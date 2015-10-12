@@ -12,6 +12,10 @@ Pre-Reqs
 ===
 The edX platform uses an existing vagrant image that works along side Virutal Box. Therefore, both virutal box and vagrant are required to be installed on the system being used for development.
 
+You also will need the nfs-kernel-server package
+
+ * apt install vagrant virtualbox nfs-kernel-server
+
 Bring-up
 ===
 Begin by reviewing the official instructions found here:
