@@ -1,4 +1,4 @@
-# ocv
+# Online Course Visualizer 
 Online Course Visualizations Project for Education Technology course at Georgia Tech
 
 This repo is for my Education Technology course project/thesis. I plan on putting bits of information I learn and instructions here. Any changes or code that I write will also be populated here.
