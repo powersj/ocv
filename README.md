@@ -6,8 +6,8 @@ This repo is for my Education Technology course project/thesis. I plan on puttin
 ## Schedule of Tasks
 | Week | Week of | Tasks |
 |------|---------|-----------------------------|
-|  7   | Sep 27  | 1) ~~Complete peer feedback~~ |
-|  8   | Sep 27  | 1) ~~Standup edX dev env.~~ 2) ~~Import example course~~ 3) ~~Document standup steps~~ 4) Start mocks for student and teacher's views|
+|  7   | Sep 27  | 1) Complete peer feedback |
+|  8   | Sep 27  | 1) Standup edX dev env. 2) Import example course 3) Document standup steps 4) Start mocks for student and teacher's views|
 |  9   | Oct 11  | 1) Extend example course 2) Finish mocks 3) Determine visualization/graphics library |
 |  10  | Oct 18  | 1) Begin implmentation |
 |  11  | Oct 25  | 1) Continue implementation 2) Initial feedback from co-worker/family |
