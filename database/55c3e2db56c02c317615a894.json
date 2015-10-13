@@ -1,0 +1,5620 @@
+{
+  "_id": ObjectId("55c3e2db56c02c317615a894"),
+  "edited_by": -1,
+  "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+  "original_version": ObjectId("55c3e2d456c02c3176159eb3"),
+  "schema_version": 1,
+  "edited_on": ISODate("2015-08-06T22:42:35.068Z"),
+  "blocks": [
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a835"),
+      "block_type": "discussion",
+      "block_id": "501aed9d902349eeb2191fa505548de2",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Numerical Input",
+        "xml_attributes": {
+          "filename": [
+            "discussion/501aed9d902349eeb2191fa505548de2.xml",
+            "discussion/501aed9d902349eeb2191fa505548de2.xml"
+          ]
+        },
+        "discussion_id": "c49f0dfb8fc94c9c8d9999cc95190c56",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.771Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a863"),
+      "block_type": "html",
+      "block_id": "html_49b4494da2f7",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/html_49b4494da2f7.xml",
+            "html/html_49b4494da2f7.xml"
+          ]
+        },
+        "display_name": "Discussion Forums",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.972Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a804"),
+      "block_type": "vertical",
+      "block_id": "vertical_0270f6de40fc",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_0270f6de40fc.xml",
+            "vertical/vertical_0270f6de40fc.xml"
+          ]
+        },
+        "display_name": "Introduction: Video and Sequences",
+        "children": [
+          [
+            "html",
+            "030e35c4756a4ddc8d40b95fbbfff4d4"
+          ],
+          [
+            "video",
+            "0b9e39477cf34507a7a48f74be381fdd"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.582Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87a"),
+      "block_type": "problem",
+      "block_id": "651e0945b77f42e0a4c89b8c3e6f5b3b",
+      "fields": {
+        "markdown": "Occasionally, you might submit a correct answer and continue experimenting with possible answers. That is great! Exploring all of the possible correct answers is a very effective way to learn. However, you should remember to leave your final answer with a green check mark next to it. The edX system will only count your most recent answer towards your final grade, so if your extra experiments leave your answer in an incorrect state, then you will not get credit for the problem. \n\nEnter the numerical value of Pi:\n= 3.14159 +- .02\n\n[explanation] Pi, or the the ratio between a circle's circumference to its diameter, is an irrational number known to extreme precision. It is value is approximately equal to 3.14. [explanation] ",
+        "display_name": "Answering More Than Once",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/651e0945b77f42e0a4c89b8c3e6f5b3b.xml",
+            "problem/651e0945b77f42e0a4c89b8c3e6f5b3b.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "always",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.064Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83b"),
+      "block_type": "vertical",
+      "block_id": "d0d804e8863c4a95a659c04d8a2b2bc0",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/d0d804e8863c4a95a659c04d8a2b2bc0.xml",
+            "vertical/d0d804e8863c4a95a659c04d8a2b2bc0.xml"
+          ]
+        },
+        "display_name": "Lesson 2 - Let's Get Interactive! ",
+        "children": [
+          [
+            "html",
+            "78d7d3642f3a4dbabbd1b017861aa5f2"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.796Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a813"),
+      "block_type": "vertical",
+      "block_id": "4a1bba2a403f40bca5ec245e945b0d76",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/4a1bba2a403f40bca5ec245e945b0d76.xml",
+            "vertical/4a1bba2a403f40bca5ec245e945b0d76.xml"
+          ]
+        },
+        "display_name": "Video Demonstrations",
+        "children": [
+          [
+            "html",
+            "ed5dccf14ae94353961f46fa07217491"
+          ],
+          [
+            "discussion",
+            "9f9e1373cc8243b985c8750cc8acec7d"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.644Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a847"),
+      "block_type": "vertical",
+      "block_id": "d6cee45205a449369d7ef8f159b22bdf",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/d6cee45205a449369d7ef8f159b22bdf.xml",
+            "vertical/d6cee45205a449369d7ef8f159b22bdf.xml"
+          ]
+        },
+        "display_name": "Labs and Demos",
+        "children": [
+          [
+            "html",
+            "2bee8c4248e842a19ba1e73ed8d426c2"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.861Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87b"),
+      "block_type": "discussion",
+      "block_id": "b8cec2a19ebf463f90cd3544c7927b0e",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Answering More Than Once",
+        "xml_attributes": {
+          "filename": [
+            "discussion/b8cec2a19ebf463f90cd3544c7927b0e.xml",
+            "discussion/b8cec2a19ebf463f90cd3544c7927b0e.xml"
+          ]
+        },
+        "discussion_id": "e252d4de97c7426e8b67ff516a9962f6",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.068Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a865"),
+      "block_type": "vertical",
+      "block_id": "312cb4faed17420e82ab3178fc3e251a",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/312cb4faed17420e82ab3178fc3e251a.xml",
+            "vertical/312cb4faed17420e82ab3178fc3e251a.xml"
+          ]
+        },
+        "display_name": "Getting Help",
+        "children": [
+          [
+            "html",
+            "8bb218cccf8d40519a971ff0e4901ccf"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.980Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a803"),
+      "block_type": "sequential",
+      "block_id": "edx_introduction",
+      "fields": {
+        "start": ISODate("1970-01-01T05:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/edx_introduction.xml",
+            "sequential/edx_introduction.xml"
+          ]
+        },
+        "display_name": "Demo Course Overview",
+        "children": [
+          [
+            "vertical",
+            "vertical_0270f6de40fc"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.578Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a864"),
+      "block_type": "discussion",
+      "block_id": "discussion_5deb6081620d",
+      "fields": {
+        "display_name": "Discussion Forums",
+        "discussion_category": "Interesting Courses",
+        "discussion_target": "Discussion Forums",
+        "xml_attributes": {
+          "filename": [
+            "discussion/discussion_5deb6081620d.xml",
+            "discussion/discussion_5deb6081620d.xml"
+          ]
+        },
+        "discussion_id": "edx_demo_embedded_discussion",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.976Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a832"),
+      "block_type": "discussion",
+      "block_id": "4d672c5893cb4f1dad0de67d2008522e",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Chemical Equations",
+        "xml_attributes": {
+          "filename": [
+            "discussion/4d672c5893cb4f1dad0de67d2008522e.xml",
+            "discussion/4d672c5893cb4f1dad0de67d2008522e.xml"
+          ]
+        },
+        "discussion_id": "b770140a122741fea651a50362dee7e6",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.761Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a836"),
+      "block_type": "vertical",
+      "block_id": "e8a5cc2aed424838853defab7be45e42",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/e8a5cc2aed424838853defab7be45e42.xml",
+            "vertical/e8a5cc2aed424838853defab7be45e42.xml"
+          ]
+        },
+        "display_name": "Text input",
+        "children": [
+          [
+            "problem",
+            "0d759dee4f9d459c8956136dbde55f02"
+          ],
+          [
+            "discussion",
+            "6244918637ed4ff4b5f94a840a7e4b43"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.774Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80c"),
+      "block_type": "html",
+      "block_id": "6bcccc2d7343416e9e03fd7325b2f232",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/6bcccc2d7343416e9e03fd7325b2f232.xml",
+            "html/6bcccc2d7343416e9e03fd7325b2f232.xml"
+          ]
+        },
+        "display_name": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.617Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a812"),
+      "block_type": "discussion",
+      "block_id": "722085be27c84ac693cfebc8ac5da700",
+      "fields": {
+        "display_name": "Videos on edX",
+        "discussion_category": "Getting Started",
+        "discussion_target": "Videos on edX",
+        "xml_attributes": {
+          "filename": [
+            "discussion/722085be27c84ac693cfebc8ac5da700.xml",
+            "discussion/722085be27c84ac693cfebc8ac5da700.xml"
+          ]
+        },
+        "discussion_id": "98d8feb5971041a085512ae22b398613",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.640Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a849"),
+      "block_type": "vertical",
+      "block_id": "vertical_0fab6aa52165",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_0fab6aa52165.xml",
+            "vertical/vertical_0fab6aa52165.xml"
+          ]
+        },
+        "display_name": "Molecule Editor",
+        "children": [
+          [
+            "html",
+            "2b94658d2eee4d85ae13f83bc24cfca9"
+          ],
+          [
+            "problem",
+            "700x_editmolB"
+          ],
+          [
+            "discussion",
+            "0aa7a3bdbe18427795b0c1a1d7c3cb9a"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.868Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a882"),
+      "block_type": "discussion",
+      "block_id": "ddede76df71045ffa16de9d1481d2119",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Randomized Questions",
+        "xml_attributes": {
+          "filename": [
+            "discussion/ddede76df71045ffa16de9d1481d2119.xml",
+            "discussion/ddede76df71045ffa16de9d1481d2119.xml"
+          ]
+        },
+        "discussion_id": "d459fcb5792b459ca0aefe141e633ccc",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.094Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a875"),
+      "block_type": "discussion",
+      "block_id": "4aba537a78774bd5a862485a8563c345",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Immediate Feedback",
+        "xml_attributes": {
+          "filename": [
+            "discussion/4aba537a78774bd5a862485a8563c345.xml",
+            "discussion/4aba537a78774bd5a862485a8563c345.xml"
+          ]
+        },
+        "discussion_id": "0717ec26e67e49b2a9f30d2e15c417dd",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.045Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a869"),
+      "block_type": "html",
+      "block_id": "6018785795994726950614ce7d0f38c5",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/6018785795994726950614ce7d0f38c5.xml",
+            "html/6018785795994726950614ce7d0f38c5.xml"
+          ]
+        },
+        "display_name": "Find Your Study Buddy",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.995Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a838"),
+      "block_type": "discussion",
+      "block_id": "6244918637ed4ff4b5f94a840a7e4b43",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Text Input",
+        "xml_attributes": {
+          "filename": [
+            "discussion/6244918637ed4ff4b5f94a840a7e4b43.xml",
+            "discussion/6244918637ed4ff4b5f94a840a7e4b43.xml"
+          ]
+        },
+        "discussion_id": "53c486b035b4437c9197a543371e0f03",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.782Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a802"),
+      "block_type": "chapter",
+      "block_id": "d8a6192ade314473a78242dfeedfbf5b",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "chapter/d8a6192ade314473a78242dfeedfbf5b.xml",
+            "chapter/d8a6192ade314473a78242dfeedfbf5b.xml"
+          ]
+        },
+        "display_name": "Introduction",
+        "children": [
+          [
+            "sequential",
+            "edx_introduction"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.573Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a889"),
+      "block_type": "vertical",
+      "block_id": "d6eaa391d2be41dea20b8b1bfbcb1c45",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/d6eaa391d2be41dea20b8b1bfbcb1c45.xml",
+            "vertical/d6eaa391d2be41dea20b8b1bfbcb1c45.xml"
+          ]
+        },
+        "display_name": "Getting Your edX Certificate",
+        "children": [
+          [
+            "html",
+            "148ae8fa73ea460eb6f05505da0ba6e6"
+          ],
+          [
+            "html",
+            "6b6bee43c7c641509da71c9299cc9f5a"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.120Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85b"),
+      "block_type": "vertical",
+      "block_id": "fb79dcbad35b466a8c6364f8ffee9050",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/fb79dcbad35b466a8c6364f8ffee9050.xml",
+            "vertical/fb79dcbad35b466a8c6364f8ffee9050.xml"
+          ]
+        },
+        "display_name": "Peer Assessed Essays",
+        "children": [
+          [
+            "openassessment",
+            "b24c33ea35954c7889e1d2944d3fe397"
+          ],
+          [
+            "discussion",
+            "12ad4f3ff4c14114a6e629b00e000976"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.939Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a839"),
+      "block_type": "chapter",
+      "block_id": "graded_interactions",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "chapter/graded_interactions.xml",
+            "chapter/graded_interactions.xml"
+          ]
+        },
+        "display_name": "Example Week 2: Get Interactive",
+        "children": [
+          [
+            "sequential",
+            "simulations"
+          ],
+          [
+            "sequential",
+            "graded_simulations"
+          ],
+          [
+            "sequential",
+            "175e76c4951144a29d46211361266e0e"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.787Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a861"),
+      "block_type": "html",
+      "block_id": "f9f3a25e7bab46e583fd1fbbd7a2f6a0",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/f9f3a25e7bab46e583fd1fbbd7a2f6a0.xml",
+            "html/f9f3a25e7bab46e583fd1fbbd7a2f6a0.xml"
+          ]
+        },
+        "display_name": "Be Social",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.965Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a808"),
+      "block_type": "sequential",
+      "block_id": "19a30717eff543078a5d94ae9d6c18a5",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "sequential/19a30717eff543078a5d94ae9d6c18a5.xml",
+            "sequential/19a30717eff543078a5d94ae9d6c18a5.xml"
+          ]
+        },
+        "display_name": "Lesson 1 - Getting Started",
+        "children": [
+          [
+            "vertical",
+            "867dddb6f55d410caaa9c1eb9c6743ec"
+          ],
+          [
+            "vertical",
+            "4f6c1b4e316a419ab5b6bf30e6c708e9"
+          ],
+          [
+            "vertical",
+            "3dc16db8d14842e38324e95d4030b8a0"
+          ],
+          [
+            "vertical",
+            "4a1bba2a403f40bca5ec245e945b0d76"
+          ],
+          [
+            "vertical",
+            "256f17a44983429fb1a60802203ee4e0"
+          ],
+          [
+            "vertical",
+            "e3601c0abee6427d8c17e6d6f8fdddd1"
+          ],
+          [
+            "vertical",
+            "134df56c516a4a0dbb24dd5facef746e"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2db56c02c317615a894"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.231Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a831"),
+      "block_type": "problem",
+      "block_id": "Sample_ChemFormula_Problem",
+      "fields": {
+        "rerandomize": "never",
+        "display_name": "Chemical Equations",
+        "children": [
+
+        ],
+        "showanswer": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/Sample_ChemFormula_Problem.xml",
+            "problem/Sample_ChemFormula_Problem.xml"
+          ]
+        }
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.756Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83e"),
+      "block_type": "html",
+      "block_id": "html_07d547513285",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "An Interactive Reference Table",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "html/html_07d547513285.xml",
+            "html/html_07d547513285.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.825Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82a"),
+      "block_type": "vertical",
+      "block_id": "54bb9b142c6c4c22afc62bcb628f0e68",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/54bb9b142c6c4c22afc62bcb628f0e68.xml",
+            "vertical/54bb9b142c6c4c22afc62bcb628f0e68.xml"
+          ]
+        },
+        "display_name": "Multiple Choice Questions",
+        "children": [
+          [
+            "problem",
+            "a0effb954cca4759994f1ac9e9434bf4"
+          ],
+          [
+            "discussion",
+            "67c26b1e826e47aaa29757f62bcd1ad0"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.731Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a871"),
+      "block_type": "vertical",
+      "block_id": "934cc32c177d41b580c8413e561346b3",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/934cc32c177d41b580c8413e561346b3.xml",
+            "vertical/934cc32c177d41b580c8413e561346b3.xml"
+          ]
+        },
+        "display_name": "EdX Exams",
+        "children": [
+          [
+            "html",
+            "8293139743f34377817d537b69911530"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.030Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a843"),
+      "block_type": "vertical",
+      "block_id": "vertical_d32bf9b2242c",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_d32bf9b2242c.xml",
+            "vertical/vertical_d32bf9b2242c.xml"
+          ]
+        },
+        "display_name": "Electronic Sound Experiment",
+        "children": [
+          [
+            "html",
+            "Lab_5B_Mosfet_Amplifier_Experiment"
+          ],
+          [
+            "discussion",
+            "03f051f9a8814881a3783d2511613aa6"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.843Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84e"),
+      "block_type": "html",
+      "block_id": "891211e17f9a472290a5f12c7a6626d7",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/891211e17f9a472290a5f12c7a6626d7.xml",
+            "html/891211e17f9a472290a5f12c7a6626d7.xml"
+          ]
+        },
+        "display_name": "Code Grader",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.888Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a891"),
+      "block_type": "course_info",
+      "block_id": "updates",
+      "fields": {
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.174Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a868"),
+      "block_type": "vertical",
+      "block_id": "26d89b08f75d48829a63520ed8b0037d",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/26d89b08f75d48829a63520ed8b0037d.xml",
+            "vertical/26d89b08f75d48829a63520ed8b0037d.xml"
+          ]
+        },
+        "display_name": "Homework - Find Your Study Buddy",
+        "children": [
+          [
+            "html",
+            "6018785795994726950614ce7d0f38c5"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.991Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a883"),
+      "block_type": "vertical",
+      "block_id": "1b0e2c2c84884b95b1c99fb678cc964c",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/1b0e2c2c84884b95b1c99fb678cc964c.xml",
+            "vertical/1b0e2c2c84884b95b1c99fb678cc964c.xml"
+          ]
+        },
+        "display_name": "Overall Grade Performance",
+        "children": [
+          [
+            "html",
+            "f4a39219742149f781a1dda6f43a623c"
+          ],
+          [
+            "discussion",
+            "1a810b1a3b2447b998f0917d0e5a802b"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.098Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a816"),
+      "block_type": "vertical",
+      "block_id": "256f17a44983429fb1a60802203ee4e0",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/256f17a44983429fb1a60802203ee4e0.xml",
+            "vertical/256f17a44983429fb1a60802203ee4e0.xml"
+          ]
+        },
+        "display_name": "Video Presentation Styles",
+        "children": [
+          [
+            "html",
+            "c2f7008c9ccf4bd09d5d800c98fb0722"
+          ],
+          [
+            "video",
+            "636541acbae448d98ab484b028c9a7f6"
+          ],
+          [
+            "discussion",
+            "e2cb0e0994f84b0abfa5f4ae42ed9d44"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.655Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a872"),
+      "block_type": "html",
+      "block_id": "8293139743f34377817d537b69911530",
+      "fields": {
+        "source_code": "\\subsection{Example of E-text in LaTeX}\n\nIt is very convenient to write complex equations in LaTeX.        \n\n\\begin{equation}\n        x = \\frac{-b\\pm\\sqrt{b^2-4*a*c}}{2a}\n\\end{equation}\n\nSeize the moment.\n",
+        "xml_attributes": {
+          "filename": [
+            "html/8293139743f34377817d537b69911530.xml",
+            "html/8293139743f34377817d537b69911530.xml"
+          ]
+        },
+        "display_name": "EdX Exams",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.034Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a873"),
+      "block_type": "vertical",
+      "block_id": "vertical_f04afeac0131",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_f04afeac0131.xml",
+            "vertical/vertical_f04afeac0131.xml"
+          ]
+        },
+        "display_name": "Immediate Feedback",
+        "children": [
+          [
+            "problem",
+            "ex_practice_2"
+          ],
+          [
+            "discussion",
+            "4aba537a78774bd5a862485a8563c345"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.038Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84b"),
+      "block_type": "problem",
+      "block_id": "700x_editmolB",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "Molecule Editor",
+        "weight": null,
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/700x_editmolB.xml",
+            "problem/700x_editmolB.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.878Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a827"),
+      "block_type": "vertical",
+      "block_id": "47dbd5f836544e61877a483c0b75606c",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/47dbd5f836544e61877a483c0b75606c.xml",
+            "vertical/47dbd5f836544e61877a483c0b75606c.xml"
+          ]
+        },
+        "display_name": "Drag and Drop",
+        "children": [
+          [
+            "problem",
+            "d2e35c1d294b4ba0b3b1048615605d2a"
+          ],
+          [
+            "discussion",
+            "5ab88e67d46049b9aa694cb240c39cef"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.720Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81b"),
+      "block_type": "problem",
+      "block_id": "9cee77a606ea4c1aa5440e0ea5d0f618",
+      "fields": {
+        "showanswer": "always",
+        "display_name": "Interactive Questions",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/9cee77a606ea4c1aa5440e0ea5d0f618.xml",
+            "problem/9cee77a606ea4c1aa5440e0ea5d0f618.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.673Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83a"),
+      "block_type": "sequential",
+      "block_id": "simulations",
+      "fields": {
+        "start": ISODate("1970-01-01T05:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/simulations.xml",
+            "sequential/simulations.xml"
+          ]
+        },
+        "display_name": "Lesson 2 - Let's Get Interactive!",
+        "children": [
+          [
+            "vertical",
+            "d0d804e8863c4a95a659c04d8a2b2bc0"
+          ],
+          [
+            "vertical",
+            "vertical_2dbb0072785e"
+          ],
+          [
+            "vertical",
+            "vertical_98cf62510471"
+          ],
+          [
+            "vertical",
+            "vertical_d32bf9b2242c"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.162Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a837"),
+      "block_type": "problem",
+      "block_id": "0d759dee4f9d459c8956136dbde55f02",
+      "fields": {
+        "markdown": "Here's a very simple example of a text input question. Depending on the course you may have to observe special text requirements for dates, case sensitivity, etc. \n\nWhich country contains Paris as its capital?\n= France\n[explanation]\nYou can find verification that Paris is the capital of France on wikipedia, or any atlas that you have at hand.\n[explanation]\n",
+        "display_name": "Text Input",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/0d759dee4f9d459c8956136dbde55f02.xml",
+            "problem/0d759dee4f9d459c8956136dbde55f02.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "always",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.778Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a881"),
+      "block_type": "problem",
+      "block_id": "ex_practice_3",
+      "fields": {
+        "rerandomize": "always",
+        "display_name": "Randomized Questions",
+        "children": [
+
+        ],
+        "showanswer": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/ex_practice_3.xml",
+            "problem/ex_practice_3.xml"
+          ]
+        }
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.090Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88b"),
+      "block_type": "html",
+      "block_id": "6b6bee43c7c641509da71c9299cc9f5a",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/6b6bee43c7c641509da71c9299cc9f5a.xml",
+            "html/6b6bee43c7c641509da71c9299cc9f5a.xml"
+          ]
+        },
+        "display_name": "Blank HTML Page",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.127Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a888"),
+      "block_type": "discussion",
+      "block_id": "23e6eda482c04335af2bb265beacaf59",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Passing a Course",
+        "xml_attributes": {
+          "filename": [
+            "discussion/23e6eda482c04335af2bb265beacaf59.xml",
+            "discussion/23e6eda482c04335af2bb265beacaf59.xml"
+          ]
+        },
+        "discussion_id": "a56e406f164746d8bbff76545e6d981f",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.117Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a826"),
+      "block_type": "discussion",
+      "block_id": "e5eac7e1a5a24f5fa7ed77bb6d136591",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Pointing on a Picture",
+        "xml_attributes": {
+          "filename": [
+            "discussion/e5eac7e1a5a24f5fa7ed77bb6d136591.xml",
+            "discussion/e5eac7e1a5a24f5fa7ed77bb6d136591.xml"
+          ]
+        },
+        "discussion_id": "eb264c9899b745fc81cd7405b53a7a65",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.717Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83c"),
+      "block_type": "html",
+      "block_id": "78d7d3642f3a4dbabbd1b017861aa5f2",
+      "fields": {
+        "source_code": "\\subsection{Example of E-text in LaTeX}\n\nIt is very convenient to write complex equations in LaTeX.        \n\n\\begin{equation}\n        x = \\frac{-b\\pm\\sqrt{b^2-4*a*c}}{2a}\n\\end{equation}\n\nSeize the moment.\n",
+        "xml_attributes": {
+          "filename": [
+            "html/78d7d3642f3a4dbabbd1b017861aa5f2.xml",
+            "html/78d7d3642f3a4dbabbd1b017861aa5f2.xml"
+          ]
+        },
+        "display_name": "Lesson 2: Let's Get Interactive!",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.800Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a819"),
+      "block_type": "discussion",
+      "block_id": "e2cb0e0994f84b0abfa5f4ae42ed9d44",
+      "fields": {
+        "display_name": "Video Presentation Styles",
+        "discussion_category": "Getting Started",
+        "discussion_target": "Video Presentation Styles",
+        "xml_attributes": {
+          "filename": [
+            "discussion/e2cb0e0994f84b0abfa5f4ae42ed9d44.xml",
+            "discussion/e2cb0e0994f84b0abfa5f4ae42ed9d44.xml"
+          ]
+        },
+        "discussion_id": "265ca2d808814d76ad670957a2b6071f",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.666Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a854"),
+      "block_type": "problem",
+      "block_id": "logic_gate_problem",
+      "fields": {
+        "markdown": null,
+        "display_name": "",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/logic_gate_problem.xml",
+            "problem/logic_gate_problem.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "always"
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.912Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a834"),
+      "block_type": "problem",
+      "block_id": "75f9562c77bc4858b61f907bb810d974",
+      "fields": {
+        "markdown": "Some course questions ask that you insert numbers into web-text fields, and your answers can be judged exactly - or approximately - according to the question. \n\nNote that the edX system uses a period to indicate decimals, so fifteen and three quarters is written \"15.75\", not \"15,75\". \n\nEnter the numerical value of Pi:\n= 3.14159 +- .02\n\nEnter the approximate value of 502*9:\n= 4518 +- 15%\n\nEnter the number of fingernails on a healthy human hand. For the purposes of this question, please consider the thumb as a finger:\n= 5\n\n[explanation] Pi, or the the ratio between a circle's circumference to its diameter, is an irrational number known to extreme precision. It is value is approximately equal to 3.14.\nAlthough you can get an exact value by typing 502*9 into a calculator, the result will be close to 500*10, or 5,000. The grader accepts any response within 15% of the true value, 4518, so that you can use any estimation technique that you like.\nThe index finger, middle finger, ring finger, pinky, and thumb are the five different fingers on a human hand.[explanation] ",
+        "display_name": "Numerical Input",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/75f9562c77bc4858b61f907bb810d974.xml",
+            "problem/75f9562c77bc4858b61f907bb810d974.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "always",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.767Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82c"),
+      "block_type": "discussion",
+      "block_id": "67c26b1e826e47aaa29757f62bcd1ad0",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Selection from Options",
+        "xml_attributes": {
+          "filename": [
+            "discussion/67c26b1e826e47aaa29757f62bcd1ad0.xml",
+            "discussion/67c26b1e826e47aaa29757f62bcd1ad0.xml"
+          ]
+        },
+        "discussion_id": "cba3e4cd91d0466b9ac50926e495b76f",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.738Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a810"),
+      "block_type": "html",
+      "block_id": "0a3b4139f51a4917a3aff9d519b1eeb6",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/0a3b4139f51a4917a3aff9d519b1eeb6.xml",
+            "html/0a3b4139f51a4917a3aff9d519b1eeb6.xml"
+          ]
+        },
+        "display_name": "Videos on edX",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.632Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82b"),
+      "block_type": "problem",
+      "block_id": "a0effb954cca4759994f1ac9e9434bf4",
+      "fields": {
+        "markdown": "Many edX courses have homework or exercises you need to complete.  Notice the clock image to the left?  That means this homework or exercise needs to be completed for you to pass the course. (This can be a bit confusing; the exercise may or may not have a due date prior to the end of the course.)\n\nWe’ve provided eight (8) examples of how a professor might ask you questions. While the multiple choice question types below are somewhat standard, explore the other question types in the sequence above, like the formula builder- try them all out. \n\nAs you go through the question types, notice how edX gives you immediate feedback on your responses - it really helps in the learning process.\n\nWhat color is the open ocean on a sunny day?\n\n[[yellow, (blue), green]]\n\n\nWhich piece of furniture is built for sitting?\n\n( ) a table\n( ) a desk\n(x) a chair\n( ) a bookshelf\n\nWhich of the following are musical instruments?\n\n[x] a piano\n[ ] a tree\n[x] a guitar\n[ ] a window\n\n\n ",
+        "display_name": "Multiple Choice Questions",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/a0effb954cca4759994f1ac9e9434bf4.xml",
+            "problem/a0effb954cca4759994f1ac9e9434bf4.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "never",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.735Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a825"),
+      "block_type": "problem",
+      "block_id": "c554538a57664fac80783b99d9d6da7c",
+      "fields": {
+        "showanswer": "always",
+        "display_name": "Pointing on a Picture",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/c554538a57664fac80783b99d9d6da7c.xml",
+            "problem/c554538a57664fac80783b99d9d6da7c.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.713Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87f"),
+      "block_type": "discussion",
+      "block_id": "cd177caa62444fbca48aa8f843f09eac",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Limited Checks",
+        "xml_attributes": {
+          "filename": [
+            "discussion/cd177caa62444fbca48aa8f843f09eac.xml",
+            "discussion/cd177caa62444fbca48aa8f843f09eac.xml"
+          ]
+        },
+        "discussion_id": "97f19f6202e54d6a9ea59f7a573725a1",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.083Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a852"),
+      "block_type": "html",
+      "block_id": "d5a5caaf35e84ebc9a747038465dcfb4",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/d5a5caaf35e84ebc9a747038465dcfb4.xml",
+            "html/d5a5caaf35e84ebc9a747038465dcfb4.xml"
+          ]
+        },
+        "display_name": "Electronic Circuit Simulator",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.904Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a86c"),
+      "block_type": "html",
+      "block_id": "d45779ad3d024a40a09ad8cc317c0970",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/d45779ad3d024a40a09ad8cc317c0970.xml",
+            "html/d45779ad3d024a40a09ad8cc317c0970.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.007Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a886"),
+      "block_type": "vertical",
+      "block_id": "c7e98fd39a6944edb6b286c32e1150ff",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/c7e98fd39a6944edb6b286c32e1150ff.xml",
+            "vertical/c7e98fd39a6944edb6b286c32e1150ff.xml"
+          ]
+        },
+        "display_name": "Passing a Course",
+        "children": [
+          [
+            "html",
+            "5e009378f0b64585baa0a14b155974b9"
+          ],
+          [
+            "discussion",
+            "23e6eda482c04335af2bb265beacaf59"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.109Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a805"),
+      "block_type": "html",
+      "block_id": "030e35c4756a4ddc8d40b95fbbfff4d4",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/030e35c4756a4ddc8d40b95fbbfff4d4.xml",
+            "html/030e35c4756a4ddc8d40b95fbbfff4d4.xml"
+          ]
+        },
+        "display_name": "Blank HTML Page",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.587Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a884"),
+      "block_type": "html",
+      "block_id": "f4a39219742149f781a1dda6f43a623c",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/f4a39219742149f781a1dda6f43a623c.xml",
+            "html/f4a39219742149f781a1dda6f43a623c.xml"
+          ]
+        },
+        "display_name": "Overall Grade",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.102Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a880"),
+      "block_type": "vertical",
+      "block_id": "vertical_36e0beb03f0a",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_36e0beb03f0a.xml",
+            "vertical/vertical_36e0beb03f0a.xml"
+          ]
+        },
+        "display_name": "Randomized Questions",
+        "children": [
+          [
+            "problem",
+            "ex_practice_3"
+          ],
+          [
+            "discussion",
+            "ddede76df71045ffa16de9d1481d2119"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.087Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82f"),
+      "block_type": "discussion",
+      "block_id": "870371212ba04dcf9536d7c7b8f3109e",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Formula Entry",
+        "xml_attributes": {
+          "filename": [
+            "discussion/870371212ba04dcf9536d7c7b8f3109e.xml",
+            "discussion/870371212ba04dcf9536d7c7b8f3109e.xml"
+          ]
+        },
+        "discussion_id": "ed3164d1235645739374094a8172964b",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.749Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87d"),
+      "block_type": "problem",
+      "block_id": "ex_practice_limited_checks",
+      "fields": {
+        "showanswer": "never",
+        "display_name": "Limited Checks",
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/ex_practice_limited_checks.xml",
+            "problem/ex_practice_limited_checks.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "max_attempts": 100
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.075Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87c"),
+      "block_type": "vertical",
+      "block_id": "vertical_ac391cde8a91",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_ac391cde8a91.xml",
+            "vertical/vertical_ac391cde8a91.xml"
+          ]
+        },
+        "display_name": "Limited Checks",
+        "children": [
+          [
+            "problem",
+            "ex_practice_limited_checks"
+          ],
+          [
+            "problem",
+            "d1b84dcd39b0423d9e288f27f0f7f242"
+          ],
+          [
+            "discussion",
+            "cd177caa62444fbca48aa8f843f09eac"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.072Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a855"),
+      "block_type": "discussion",
+      "block_id": "4f06b358a96f4d1dae57d6d81acd06f2",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Labs and Simulators",
+        "discussion_target": "Electronic Circuit Simulator",
+        "xml_attributes": {
+          "filename": [
+            "discussion/4f06b358a96f4d1dae57d6d81acd06f2.xml",
+            "discussion/4f06b358a96f4d1dae57d6d81acd06f2.xml"
+          ]
+        },
+        "discussion_id": "cdad92273f7d4622aed770b7de8583bc",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.916Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a822"),
+      "block_type": "discussion",
+      "block_id": "ffa5817d49e14fec83ad6187cbe16358",
+      "fields": {
+        "display_name": "Reading Sample",
+        "discussion_category": "Getting Started",
+        "discussion_target": "Reading Sample",
+        "xml_attributes": {
+          "filename": [
+            "discussion/ffa5817d49e14fec83ad6187cbe16358.xml",
+            "discussion/ffa5817d49e14fec83ad6187cbe16358.xml"
+          ]
+        },
+        "discussion_id": "4250393f9f684bfeb3f1d514e15592d1",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.700Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a879"),
+      "block_type": "vertical",
+      "block_id": "f91d8d31f7cf48ce990f8d8745ae4cfa",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/f91d8d31f7cf48ce990f8d8745ae4cfa.xml",
+            "vertical/f91d8d31f7cf48ce990f8d8745ae4cfa.xml"
+          ]
+        },
+        "display_name": "Answering More Than Once",
+        "children": [
+          [
+            "problem",
+            "651e0945b77f42e0a4c89b8c3e6f5b3b"
+          ],
+          [
+            "discussion",
+            "b8cec2a19ebf463f90cd3544c7927b0e"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.060Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88d"),
+      "block_type": "sequential",
+      "block_id": "07bc32474380492cb34f76e5f9d9a135",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "sequential/07bc32474380492cb34f76e5f9d9a135.xml",
+            "sequential/07bc32474380492cb34f76e5f9d9a135.xml"
+          ]
+        },
+        "display_name": "New Subsection",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.068Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a877"),
+      "block_type": "problem",
+      "block_id": "45d46192272c4f6db6b63586520bbdf4",
+      "fields": {
+        "markdown": "In some courses a \"show answer\" button might appear below a question. When you click on this button, you can see the correct answer (with an explanation) that would receive full credit. \n\nHow much does it cost to take an edX course? Enter the number of dollars.\n\n= 0 \n\n[explanation]\nIt costs zero dollars to take an edX course. All edX courses are free to students.\n[explanation]\n\n\n\n",
+        "display_name": "Getting Answers",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/45d46192272c4f6db6b63586520bbdf4.xml",
+            "problem/45d46192272c4f6db6b63586520bbdf4.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "always",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.053Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84f"),
+      "block_type": "problem",
+      "block_id": "python_grader",
+      "fields": {
+        "markdown": null,
+        "display_name": "",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/python_grader.xml",
+            "problem/python_grader.xml"
+          ],
+          "title": "Embedded Code Box"
+        },
+        "children": [
+
+        ],
+        "showanswer": "always"
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.893Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82e"),
+      "block_type": "problem",
+      "block_id": "Sample_Algebraic_Problem",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "Mathematical Expressions",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/Sample_Algebraic_Problem.xml",
+            "problem/Sample_Algebraic_Problem.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.746Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83d"),
+      "block_type": "vertical",
+      "block_id": "vertical_2dbb0072785e",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_2dbb0072785e.xml",
+            "vertical/vertical_2dbb0072785e.xml"
+          ]
+        },
+        "display_name": "An Interactive Reference Table",
+        "children": [
+          [
+            "html",
+            "html_07d547513285"
+          ],
+          [
+            "discussion",
+            "6f7a6670f87147149caeff6afa07a526"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.803Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84a"),
+      "block_type": "html",
+      "block_id": "2b94658d2eee4d85ae13f83bc24cfca9",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/2b94658d2eee4d85ae13f83bc24cfca9.xml",
+            "html/2b94658d2eee4d85ae13f83bc24cfca9.xml"
+          ]
+        },
+        "display_name": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.874Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a866"),
+      "block_type": "html",
+      "block_id": "8bb218cccf8d40519a971ff0e4901ccf",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/8bb218cccf8d40519a971ff0e4901ccf.xml",
+            "html/8bb218cccf8d40519a971ff0e4901ccf.xml"
+          ]
+        },
+        "display_name": "Getting Help",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.983Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d556c02c3176159eb7"),
+      "block_type": "course",
+      "block_id": "course",
+      "fields": {
+        "rerandomize": "never",
+        "graded": false,
+        "tabs": [
+          {
+            "type": "courseware",
+            "name": "Courseware"
+          },
+          {
+            "type": "course_info",
+            "name": "Course Info"
+          },
+          {
+            "type": "discussion",
+            "name": "Discussion"
+          },
+          {
+            "type": "wiki",
+            "name": "Wiki"
+          },
+          {
+            "type": "textbooks",
+            "name": "Textbooks"
+          },
+          {
+            "type": "progress",
+            "name": "Progress"
+          }
+        ],
+        "giturl": null,
+        "discussion_topics": {
+          "General": {
+            "id": "i4x-edx-eiorguegnru-course-foobarbaz"
+          }
+        },
+        "source_file": null,
+        "children": [
+          [
+            "chapter",
+            "d8a6192ade314473a78242dfeedfbf5b"
+          ],
+          [
+            "chapter",
+            "interactive_demonstrations"
+          ],
+          [
+            "chapter",
+            "graded_interactions"
+          ],
+          [
+            "chapter",
+            "social_integration"
+          ],
+          [
+            "chapter",
+            "1414ffd5143b4b508f739b563ab468b7"
+          ],
+          [
+            "chapter",
+            "9fca584977d04885bc911ea76a9ef29e"
+          ]
+        ],
+        "showanswer": "attempted",
+        "display_name": "edX Demonstration Course",
+        "graceperiod": "18000 seconds",
+        "due": null,
+        "html_textbooks": [
+          {
+            "tab_title": "H24H",
+            "chapters": [
+              {
+                "url": "/static/book/h24h/BEFORE-INTRO-HOMER-h24h-intro-book.html",
+                "title": "Introduction to the Book"
+              },
+              {
+                "url": "/static/book/h24h/BEFORE-HOUR-1-h24h-intro-homer.html",
+                "title": "Introduction to Homeric Poetry"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour1.html",
+                "title": "Hour 1"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour2.html",
+                "title": "Hour 2"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour3.html",
+                "title": "Hour 3"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour4.html",
+                "title": "Hour 4"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour5.html",
+                "title": "Hour 5"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour6.html",
+                "title": "Hour 6"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour7.html",
+                "title": "Hour 7"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour8.html",
+                "title": "Hour 8"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour9.html",
+                "title": "Hour 9"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour10.html",
+                "title": "Hour 10"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour11.html",
+                "title": "Hour 11"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour12.html",
+                "title": "Hour 12"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour13.html",
+                "title": "Hour 13"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour14.html",
+                "title": "Hour 14"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour15.html",
+                "title": "Hour 15"
+              },
+              {
+                "url": "/static/book/h24h/AFTER-HOUR-15-h24h-intro-tragedy.html",
+                "title": "Introduction to Tragedy"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour16.html",
+                "title": "Hour 16"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour17.html",
+                "title": "Hour 17"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour18.html",
+                "title": "Hour 18"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour19.html",
+                "title": "Hour 19"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour20.html",
+                "title": "Hour 20"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour21.html",
+                "title": "Hour 21"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour22.html",
+                "title": "Hour 22"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour23.html",
+                "title": "Hour 23"
+              },
+              {
+                "url": "/static/book/h24h/h24h-hour24.html",
+                "title": "Hour 24"
+              },
+              {
+                "url": "/static/book/h24h/CoreVocab.html",
+                "title": "Core Vocab"
+              },
+              {
+                "url": "/static/book/h24h/references.html",
+                "title": "Biblio"
+              }
+            ]
+          },
+          {
+            "tab_title": "Sourcebook",
+            "chapters": [
+              {
+                "url": "/static/book/sourcebook/table-of-contents.html",
+                "title": "Title Page"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-1.html",
+                "title": "Homeric Iliad: Scroll I"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-2.html",
+                "title": "Homeric Iliad: Scroll II"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-3.html",
+                "title": "Homeric Iliad: Scroll III"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-4.html",
+                "title": "Homeric Iliad: Scroll IV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-5.html",
+                "title": "Homeric Iliad: Scroll V"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-6.html",
+                "title": "Homeric Iliad: Scroll VI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-7.html",
+                "title": "Homeric Iliad: Scroll VII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-8.html",
+                "title": "Homeric Iliad: Scroll VIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-9.html",
+                "title": "Homeric Iliad: Scroll IX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-10.html",
+                "title": "Homeric Iliad: Scroll X"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-11.html",
+                "title": "Homeric Iliad: Scroll XI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-12.html",
+                "title": "Homeric Iliad: Scroll XII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-13.html",
+                "title": "Homeric Iliad: Scroll XIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-14.html",
+                "title": "Homeric Iliad: Scroll XIV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-15.html",
+                "title": "Homeric Iliad: Scroll XV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-16.html",
+                "title": "Homeric Iliad: Scroll XVI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-17.html",
+                "title": "Homeric Iliad: Scroll XVII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-18.html",
+                "title": "Homeric Iliad: Scroll XVIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-19.html",
+                "title": "Homeric Iliad: Scroll XIX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-20.html",
+                "title": "Homeric Iliad: Scroll XX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-21.html",
+                "title": "Homeric Iliad: Scroll XXI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-22.html",
+                "title": "Homeric Iliad: Scroll XXII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-23.html",
+                "title": "Homeric Iliad: Scroll XXIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-iliad-24.html",
+                "title": "Homeric Iliad: Scroll XXIV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-1.html",
+                "title": "Homeric Odyssey: Scroll I"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-2.html",
+                "title": "Homeric Odyssey: Scroll II"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-3.html",
+                "title": "Homeric Odyssey: Scroll III"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-4.html",
+                "title": "Homeric Odyssey: Scroll IV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-5.html",
+                "title": "Homeric Odyssey: Scroll V"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-6.html",
+                "title": "Homeric Odyssey: Scroll VI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-7.html",
+                "title": "Homeric Odyssey: Scroll VII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-8.html",
+                "title": "Homeric Odyssey: Scroll VIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-9.html",
+                "title": "Homeric Odyssey: Scroll IX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-10.html",
+                "title": "Homeric Odyssey: Scroll X"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-11.html",
+                "title": "Homeric Odyssey: Scroll XI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-12.html",
+                "title": "Homeric Odyssey: Scroll XII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-13.html",
+                "title": "Homeric Odyssey: Scroll XIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-14.html",
+                "title": "Homeric Odyssey: Scroll XIV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-15.html",
+                "title": "Homeric Odyssey: Scroll XV"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-16.html",
+                "title": "Homeric Odyssey: Scroll XVI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-17.html",
+                "title": "Homeric Odyssey: Scroll XVII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-18.html",
+                "title": "Homeric Odyssey: Scroll XVIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-19.html",
+                "title": "Homeric Odyssey: Scroll XIX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-20.html",
+                "title": "Homeric Odyssey: Scroll XX"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-21.html",
+                "title": "Homeric Odyssey: Scroll XXI"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-22.html",
+                "title": "Homeric Odyssey: Scroll XXII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-23.html",
+                "title": "Homeric Odyssey: Scroll XXIII"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-odyssey-24.html",
+                "title": "Homeric Odyssey: Scroll XXIV"
+              },
+              {
+                "url": "/static/book/sourcebook/epic-cycle.html",
+                "title": "The Epic Cycle"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-hymn-to-demeter.html",
+                "title": "Homeric Hymn to Demeter"
+              },
+              {
+                "url": "/static/book/sourcebook/homeric-hymn-to-aphrodite.html",
+                "title": "Homeric Hymn to Aphrodite"
+              },
+              {
+                "url": "/static/book/sourcebook/alcman-partheneion.html",
+                "title": "Alcman: Partheneion"
+              },
+              {
+                "url": "/static/book/sourcebook/sappho.html",
+                "title": "Sappho"
+              },
+              {
+                "url": "/static/book/sourcebook/pindar-pythian-8.html",
+                "title": "Pindar: Pythian 8"
+              },
+              {
+                "url": "/static/book/sourcebook/aeschylus-agamemnon.html",
+                "title": "Aeschylus: Agamemnon"
+              },
+              {
+                "url": "/static/book/sourcebook/aeschylus-libation-bearers.html",
+                "title": "Aeschylus: Libation Bearers"
+              },
+              {
+                "url": "/static/book/sourcebook/aeschylus-eumenides.html",
+                "title": "Aeschylus: Eumenides"
+              },
+              {
+                "url": "/static/book/sourcebook/sophocles-oc.html",
+                "title": "Sophocles: Oedipus at Colonus"
+              },
+              {
+                "url": "/static/book/sourcebook/sophocles-ot.html",
+                "title": "Sophocles: Oedipus Tyrannos"
+              },
+              {
+                "url": "/static/book/sourcebook/euripides-hippolytus.html",
+                "title": "Euripides: Hyppolytus"
+              },
+              {
+                "url": "/static/book/sourcebook/euripides-bacchae.html",
+                "title": "Euripides: Bacchae"
+              },
+              {
+                "url": "/static/book/sourcebook/aristotle.html",
+                "title": "Aristotle: Selections"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-croesus.html",
+                "title": "Herodotus: Croesus"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-kyrnos.html",
+                "title": "Herodotus: Kyrnos"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-timesios.html",
+                "title": "Herodotus: Timesios"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-miltiades.html",
+                "title": "Herodotus: Miltiades"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-marathon.html",
+                "title": "Herodotus: Marathon"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-artachaees.html",
+                "title": "Herodotus: Artachaees"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-thermopylae.html",
+                "title": "Herodotus: Thermopylae"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-salamis.html",
+                "title": "Herodotus: Salamis"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-plataea.html",
+                "title": "Herodotus: Plataea"
+              },
+              {
+                "url": "/static/book/sourcebook/herodotus-protesilaos.html",
+                "title": "Herodotus: Protesilaos"
+              },
+              {
+                "url": "/static/book/sourcebook/plato-apology.html",
+                "title": "Plato: Apology"
+              },
+              {
+                "url": "/static/book/sourcebook/plato-phaedo.html",
+                "title": "Plato: Phaedo"
+              },
+              {
+                "url": "/static/book/sourcebook/pausanias.html",
+                "title": "Pausanias: Selections"
+              },
+              {
+                "url": "/static/book/sourcebook/hesiod-theogony.html",
+                "title": "Hesiod: Theogony"
+              },
+              {
+                "url": "/static/book/sourcebook/hesiod-works-and-days.html",
+                "title": "Hesiod: Works and Days"
+              },
+              {
+                "url": "/static/book/sourcebook/theognis-of-megara.html",
+                "title": "Theognis of Megara"
+              },
+              {
+                "url": "/static/book/sourcebook/the-sign-of-the-hero.html",
+                "title": "The Sign of the hero"
+              }
+            ]
+          }
+        ],
+        "start": ISODate("2013-02-05T05:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "course/Demo_Course.xml",
+            "course/Demo_Course.xml"
+          ]
+        },
+        "days_early_for_beta": null,
+        "advanced_modules": [
+          "annotatable",
+          "videoalpha",
+          "openassessment"
+        ],
+        "format": null,
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "checklists": [
+          {
+            "short_description": "Getting Started With Studio",
+            "items": [
+              {
+                "action_external": false,
+                "is_checked": false,
+                "action_url": "/manage_users/i4x://edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Team",
+                "short_description": "Add Course Team Members",
+                "long_description": "Grant your collaborators permission to edit your course so you can work together."
+              },
+              {
+                "action_external": false,
+                "is_checked": false,
+                "action_url": "/edX/DemoX/settings-details/Demo_Course",
+                "action_text": "Edit Course Details &amp; Schedule",
+                "short_description": "Set Important Dates for Your Course",
+                "long_description": "Establish your course's student enrollment and launch dates on the Schedule and Details page."
+              },
+              {
+                "action_external": false,
+                "is_checked": false,
+                "action_url": "/edX/DemoX/settings-grading/Demo_Course",
+                "action_text": "Edit Grading Settings",
+                "short_description": "Draft Your Course's Grading Policy",
+                "long_description": "Set up your assignment types and grading policy even if you haven't created all your assignments."
+              },
+              {
+                "action_external": false,
+                "is_checked": false,
+                "action_url": "",
+                "action_text": "",
+                "short_description": "Explore the Other Studio Checklists",
+                "long_description": "Discover other available course authoring tools, and find help when you need it."
+              }
+            ],
+            "id": 0,
+            "action_urls_expanded": true
+          },
+          {
+            "short_description": "Draft a Rough Course Outline",
+            "items": [
+              {
+                "action_external": false,
+                "short_description": "Create Your First Section and Subsection",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Use your course outline to build your first Section and Subsection."
+              },
+              {
+                "action_external": false,
+                "short_description": "Set Section Release Dates",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Specify the release dates for each Section in your course. Sections become visible to students on their release dates."
+              },
+              {
+                "action_external": false,
+                "short_description": "Designate a Subsection as Graded",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Set a Subsection to be graded as a specific assignment type. Assignments within graded Subsections count toward a student's final grade."
+              },
+              {
+                "action_external": false,
+                "short_description": "Reordering Course Content",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Use drag and drop to reorder the content in your course."
+              },
+              {
+                "action_external": false,
+                "short_description": "Renaming Sections",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Rename Sections by clicking the Section name from the Course Outline."
+              },
+              {
+                "action_external": false,
+                "short_description": "Deleting Course Content",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Delete Sections, Subsections, or Units you don't need anymore. Be careful, as there is no Undo function."
+              },
+              {
+                "action_external": false,
+                "short_description": "Add an Instructor-Only Section to Your Outline",
+                "action_url": "/edX/DemoX/course/Demo_Course",
+                "action_text": "Edit Course Outline",
+                "is_checked": false,
+                "long_description": "Some course authors find using a section for unsorted, in-progress work useful. To do this, create a section and set the release date to the distant future."
+              }
+            ],
+            "action_urls_expanded": true
+          },
+          {
+            "short_description": "Explore edX's Support Tools",
+            "items": [
+              {
+                "action_external": true,
+                "short_description": "Explore the Studio Help Forum",
+                "action_url": "http://help.edge.edx.org/",
+                "action_text": "Visit Studio Help",
+                "is_checked": false,
+                "long_description": "Access the Studio Help forum from the menu that appears when you click your user name in the top right corner of Studio."
+              },
+              {
+                "action_external": true,
+                "short_description": "Enroll in edX 101",
+                "action_url": "https://edge.edx.org/courses/edX/edX101/How_to_Create_an_edX_Course/about",
+                "action_text": "Register for edX 101",
+                "is_checked": false,
+                "long_description": "Register for edX 101, edX's primer for course creation."
+              },
+              {
+                "action_external": true,
+                "short_description": "Download the Studio Documentation",
+                "action_url": "http://files.edx.org/Getting_Started_with_Studio.pdf",
+                "action_text": "Download Documentation",
+                "is_checked": false,
+                "long_description": "Download the searchable Studio reference documentation in PDF form."
+              }
+            ],
+            "action_urls_expanded": true
+          },
+          {
+            "short_description": "Draft Your Course About Page",
+            "items": [
+              {
+                "action_external": false,
+                "short_description": "Draft a Course Description",
+                "action_url": "/edX/DemoX/settings-details/Demo_Course",
+                "action_text": "Edit Course Schedule &amp; Details",
+                "is_checked": false,
+                "long_description": "Courses on edX have an About page that includes a course video, description, and more. Draft the text students will read before deciding to enroll in your course."
+              },
+              {
+                "action_external": false,
+                "short_description": "Add Staff Bios",
+                "action_url": "/edX/DemoX/settings-details/Demo_Course",
+                "action_text": "Edit Course Schedule &amp; Details",
+                "is_checked": false,
+                "long_description": "Showing prospective students who their instructor will be is helpful. Include staff bios on the course About page."
+              },
+              {
+                "action_external": false,
+                "short_description": "Add Course FAQs",
+                "action_url": "/edX/DemoX/settings-details/Demo_Course",
+                "action_text": "Edit Course Schedule &amp; Details",
+                "is_checked": false,
+                "long_description": "Include a short list of frequently asked questions about your course."
+              },
+              {
+                "action_external": false,
+                "short_description": "Add Course Prerequisites",
+                "action_url": "/edX/DemoX/settings-details/Demo_Course",
+                "action_text": "Edit Course Schedule &amp; Details",
+                "is_checked": false,
+                "long_description": "Let students know what knowledge and/or skills they should have before they enroll in your course."
+              }
+            ],
+            "action_urls_expanded": true
+          }
+        ],
+        "end": null,
+        "show_calculator": false,
+        "hide_from_toc": false,
+        "ispublic": false
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d456c02c3176159eb3"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:29.076Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a809"),
+      "block_type": "vertical",
+      "block_id": "867dddb6f55d410caaa9c1eb9c6743ec",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/867dddb6f55d410caaa9c1eb9c6743ec.xml",
+            "vertical/867dddb6f55d410caaa9c1eb9c6743ec.xml"
+          ]
+        },
+        "display_name": "Getting Started",
+        "children": [
+          [
+            "html",
+            "82d599b014b246c7a9b5dfc750dc08a9"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.605Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a87e"),
+      "block_type": "problem",
+      "block_id": "d1b84dcd39b0423d9e288f27f0f7f242",
+      "fields": {
+        "showanswer": "never",
+        "display_name": "Few Checks",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/d1b84dcd39b0423d9e288f27f0f7f242.xml",
+            "problem/d1b84dcd39b0423d9e288f27f0f7f242.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "max_attempts": 3
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.079Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a870"),
+      "block_type": "sequential",
+      "block_id": "workflow",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "edX Exams",
+        "graded": true,
+        "format": "Exam",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/workflow.xml",
+            "sequential/workflow.xml"
+          ]
+        },
+        "children": [
+          [
+            "vertical",
+            "934cc32c177d41b580c8413e561346b3"
+          ],
+          [
+            "vertical",
+            "vertical_f04afeac0131"
+          ],
+          [
+            "vertical",
+            "b6662b497c094bcc9b870d8270c90c93"
+          ],
+          [
+            "vertical",
+            "f91d8d31f7cf48ce990f8d8745ae4cfa"
+          ],
+          [
+            "vertical",
+            "vertical_ac391cde8a91"
+          ],
+          [
+            "vertical",
+            "vertical_36e0beb03f0a"
+          ],
+          [
+            "vertical",
+            "1b0e2c2c84884b95b1c99fb678cc964c"
+          ],
+          [
+            "vertical",
+            "c7e98fd39a6944edb6b286c32e1150ff"
+          ],
+          [
+            "vertical",
+            "d6eaa391d2be41dea20b8b1bfbcb1c45"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.027Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a821"),
+      "block_type": "problem",
+      "block_id": "303034da25524878a2e66fb57c91cf85",
+      "fields": {
+        "markdown": "Two alternative explanations are offered for the fact that the key would not open any of the doors. Which one is correct?\n\n( ) The key was too small.\n( ) The locks were too large. \n(x) Neither - because there is no 'correct' frame of reference, the only true statement can be that there was no lock-to-key match.\n",
+        "display_name": "Attributing Blame",
+        "rerandomize": "never",
+        "children": [
+
+        ],
+        "xml_attributes": {
+          "filename": [
+            "problem/303034da25524878a2e66fb57c91cf85.xml",
+            "problem/303034da25524878a2e66fb57c91cf85.xml"
+          ]
+        },
+        "showanswer": "finished"
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.696Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84d"),
+      "block_type": "vertical",
+      "block_id": "vertical_aae927868e55",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_aae927868e55.xml",
+            "vertical/vertical_aae927868e55.xml"
+          ]
+        },
+        "display_name": "Code Grader",
+        "children": [
+          [
+            "html",
+            "891211e17f9a472290a5f12c7a6626d7"
+          ],
+          [
+            "problem",
+            "python_grader"
+          ],
+          [
+            "discussion",
+            "c6cd4bea43454aaea60ad01beb0cf213"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.885Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85e"),
+      "block_type": "chapter",
+      "block_id": "social_integration",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "chapter/social_integration.xml",
+            "chapter/social_integration.xml"
+          ]
+        },
+        "display_name": "Example Week 3: Be Social",
+        "children": [
+          [
+            "sequential",
+            "48ecb924d7fe4b66a230137626bfa93e"
+          ],
+          [
+            "sequential",
+            "dbe8fc027bcb4fe9afb744d2e8415855"
+          ],
+          [
+            "sequential",
+            "6ab9c442501d472c8ed200e367b4edfa"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.952Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a806"),
+      "block_type": "video",
+      "block_id": "0b9e39477cf34507a7a48f74be381fdd",
+      "fields": {
+        "youtube_id_1_25": "",
+        "download_video": true,
+        "display_name": "Welcome!",
+        "sub": "name_of_file",
+        "track": "",
+        "youtube_id_1_0": "b7xgknqkQk8",
+        "html5_sources": [
+          "https://s3.amazonaws.com/edx-course-videos/edx-edx101/EDXSPCPJSP13-H010000_100.mp4"
+        ],
+        "source": "",
+        "show_captions": true,
+        "download_track": true,
+        "youtube_id_1_5": "",
+        "youtube_id_0_75": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.591Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a890"),
+      "block_type": "course_info",
+      "block_id": "handouts",
+      "fields": {
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.169Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a846"),
+      "block_type": "sequential",
+      "block_id": "graded_simulations",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "Homework - Labs and Demos",
+        "graded": true,
+        "format": "Homework",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/graded_simulations.xml",
+            "sequential/graded_simulations.xml"
+          ]
+        },
+        "children": [
+          [
+            "vertical",
+            "d6cee45205a449369d7ef8f159b22bdf"
+          ],
+          [
+            "vertical",
+            "vertical_0fab6aa52165"
+          ],
+          [
+            "vertical",
+            "vertical_aae927868e55"
+          ],
+          [
+            "vertical",
+            "vertical_c037f3757df1"
+          ],
+          [
+            "vertical",
+            "vertical_bc69a47c6fae"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.191Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a817"),
+      "block_type": "html",
+      "block_id": "c2f7008c9ccf4bd09d5d800c98fb0722",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/c2f7008c9ccf4bd09d5d800c98fb0722.xml",
+            "html/c2f7008c9ccf4bd09d5d800c98fb0722.xml"
+          ]
+        },
+        "display_name": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.658Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80d"),
+      "block_type": "video",
+      "block_id": "7e9b434e6de3435ab99bd3fb25bde807",
+      "fields": {
+        "download_video": false,
+        "display_name": "Science and Cooking Chef Profile: JOSÉ ANDRÉS",
+        "sub": "CCxmtcICYNc",
+        "html5_sources": [
+
+        ],
+        "youtube_id_1_0": "CCxmtcICYNc",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.621Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81a"),
+      "block_type": "vertical",
+      "block_id": "e3601c0abee6427d8c17e6d6f8fdddd1",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/e3601c0abee6427d8c17e6d6f8fdddd1.xml",
+            "vertical/e3601c0abee6427d8c17e6d6f8fdddd1.xml"
+          ]
+        },
+        "display_name": "Interactive Questions",
+        "children": [
+          [
+            "problem",
+            "9cee77a606ea4c1aa5440e0ea5d0f618"
+          ],
+          [
+            "discussion",
+            "3169f89efde2452993f2f2d9bc74f5b2"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.670Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a859"),
+      "block_type": "discussion",
+      "block_id": "ed01bcd164e64038a78964a16eac3edc",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Labs and Simulators",
+        "discussion_target": "Protein Creator",
+        "xml_attributes": {
+          "filename": [
+            "discussion/ed01bcd164e64038a78964a16eac3edc.xml",
+            "discussion/ed01bcd164e64038a78964a16eac3edc.xml"
+          ]
+        },
+        "discussion_id": "e4365aad2c39498d824cf984b3f9b083",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.930Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a86a"),
+      "block_type": "sequential",
+      "block_id": "6ab9c442501d472c8ed200e367b4edfa",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "sequential/6ab9c442501d472c8ed200e367b4edfa.xml",
+            "sequential/6ab9c442501d472c8ed200e367b4edfa.xml"
+          ]
+        },
+        "display_name": "More Ways to Connect",
+        "children": [
+          [
+            "vertical",
+            "3f2c11aba9434e459676a7d7acc4d960"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85d"),
+      "block_type": "discussion",
+      "block_id": "12ad4f3ff4c14114a6e629b00e000976",
+      "fields": {
+        "display_name": "Peer Grading",
+        "discussion_category": "Essays",
+        "discussion_target": "Peer Grading",
+        "xml_attributes": {
+          "filename": [
+            "discussion/12ad4f3ff4c14114a6e629b00e000976.xml",
+            "discussion/12ad4f3ff4c14114a6e629b00e000976.xml"
+          ]
+        },
+        "discussion_id": "6e51dd8f181b44ffa6d91303a287ed3f",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.947Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a840"),
+      "block_type": "vertical",
+      "block_id": "vertical_98cf62510471",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_98cf62510471.xml",
+            "vertical/vertical_98cf62510471.xml"
+          ]
+        },
+        "display_name": "Zooming Diagrams",
+        "children": [
+          [
+            "html",
+            "700x_pathways"
+          ],
+          [
+            "discussion",
+            "e0d7423118ab432582d03e8e8dad8e36"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.832Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a841"),
+      "block_type": "html",
+      "block_id": "700x_pathways",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "Zooming Diagrams",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "html/700x_pathways.xml",
+            "html/700x_pathways.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.836Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81f"),
+      "block_type": "html",
+      "block_id": "2574c523e97b477a9d72fbb37bfb995f",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/2574c523e97b477a9d72fbb37bfb995f.xml",
+            "html/2574c523e97b477a9d72fbb37bfb995f.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.689Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a856"),
+      "block_type": "vertical",
+      "block_id": "vertical_bc69a47c6fae",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_bc69a47c6fae.xml",
+            "vertical/vertical_bc69a47c6fae.xml"
+          ]
+        },
+        "display_name": "Protein Creator",
+        "children": [
+          [
+            "html",
+            "78e3719e864e45f3bee938461f3c3de6"
+          ],
+          [
+            "problem",
+            "700x_proteinmake"
+          ],
+          [
+            "discussion",
+            "ed01bcd164e64038a78964a16eac3edc"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.919Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81e"),
+      "block_type": "html",
+      "block_id": "e0254b911fa246218bd98bbdadffef06",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/e0254b911fa246218bd98bbdadffef06.xml",
+            "html/e0254b911fa246218bd98bbdadffef06.xml"
+          ]
+        },
+        "display_name": "Reading Assignments",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.685Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a885"),
+      "block_type": "discussion",
+      "block_id": "1a810b1a3b2447b998f0917d0e5a802b",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Passing a Course",
+        "xml_attributes": {
+          "filename": [
+            "discussion/1a810b1a3b2447b998f0917d0e5a802b.xml",
+            "discussion/1a810b1a3b2447b998f0917d0e5a802b.xml"
+          ]
+        },
+        "discussion_id": "ba12c2e0b81e4cef8e05e22049aafd63",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.106Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a815"),
+      "block_type": "discussion",
+      "block_id": "9f9e1373cc8243b985c8750cc8acec7d",
+      "fields": {
+        "display_name": "Video Demonstrations",
+        "discussion_category": "Getting Started",
+        "discussion_target": "Video Demonstrations",
+        "xml_attributes": {
+          "filename": [
+            "discussion/9f9e1373cc8243b985c8750cc8acec7d.xml",
+            "discussion/9f9e1373cc8243b985c8750cc8acec7d.xml"
+          ]
+        },
+        "discussion_id": "1d153da210844719a1a6cc39ca09673c",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.650Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a82d"),
+      "block_type": "vertical",
+      "block_id": "vertical_0c92347a5c00",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_0c92347a5c00.xml",
+            "vertical/vertical_0c92347a5c00.xml"
+          ]
+        },
+        "display_name": "Mathematical Expressions",
+        "children": [
+          [
+            "problem",
+            "Sample_Algebraic_Problem"
+          ],
+          [
+            "discussion",
+            "870371212ba04dcf9536d7c7b8f3109e"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.742Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a823"),
+      "block_type": "sequential",
+      "block_id": "basic_questions",
+      "fields": {
+        "showanswer": "attempted",
+        "display_name": "Homework - Question Styles",
+        "graded": true,
+        "format": "Homework",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/basic_questions.xml",
+            "sequential/basic_questions.xml"
+          ]
+        },
+        "children": [
+          [
+            "vertical",
+            "2152d4a4aadc4cb0af5256394a3d1fc7"
+          ],
+          [
+            "vertical",
+            "47dbd5f836544e61877a483c0b75606c"
+          ],
+          [
+            "vertical",
+            "54bb9b142c6c4c22afc62bcb628f0e68"
+          ],
+          [
+            "vertical",
+            "vertical_0c92347a5c00"
+          ],
+          [
+            "vertical",
+            "vertical_1fef54c2b23b"
+          ],
+          [
+            "vertical",
+            "2889db1677a549abb15eb4d886f95d1c"
+          ],
+          [
+            "vertical",
+            "e8a5cc2aed424838853defab7be45e42"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.201Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a833"),
+      "block_type": "vertical",
+      "block_id": "2889db1677a549abb15eb4d886f95d1c",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/2889db1677a549abb15eb4d886f95d1c.xml",
+            "vertical/2889db1677a549abb15eb4d886f95d1c.xml"
+          ]
+        },
+        "display_name": "Numerical Input",
+        "children": [
+          [
+            "problem",
+            "75f9562c77bc4858b61f907bb810d974"
+          ],
+          [
+            "discussion",
+            "501aed9d902349eeb2191fa505548de2"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.764Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a824"),
+      "block_type": "vertical",
+      "block_id": "2152d4a4aadc4cb0af5256394a3d1fc7",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/2152d4a4aadc4cb0af5256394a3d1fc7.xml",
+            "vertical/2152d4a4aadc4cb0af5256394a3d1fc7.xml"
+          ]
+        },
+        "display_name": "Pointing on a Picture",
+        "children": [
+          [
+            "problem",
+            "c554538a57664fac80783b99d9d6da7c"
+          ],
+          [
+            "discussion",
+            "e5eac7e1a5a24f5fa7ed77bb6d136591"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.709Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a83f"),
+      "block_type": "discussion",
+      "block_id": "6f7a6670f87147149caeff6afa07a526",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Visualizations and Demonstrations",
+        "discussion_target": "Rich Reference",
+        "xml_attributes": {
+          "filename": [
+            "discussion/6f7a6670f87147149caeff6afa07a526.xml",
+            "discussion/6f7a6670f87147149caeff6afa07a526.xml"
+          ]
+        },
+        "discussion_id": "d7b66e45154b4af18f33213337685e91",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.828Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81d"),
+      "block_type": "vertical",
+      "block_id": "134df56c516a4a0dbb24dd5facef746e",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/134df56c516a4a0dbb24dd5facef746e.xml",
+            "vertical/134df56c516a4a0dbb24dd5facef746e.xml"
+          ]
+        },
+        "display_name": "Reading Assignments",
+        "children": [
+          [
+            "html",
+            "e0254b911fa246218bd98bbdadffef06"
+          ],
+          [
+            "html",
+            "2574c523e97b477a9d72fbb37bfb995f"
+          ],
+          [
+            "problem",
+            "932e6f2ce8274072a355a94560216d1a"
+          ],
+          [
+            "problem",
+            "303034da25524878a2e66fb57c91cf85"
+          ],
+          [
+            "discussion",
+            "ffa5817d49e14fec83ad6187cbe16358"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.681Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a887"),
+      "block_type": "html",
+      "block_id": "5e009378f0b64585baa0a14b155974b9",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/5e009378f0b64585baa0a14b155974b9.xml",
+            "html/5e009378f0b64585baa0a14b155974b9.xml"
+          ]
+        },
+        "display_name": "Passing a Course",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.113Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a818"),
+      "block_type": "video",
+      "block_id": "636541acbae448d98ab484b028c9a7f6",
+      "fields": {
+        "youtube_id_1_25": "XGsB9bA6rGU",
+        "download_video": true,
+        "display_name": "Connecting a Circuit and a Circuit Diagram",
+        "html5_sources": [
+          "https://s3.amazonaws.com/edx-course-videos/mit-6002x/6002-Tutorial-00010_100.mov"
+        ],
+        "source": "",
+        "youtube_id_1_0": "o2pLltkrhGM",
+        "youtube_id_1_5": "_HuIF16HdTA",
+        "youtube_id_0_75": "xGKlr7nT_Zw",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.662Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a874"),
+      "block_type": "problem",
+      "block_id": "ex_practice_2",
+      "fields": {
+        "rerandomize": "never",
+        "display_name": "Immediate Feedback",
+        "children": [
+
+        ],
+        "showanswer": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/ex_practice_2.xml",
+            "problem/ex_practice_2.xml"
+          ]
+        }
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.042Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85c"),
+      "block_type": "openassessment",
+      "block_id": "b24c33ea35954c7889e1d2944d3fe397",
+      "fields": {
+        "submission_start": null,
+        "allow_latex": false,
+        "children": [
+
+        ],
+        "submission_due": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.944Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a867"),
+      "block_type": "sequential",
+      "block_id": "dbe8fc027bcb4fe9afb744d2e8415855",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "sequential/dbe8fc027bcb4fe9afb744d2e8415855.xml",
+            "sequential/dbe8fc027bcb4fe9afb744d2e8415855.xml"
+          ]
+        },
+        "display_name": "Homework - Find Your Study Buddy",
+        "children": [
+          [
+            "vertical",
+            "26d89b08f75d48829a63520ed8b0037d"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.988Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85a"),
+      "block_type": "sequential",
+      "block_id": "175e76c4951144a29d46211361266e0e",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "sequential/175e76c4951144a29d46211361266e0e.xml",
+            "sequential/175e76c4951144a29d46211361266e0e.xml"
+          ]
+        },
+        "display_name": "Homework - Essays",
+        "children": [
+          [
+            "vertical",
+            "fb79dcbad35b466a8c6364f8ffee9050"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.936Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a807"),
+      "block_type": "chapter",
+      "block_id": "interactive_demonstrations",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "chapter/interactive_demonstrations.xml",
+            "chapter/interactive_demonstrations.xml"
+          ]
+        },
+        "display_name": "Example Week 1: Getting Started",
+        "children": [
+          [
+            "sequential",
+            "19a30717eff543078a5d94ae9d6c18a5"
+          ],
+          [
+            "sequential",
+            "basic_questions"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.596Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a86b"),
+      "block_type": "vertical",
+      "block_id": "3f2c11aba9434e459676a7d7acc4d960",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/3f2c11aba9434e459676a7d7acc4d960.xml",
+            "vertical/3f2c11aba9434e459676a7d7acc4d960.xml"
+          ]
+        },
+        "display_name": "Google Hangout",
+        "children": [
+          [
+            "html",
+            "d45779ad3d024a40a09ad8cc317c0970"
+          ],
+          [
+            "html",
+            "55cbc99f262443d886a25cf84594eafb"
+          ],
+          [
+            "discussion",
+            "ade92343df3d4953a40ab3adc8805390"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.004Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a851"),
+      "block_type": "vertical",
+      "block_id": "vertical_c037f3757df1",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_c037f3757df1.xml",
+            "vertical/vertical_c037f3757df1.xml"
+          ]
+        },
+        "display_name": "Electric Circuit Simulator",
+        "children": [
+          [
+            "html",
+            "d5a5caaf35e84ebc9a747038465dcfb4"
+          ],
+          [
+            "problem",
+            "free_form_simulation"
+          ],
+          [
+            "problem",
+            "logic_gate_problem"
+          ],
+          [
+            "discussion",
+            "4f06b358a96f4d1dae57d6d81acd06f2"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.900Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88f"),
+      "block_type": "static_tab",
+      "block_id": "periodic_table",
+      "fields": {
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.164Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a86e"),
+      "block_type": "discussion",
+      "block_id": "ade92343df3d4953a40ab3adc8805390",
+      "fields": {
+        "display_name": "Google Hangout",
+        "discussion_category": "Google Hangout",
+        "discussion_target": "",
+        "xml_attributes": {
+          "filename": [
+            "discussion/ade92343df3d4953a40ab3adc8805390.xml",
+            "discussion/ade92343df3d4953a40ab3adc8805390.xml"
+          ]
+        },
+        "discussion_id": "31c83aefa6634e83a3c80b81f5447201",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.015Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88a"),
+      "block_type": "html",
+      "block_id": "148ae8fa73ea460eb6f05505da0ba6e6",
+      "fields": {
+        "source_code": "\\subsection{Example of E-text in LaTeX}\n\nIt is very convenient to write complex equations in LaTeX.        \n\n\\begin{equation}\n        x = \\frac{-b\\pm\\sqrt{b^2-4*a*c}}{2a}\n\\end{equation}\n\nSeize the moment.\n",
+        "xml_attributes": {
+          "filename": [
+            "html/148ae8fa73ea460eb6f05505da0ba6e6.xml",
+            "html/148ae8fa73ea460eb6f05505da0ba6e6.xml"
+          ]
+        },
+        "display_name": "Getting Your edX Certificate",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.124Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88e"),
+      "block_type": "about",
+      "block_id": "overview",
+      "fields": {
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d456c02c3176159eb3"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.146Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80b"),
+      "block_type": "vertical",
+      "block_id": "4f6c1b4e316a419ab5b6bf30e6c708e9",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/4f6c1b4e316a419ab5b6bf30e6c708e9.xml",
+            "vertical/4f6c1b4e316a419ab5b6bf30e6c708e9.xml"
+          ]
+        },
+        "display_name": "Working with Videos",
+        "children": [
+          [
+            "html",
+            "6bcccc2d7343416e9e03fd7325b2f232"
+          ],
+          [
+            "video",
+            "7e9b434e6de3435ab99bd3fb25bde807"
+          ],
+          [
+            "discussion",
+            "412dc8dbb6674014862237b23c1f643f"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.613Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a85f"),
+      "block_type": "sequential",
+      "block_id": "48ecb924d7fe4b66a230137626bfa93e",
+      "fields": {
+        "start": ISODate("1978-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "sequential/48ecb924d7fe4b66a230137626bfa93e.xml",
+            "sequential/48ecb924d7fe4b66a230137626bfa93e.xml"
+          ]
+        },
+        "display_name": "Lesson 3 - Be Social",
+        "children": [
+          [
+            "vertical",
+            "3c4b575924bf4b75a2f3542df5c354fc"
+          ],
+          [
+            "vertical",
+            "vertical_3888db0bc286"
+          ],
+          [
+            "vertical",
+            "312cb4faed17420e82ab3178fc3e251a"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:35.124Z"),
+        "source_version": ObjectId("55c3e2db56c02c317615a893"),
+        "update_version": ObjectId("55c3e2db56c02c317615a894")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a86d"),
+      "block_type": "html",
+      "block_id": "55cbc99f262443d886a25cf84594eafb",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/55cbc99f262443d886a25cf84594eafb.xml",
+            "html/55cbc99f262443d886a25cf84594eafb.xml"
+          ]
+        },
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.011Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a820"),
+      "block_type": "problem",
+      "block_id": "932e6f2ce8274072a355a94560216d1a",
+      "fields": {
+        "markdown": "The paragraph contains references to sleepiness and an unexpected event. Why?\n\n( ) Feeling sleepy can cause white rabbits to appear.\n( ) There is foreshadowing of a tea party.\n(x) There is an implication that the strangeness to follow can be considered like a dream.\n\n",
+        "display_name": "Perchance to Dream",
+        "rerandomize": "never",
+        "children": [
+
+        ],
+        "xml_attributes": {
+          "filename": [
+            "problem/932e6f2ce8274072a355a94560216d1a.xml",
+            "problem/932e6f2ce8274072a355a94560216d1a.xml"
+          ]
+        },
+        "showanswer": "always"
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.692Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a892"),
+      "block_type": "static_tab",
+      "block_id": "be2f396016c94427a5c3c4ea141155b7",
+      "fields": {
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.179Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80e"),
+      "block_type": "discussion",
+      "block_id": "412dc8dbb6674014862237b23c1f643f",
+      "fields": {
+        "display_name": "Working with Videos",
+        "discussion_category": "Getting Started",
+        "discussion_target": "Working with Videos",
+        "xml_attributes": {
+          "filename": [
+            "discussion/412dc8dbb6674014862237b23c1f643f.xml",
+            "discussion/412dc8dbb6674014862237b23c1f643f.xml"
+          ]
+        },
+        "discussion_id": "d9f970a42067413cbb633f81cfb12604",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.625Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a842"),
+      "block_type": "discussion",
+      "block_id": "e0d7423118ab432582d03e8e8dad8e36",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Visualizations and Demonstrations",
+        "discussion_target": "Detail Zoom",
+        "xml_attributes": {
+          "filename": [
+            "discussion/e0d7423118ab432582d03e8e8dad8e36.xml",
+            "discussion/e0d7423118ab432582d03e8e8dad8e36.xml"
+          ]
+        },
+        "discussion_id": "9ad16580878f49d1bf20ce1bc533d16e",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.840Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a811"),
+      "block_type": "video",
+      "block_id": "5c90cffecd9b48b188cbfea176bf7fe9",
+      "fields": {
+        "youtube_id_1_25": "",
+        "download_video": true,
+        "display_name": "Video",
+        "sub": "HARHEROESP13-H00700_100",
+        "start_time": "00:05:10",
+        "html5_sources": [
+          "https://s3.amazonaws.com/edx-course-videos/harvard-heroes/HARHEROESP13-H00700_100.mp4"
+        ],
+        "source": "",
+        "youtube_id_1_0": "qWxm7CA2v24",
+        "end_time": "00:07:24",
+        "youtube_id_1_5": "",
+        "youtube_id_0_75": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.636Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a86f"),
+      "block_type": "chapter",
+      "block_id": "1414ffd5143b4b508f739b563ab468b7",
+      "fields": {
+        "start": ISODate("1970-01-01T05:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "chapter/1414ffd5143b4b508f739b563ab468b7.xml",
+            "chapter/1414ffd5143b4b508f739b563ab468b7.xml"
+          ]
+        },
+        "display_name": "About Exams and Certificates",
+        "children": [
+          [
+            "sequential",
+            "workflow"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.020Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a830"),
+      "block_type": "vertical",
+      "block_id": "vertical_1fef54c2b23b",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_1fef54c2b23b.xml",
+            "vertical/vertical_1fef54c2b23b.xml"
+          ]
+        },
+        "display_name": "Chemical Equations",
+        "children": [
+          [
+            "problem",
+            "Sample_ChemFormula_Problem"
+          ],
+          [
+            "discussion",
+            "4d672c5893cb4f1dad0de67d2008522e"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.753Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a876"),
+      "block_type": "vertical",
+      "block_id": "b6662b497c094bcc9b870d8270c90c93",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/b6662b497c094bcc9b870d8270c90c93.xml",
+            "vertical/b6662b497c094bcc9b870d8270c90c93.xml"
+          ]
+        },
+        "display_name": "Getting Answers",
+        "children": [
+          [
+            "problem",
+            "45d46192272c4f6db6b63586520bbdf4"
+          ],
+          [
+            "discussion",
+            "f480df4ce91347c5ae4301ddf6146238"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.049Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a828"),
+      "block_type": "problem",
+      "block_id": "d2e35c1d294b4ba0b3b1048615605d2a",
+      "fields": {
+        "markdown": null,
+        "display_name": "Drag and Drop",
+        "weight": null,
+        "rerandomize": "never",
+        "xml_attributes": {
+          "filename": [
+            "problem/d2e35c1d294b4ba0b3b1048615605d2a.xml",
+            "problem/d2e35c1d294b4ba0b3b1048615605d2a.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "never",
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.724Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a88c"),
+      "block_type": "chapter",
+      "block_id": "9fca584977d04885bc911ea76a9ef29e",
+      "fields": {
+        "start": ISODate("2970-01-01T05:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "chapter/9fca584977d04885bc911ea76a9ef29e.xml",
+            "chapter/9fca584977d04885bc911ea76a9ef29e.xml"
+          ]
+        },
+        "display_name": "holding section",
+        "children": [
+          [
+            "sequential",
+            "07bc32474380492cb34f76e5f9d9a135"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": ObjectId("55c3e2d556c02c3176159eb8"),
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.136Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a829"),
+      "block_type": "discussion",
+      "block_id": "5ab88e67d46049b9aa694cb240c39cef",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Basic Question Types",
+        "discussion_target": "Drag and Drop",
+        "xml_attributes": {
+          "filename": [
+            "discussion/5ab88e67d46049b9aa694cb240c39cef.xml",
+            "discussion/5ab88e67d46049b9aa694cb240c39cef.xml"
+          ]
+        },
+        "discussion_id": "aecab8f355744782af5a9470185f0005",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.728Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a84c"),
+      "block_type": "discussion",
+      "block_id": "0aa7a3bdbe18427795b0c1a1d7c3cb9a",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Labs and Simulators",
+        "discussion_target": "Molecule Editor",
+        "xml_attributes": {
+          "filename": [
+            "discussion/0aa7a3bdbe18427795b0c1a1d7c3cb9a.xml",
+            "discussion/0aa7a3bdbe18427795b0c1a1d7c3cb9a.xml"
+          ]
+        },
+        "discussion_id": "bb15269287ec44b6a2f69447db43d845",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.881Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80f"),
+      "block_type": "vertical",
+      "block_id": "3dc16db8d14842e38324e95d4030b8a0",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/3dc16db8d14842e38324e95d4030b8a0.xml",
+            "vertical/3dc16db8d14842e38324e95d4030b8a0.xml"
+          ]
+        },
+        "display_name": "Videos on edX",
+        "children": [
+          [
+            "html",
+            "0a3b4139f51a4917a3aff9d519b1eeb6"
+          ],
+          [
+            "video",
+            "5c90cffecd9b48b188cbfea176bf7fe9"
+          ],
+          [
+            "discussion",
+            "722085be27c84ac693cfebc8ac5da700"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.628Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2da56c02c317615a878"),
+      "block_type": "discussion",
+      "block_id": "f480df4ce91347c5ae4301ddf6146238",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Getting Answers",
+        "xml_attributes": {
+          "filename": [
+            "discussion/f480df4ce91347c5ae4301ddf6146238.xml",
+            "discussion/f480df4ce91347c5ae4301ddf6146238.xml"
+          ]
+        },
+        "discussion_id": "df0905ee484844769644f330844253e7",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:34.056Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a857"),
+      "block_type": "html",
+      "block_id": "78e3719e864e45f3bee938461f3c3de6",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/78e3719e864e45f3bee938461f3c3de6.xml",
+            "html/78e3719e864e45f3bee938461f3c3de6.xml"
+          ]
+        },
+        "display_name": "Protein Builder",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.922Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a862"),
+      "block_type": "vertical",
+      "block_id": "vertical_3888db0bc286",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/vertical_3888db0bc286.xml",
+            "vertical/vertical_3888db0bc286.xml"
+          ]
+        },
+        "display_name": "Discussion Forums",
+        "children": [
+          [
+            "html",
+            "html_49b4494da2f7"
+          ],
+          [
+            "discussion",
+            "discussion_5deb6081620d"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.969Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a80a"),
+      "block_type": "html",
+      "block_id": "82d599b014b246c7a9b5dfc750dc08a9",
+      "fields": {
+        "source_code": "\\subsection{Example of E-text in LaTeX}\n\nIt is very convenient to write complex equations in LaTeX.        \n\n\\begin{equation}\n        x = \\frac{-b\\pm\\sqrt{b^2-4*a*c}}{2a}\n\\end{equation}\n\nSeize the moment.\n",
+        "xml_attributes": {
+          "filename": [
+            "html/82d599b014b246c7a9b5dfc750dc08a9.xml",
+            "html/82d599b014b246c7a9b5dfc750dc08a9.xml"
+          ]
+        },
+        "display_name": "Getting Started",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.609Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a845"),
+      "block_type": "discussion",
+      "block_id": "03f051f9a8814881a3783d2511613aa6",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Visualizations and Demonstrations",
+        "discussion_target": "Embedded Web Apps",
+        "xml_attributes": {
+          "filename": [
+            "discussion/03f051f9a8814881a3783d2511613aa6.xml",
+            "discussion/03f051f9a8814881a3783d2511613aa6.xml"
+          ]
+        },
+        "discussion_id": "b11488e3580241f08146cbcfca693d06",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.852Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a844"),
+      "block_type": "html",
+      "block_id": "Lab_5B_Mosfet_Amplifier_Experiment",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/Lab_5B_Mosfet_Amplifier_Experiment.xml",
+            "html/Lab_5B_Mosfet_Amplifier_Experiment.xml"
+          ]
+        },
+        "display_name": "Electronic Sound Experiment",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.848Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a848"),
+      "block_type": "html",
+      "block_id": "2bee8c4248e842a19ba1e73ed8d426c2",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/2bee8c4248e842a19ba1e73ed8d426c2.xml",
+            "html/2bee8c4248e842a19ba1e73ed8d426c2.xml"
+          ]
+        },
+        "display_name": "Labs and Demos",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.865Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a814"),
+      "block_type": "html",
+      "block_id": "ed5dccf14ae94353961f46fa07217491",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "html/ed5dccf14ae94353961f46fa07217491.xml",
+            "html/ed5dccf14ae94353961f46fa07217491.xml"
+          ]
+        },
+        "display_name": "",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.646Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a858"),
+      "block_type": "problem",
+      "block_id": "700x_proteinmake",
+      "fields": {
+        "showanswer": "always",
+        "display_name": "Designing Proteins in Two Dimensions",
+        "weight": null,
+        "graceperiod": "",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/700x_proteinmake.xml",
+            "problem/700x_proteinmake.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "max_attempts": null
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.927Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a853"),
+      "block_type": "problem",
+      "block_id": "free_form_simulation",
+      "fields": {
+        "markdown": null,
+        "display_name": "",
+        "graceperiod": "18000 seconds",
+        "xqa_key": "qaijS3UatK020Wc0sfCtFe0V6jpB4d64",
+        "rerandomize": "never",
+        "start": ISODate("2013-02-05T00:00:00Z"),
+        "xml_attributes": {
+          "filename": [
+            "problem/free_form_simulation.xml",
+            "problem/free_form_simulation.xml"
+          ]
+        },
+        "children": [
+
+        ],
+        "showanswer": "never"
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.907Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a850"),
+      "block_type": "discussion",
+      "block_id": "c6cd4bea43454aaea60ad01beb0cf213",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Labs and Simulators",
+        "discussion_target": "Code Grader",
+        "xml_attributes": {
+          "filename": [
+            "discussion/c6cd4bea43454aaea60ad01beb0cf213.xml",
+            "discussion/c6cd4bea43454aaea60ad01beb0cf213.xml"
+          ]
+        },
+        "discussion_id": "239ef52e6eee468fb698b4217a7bafc6",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.897Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a81c"),
+      "block_type": "discussion",
+      "block_id": "3169f89efde2452993f2f2d9bc74f5b2",
+      "fields": {
+        "display_name": "",
+        "discussion_category": "Getting Graded",
+        "discussion_target": "Late Assignments",
+        "xml_attributes": {
+          "filename": [
+            "discussion/3169f89efde2452993f2f2d9bc74f5b2.xml",
+            "discussion/3169f89efde2452993f2f2d9bc74f5b2.xml"
+          ]
+        },
+        "discussion_id": "23347cb1d1e74ec79453ce361e38eb18",
+        "children": [
+
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.677Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    },
+    {
+      "definition": ObjectId("55c3e2d956c02c317615a860"),
+      "block_type": "vertical",
+      "block_id": "3c4b575924bf4b75a2f3542df5c354fc",
+      "fields": {
+        "xml_attributes": {
+          "filename": [
+            "vertical/3c4b575924bf4b75a2f3542df5c354fc.xml",
+            "vertical/3c4b575924bf4b75a2f3542df5c354fc.xml"
+          ]
+        },
+        "display_name": "Be Social",
+        "children": [
+          [
+            "html",
+            "f9f3a25e7bab46e583fd1fbbd7a2f6a0"
+          ]
+        ]
+      },
+      "defaults": {
+
+      },
+      "edit_info": {
+        "edited_by": -1,
+        "previous_version": null,
+        "original_usage_version": null,
+        "original_usage": null,
+        "edited_on": ISODate("2015-08-06T22:42:33.961Z"),
+        "source_version": ObjectId("55c3e2d556c02c3176159eb6"),
+        "update_version": ObjectId("55c3e2d556c02c3176159eb8")
+      }
+    }
+  ],
+  "root": [
+    "course",
+    "course"
+  ]
+}
