@@ -25,11 +25,12 @@ https://github.com/edx/configuration/wiki/edX-Developer-Stack#installing-the-edx
 
 These will give a very simple and easy to use steps. For example, all the author had to complete were these five commands. This whole process will take 10-15mins. depending on the internet connection.
 
-1. mkdir devstack
-2. cd devstack
-3. curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/devstack/Vagrantfile > Vagrantfile
-4. vagrant plugin install vagrant-vbguest
-5. vagrant up
+```
+# mkdir devstack && cd devstack
+# curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/devstack/Vagrantfile > Vagrantfile
+# vagrant plugin install vagrant-vbguest
+# vagrant up
+```
 
 At this point the vagrant image is up and running and will begin to boot. Once booted it will update and load the latest bits on the system, including getting all necessary dependencies.
 
