@@ -12,6 +12,7 @@ Fall 2015
 
 ## Schedule of Tasks
 A high-level list of the tasks required to complete the project week-by-week:
+
 | Week | Week of | Tasks                       |
 |------|---------|-----------------------------|
 |  7   | Sep 27  | Complete peer feedback |
