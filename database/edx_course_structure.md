@@ -40,13 +40,16 @@ Break down what each of the fields above, that are of interest, need to pull in:
 Going to go ahead and create a white-list of types consisting of:
 * chapter
 * course
+* discussion
 * html
 * problem
 * sequential
 * vertical
 * video
 
-Not sure about discussion or html at this time.
+All blocks have at least an id, type, and children. However, some do not have the display_name
+value and others have additional fields that need to be captured. These are called out below under
+the fields section.
 
 ### block_id
 Simple id value that I will keep.
@@ -56,13 +59,22 @@ From here can get the English readable name and next item via:
 * display_name
 * children
 
-If there are no children, then it means the the end of a particular unit.
+If there are no children, then it means the the end of a particular unit. Again display_name is not
+always present, particularly with the html type.
 
-#### Problem
+#### fields: discussion type
+Appear to have an empty display name, in favor of:
+* discussion_category
+* discussion_target
+
+#### fields: html type
+These are text based pages that have specific XML files that get loaded.
+
+#### fields: problem type
 For block types of problems, can get the text for the problems via:
 * markdown
 
-#### Video
+#### fields: video type
 For block types of video, can get the YouTube video ID via:
 * youtube_id_1_0
 This can then be used like to fill out a URL like:
@@ -74,11 +86,3 @@ Note that videos can have predefined start and end times via:
 * start_time
 * end_time
 This is important in determining the video length as the whole video may not be watched.
-
-#### HTML
-These are text based pages that have specific XML files that get loaded.
-
-#### discussion
-Appear to have an empty display name, in favor of:
-* discussion_category
-* discussion_target
