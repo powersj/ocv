@@ -45,7 +45,7 @@ At this point the vagrant image is up and running and will begin to boot. Once b
 # sudo su edxapp
 ```
 
-- Start the LMS app: 
+- Start the LMS app:
 ```
 # paver devstack lms
 ```
@@ -71,7 +71,7 @@ At this point the vagrant image is up and running and will begin to boot. Once b
 # sudo su edxapp
 ```
 
-- Start the LMS app: 
+- Start the LMS app:
 ```
 # paver devstack studio
 ```
@@ -93,3 +93,18 @@ https://github.com/edx/edx-platform/wiki/Developing-on-the-edX-Developer-Stack
 
 ## Troubleshooting
 If you run into issues with vagrant, bring up virtual box and watch the VM system boot up. In doing so you have more information being provided by the VM to you and can make a determiniation as to what a possible problem might be (assuming you run into one).
+
+### MongoDB Conn Error 111
+If you get the following MongoDB error message:
+```
+pymongo.errors.ConnectionFailure: [Errno 111] Connection refused
+```
+
+Run the following set of commands:
+```
+# sudo rm /edx/var/mongo/mongodb/mongod.lock
+# sudo -u mongodb mongod --dbpath /edx/var/mongo/mongodb --repair --repairpath /edx/var/mongo/mongodb
+# sudo start mongod
+```
+
+Then mongod process will be running as expected and you can start the services sucessfully.
