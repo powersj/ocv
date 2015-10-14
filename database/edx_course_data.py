@@ -47,6 +47,7 @@ def get_course_content(branch_ids):
 
 
 def build_course_map(course_id, course_content):
+    """Parse out the data for each block."""
     for block in course_content['blocks']:
         id = block['block_id'].encode('utf-8')
         type = block['block_type'].encode('utf-8')
@@ -66,6 +67,7 @@ def build_course_map(course_id, course_content):
 
 
 def main():
+    """Main process."""
     branch_ids = get_published_branch_id()
     content = get_course_content(branch_ids)
     print 'breaking down course:'
@@ -73,6 +75,7 @@ def main():
     for course_id, course_content in content.iteritems():
         # if course_id.__str__() == '561c649756c02c484b1bb5ec':
         build_course_map(course_id, course_content)
+
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
