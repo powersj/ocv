@@ -21,7 +21,7 @@ The goal of this project is to create visualizations of components of an online 
 * **dagre-d3**
   * Used to create the visualizations themselves
   * Find more information at: https://github.com/cpettitt/dagre-d3
-* **python**
+* **Python**
   * Used as the primary coding language of choice
   * The author's favorite
 
