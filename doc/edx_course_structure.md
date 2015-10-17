@@ -17,8 +17,8 @@ The first level of the dictionary has the following keys:
 * schema_version - Only see '1', so going to ignore in an effort to get this going ASAP
 * edited_on - Not interested in as a date do not need
 * edited_by - Not interested in as a value do not care about
-* _id - Not interested in, as already have this
 * root - Not interested in, just says 'course'
+* id - Not interested in, as already have this
 
 ## Level 2 - Blocks
 The blocks element is a list of each of the building blocks of a course. Each list element is
@@ -26,8 +26,10 @@ another dictionary with the following elements:
 
 * definition - id for each block element
 * block_type - the type of element (e.g. problem, about, vertical, chapter, sequential, etc.)
-* block_id - some are ids, others are predefined items (e.g. overview, course, short_description, etc.)
-* fields - This is a dictionary of values like display name, or the actual assessment text with options. Of note is this dictionary also contains the children key that connections to other ids.
+* block_id - some are ids, others are predefined items (e.g. overview, course, short_description,
+    etc.)
+* fields - This is a dictionary of values like display name, or the actual assessment text with
+options. Of note is this dictionary also contains the children key that connections to other ids.
 * defaults - My example did not have anything here, probably not needed.
 * edit_info - Not interested in as info about edits only.
 

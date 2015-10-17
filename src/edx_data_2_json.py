@@ -1,4 +1,8 @@
 #!/usr/bin/python
+"""
+Script used to connect to the edX MongoDB or take in valid MongoDB database
+dump and produce valid couse represented in JSON format.
+"""
 import argparse
 
 from pymongo import MongoClient
@@ -8,14 +12,14 @@ MONGODB_PORT = 27017
 MONGODB_DB = 'edxapp'
 
 
-def query_db(collection, query={}, projection=None):
+def query_db(collection, query, projection=None):
     """Given a query connect to the datbase and run it."""
     client = MongoClient('mongodb://' + MONGODB_IP + ':' + str(MONGODB_PORT))
-    db = client[MONGODB_DB]
+    database = client[MONGODB_DB]
     if projection:
-        return db[collection].find(query, projection)
+        return database[collection].find(query, projection)
     else:
-        return db[collection].find(query)
+        return database[collection].find(query)
 
 
 def get_published_branch_id():
@@ -24,13 +28,12 @@ def get_published_branch_id():
                        {},
                        {'versions.published-branch': 1, '_id': 0})
 
-    branch_ids = []
+    published_branch_ids = []
     for result in results:
-        id = result['versions']['published-branch']
-        print id
-        branch_ids.append(id)
+        course_id = result['versions']['published-branch']
+        published_branch_ids.append(course_id)
 
-    return branch_ids
+    return published_branch_ids
 
 
 def get_course_content(branch_ids):
@@ -48,9 +51,10 @@ def get_course_content(branch_ids):
 
 def build_course_map(course_id, course_content):
     """Parse out the data for each block."""
+    print course_id
     for block in course_content['blocks']:
-        id = block['block_id'].encode('utf-8')
-        type = block['block_type'].encode('utf-8')
+        content_id = block['block_id'].encode('utf-8')
+        content_type = block['block_type'].encode('utf-8')
         children = block['fields']['children']
 
         try:
@@ -58,7 +62,7 @@ def build_course_map(course_id, course_content):
         except KeyError:
             name = ''
 
-        print '%s, %s, %s' % (id, type, name)
+        print '%s, %s, %s' % (content_id, content_type, name)
         for child in children:
             child_id = child[0].encode('utf-8')
             child_type = child[1].encode('utf-8')
@@ -67,7 +71,7 @@ def build_course_map(course_id, course_content):
 
 
 def main():
-    """Main process."""
+    """Main function to do stuff."""
     branch_ids = get_published_branch_id()
     content = get_course_content(branch_ids)
     print 'breaking down course:'
@@ -79,7 +83,9 @@ def main():
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
-    PARSER.add_argument('ip', help='IP Address containing MongoDB')
+    PARSER.add_argument('ip', help='IP Address for valid MongoDB')
+    PARSER.add_argument('file', help='MongoDB data dumped to file')
+    PARSER.add_argument('dir', help='Directory of MongoDB data')
     ARGS = PARSER.parse_args()
 
     MONGODB_IP = ARGS.ip

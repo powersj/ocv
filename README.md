@@ -1,27 +1,38 @@
-# Online Course Visualizer 
-Takes data about edX courses (or other inputs via JSON) and produces a web-based visualization of the course. This is an effort to help demonstrate how online courses are designed and to highlight if courses are taking advantage of online assessment techniques and providing variety.
+# Online Course Visualizer
+The following takes data about edX courses (or other inputs via JSON) and produces a web-based
+visualization of the course. This is an effort to help demonstrate how online courses are designed
+and to highlight if courses are taking advantage of online assessment techniques and providing
+variety.
 
-CS6440 Education Technology
-Georgia Institude of Technology
-Fall 2015
+## Background
+With the continual blending of education together with technology there is a trend of taking traditional methods and placing them online with no changes. The general experience involves students watching lectures and then students take a multiple choice test, which if they pass they move on to the next set of lectures. If they do not pass, they are forced to go back and review the lectures with little to no guidance as to what the student failed or missed.
+
+This type of online education however does not take full advantage of new technologies that may exist or have been enabled by an online platform. As an example, consider methods for providing intelligent feedback to students during assessments. Taking a multiple choice quiz and making it accessible via online tools ignores the fact that educators could provide realtime feedback, use additional methods of assessment, or analyze student inputs to determine where places in lectures may need to be refined.
+
+In addition, writing good well thought out assessments is incredibly difficult. A teacher needs to spend time refining and crafting an assessment to help guide a student’s learning. As such enabling teachers to take advantage of the tools and processes available to them enables them to be more effective teachers.
+
+## Objective
+The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, liked edX.
 
 ## Technologies Used
-* edX - used as the online course 
-* dagre-d3 - used to create the visualizations themselves
-* python - used to pull out data from edX backend and produce the visualizations
+* **edX**
+  * Used as the open source online course platform that the visualizations are based off of
+  * Find more information at: https://www.edx.org/
+* **dagre-d3**
+  * Used to create the visualizations themselves
+  * Find more information at: https://github.com/cpettitt/dagre-d3
+* **python**
+  * Used as the primary coding language of choice
+  * The author's favorite
 
-## Schedule of Tasks
-A high-level list of the tasks required to complete the project week-by-week:
+## Tests
+There are example edX course output in the src/test directory that can be used to build the
+visualizations without the need for standing up the entire edX environment.
 
-| Week | Week of | Tasks                       |
-|------|---------|-----------------------------|
-|  7   | Sep 27  | Complete peer feedback |
-|  8   | Sep 27  | Standup edX dev env., import example course, document standup steps, and start mocks for student and teacher's views|
-|  9   | Oct 11  | Extend example course, finish mocks, determine visualization/graphics library |
-|  10  | Oct 18  | Begin implmentation |
-|  11  | Oct 25  | Continue implementation, initial feedback from co-worker/family |
-|  12  | Nov  1  | Finish implementation |
-|  13  | Nov  8  | Stand-up cloud hosting, stand-up demo enviornment |
-|  14  | Nov 15  | Conduct 2nd round of testing, final tweaks and bug fixes|
-|  15  | Nov 22  | Setup final demo instance, test demo |
-|  16  | Nov 29  | Create paper and create presentation |
+## Contributors
+* Joshua Powers
+  * CS6440 Education Technology (Fall 2015)
+  * Georgia Institute of Technology
+
+# License
+Apache 2.0 &copy; Joshua Powers
