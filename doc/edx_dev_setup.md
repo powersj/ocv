@@ -17,9 +17,9 @@ virtual box and vagrant are required to be installed on the system being used fo
 You also will need the nfs-kernel-server package to allow for NFS mounting the images.
 
 These can all be obtained simply by running the following on a Debian/Ubuntu system:
-```bash
-# apt update
-# apt install vagrant virtualbox nfs-kernel-server
+```shell
+apt update
+apt install vagrant virtualbox nfs-kernel-server
 ```
 
 ## Bring-up
@@ -30,11 +30,11 @@ These will give a very simple and easy to use steps. For example, all the author
 were these five commands. This whole process will take 10-15mins. depending on the Internet
 connection.
 
-```bash
-# mkdir devstack && cd devstack
-# curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/devstack/Vagrantfile > Vagrantfile
-# vagrant plugin install vagrant-vbguest
-# vagrant up
+```shell
+mkdir devstack && cd devstack
+curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/devstack/Vagrantfile > Vagrantfile
+vagrant plugin install vagrant-vbguest
+vagrant up
 ```
 
 At this point the vagrant image is up and running and will begin to boot. Once booted it will
@@ -49,17 +49,17 @@ To start the LMS application the following steps are required:
 - View the app at the correct port
 
 This is accomplished via the following commands:
-```bash
-# vagrant up and vagrant ssh
-# sudo su edxapp
-# paver devstack lms
-# http://localhost:8000/
+```shell
+vagrant up and vagrant ssh
+sudo su edxapp
+paver devstack lms
+http://localhost:8000/
 ```
 
 Finally, if speed is required and you do not wish to update the environment then when starting
 run the paver command with --fast option, as such:
-```bash
-# paver devstack --fast lms
+```shell
+paver devstack --fast lms
 ```
 
 ## Studio App
@@ -71,17 +71,17 @@ To start the studio application the following steps are required:
 - View the app at the correct port
 
 This is accomplished via the following commands:
-```bash
-# vagrant up and vagrant ssh
-# sudo su edxapp
-# paver devstack studio
-# http://localhost:8001/
+```shell
+vagrant up and vagrant ssh
+sudo su edxapp
+paver devstack studio
+http://localhost:8001/
 ```
 
 Finally, if speed is required and you do not wish to update the environment then when starting
 run the paver command with --fast option, as such:
-```bash
-# paver devstack --fast studio
+```shell
+paver devstack --fast studio
 ```
 
 ## Development
@@ -100,10 +100,10 @@ pymongo.errors.ConnectionFailure: [Errno 111] Connection refused
 ```
 
 Run the following set of commands:
-```bash
-# sudo rm /edx/var/mongo/mongodb/mongod.lock
-# sudo -u mongodb mongod --dbpath /edx/var/mongo/mongodb --repair --repairpath /edx/var/mongo/mongodb
-# sudo start mongod
+```shell
+sudo rm /edx/var/mongo/mongodb/mongod.lock
+sudo -u mongodb mongod --dbpath /edx/var/mongo/mongodb --repair --repairpath /edx/var/mongo/mongodb
+sudo start mongod
 ```
 
 Then mongod process will be running as expected and you can start the services successfully.
