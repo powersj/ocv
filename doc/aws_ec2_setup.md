@@ -11,8 +11,8 @@ a single mini free instance as well.
 To connect via SSH, you need the SSH key that was generated and then find the IP address from the
 Amazon console. Then you can run:
 
-```bash
-# ssh -i ~/.ssh/aws-key.pem ubuntu@IP_ADDRESS
+```shell
+ssh -i ~/.ssh/aws-key.pem ubuntu@IP_ADDRESS
 ```
 
 The ubuntu user has sudo permissions.
