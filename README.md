@@ -30,7 +30,7 @@ There are example edX course output in the src/test directory that can be used t
 visualizations without the need for standing up the entire edX environment.
 
 ## Contributors
-* Joshua Powers
+* [Joshua Powers](http://powersj.github.io/)
   * CS6440 Education Technology (Fall 2015)
   * Georgia Institute of Technology
 
