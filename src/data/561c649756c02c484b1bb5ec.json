@@ -2,137 +2,137 @@
     "course_id": "561c649756c02c484b1bb5ec", 
     "blocks": [
         {
-            "content_id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
-            "content_name": "Dropdown", 
-            "children": [], 
-            "content_type": "problem"
+            "block_name": "Dropdown", 
+            "block_type": "problem", 
+            "block_id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
+            "children": []
         }, 
         {
-            "content_id": "entrance_exam_minimum_score_pct", 
-            "content_name": null, 
-            "children": [], 
-            "content_type": "about"
+            "block_name": null, 
+            "block_type": "about", 
+            "block_id": "entrance_exam_minimum_score_pct", 
+            "children": []
         }, 
         {
-            "content_id": "04614bedaa494176bbcb19ce34bed343", 
-            "content_name": "Unit 1.1.1", 
+            "block_name": "Unit 1.1.1", 
+            "block_type": "vertical", 
+            "block_id": "04614bedaa494176bbcb19ce34bed343", 
             "children": [
                 {
-                    "child_id": "problem", 
-                    "child_type": "9d6a3b976a1c461ab6a182eab3ee28e8"
+                    "child_id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
+                    "child_type": "problem"
                 }
-            ], 
-            "content_type": "vertical"
+            ]
         }, 
         {
-            "content_id": "overview", 
-            "content_name": "overview", 
-            "children": [], 
-            "content_type": "about"
+            "block_name": "overview", 
+            "block_type": "about", 
+            "block_id": "overview", 
+            "children": []
         }, 
         {
-            "content_id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
-            "content_name": "Section 1", 
+            "block_name": "Section 1", 
+            "block_type": "chapter", 
+            "block_id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
             "children": [
                 {
-                    "child_id": "sequential", 
-                    "child_type": "b8ad8e7b451a49ada6851cfd23bccaff"
+                    "child_id": "b8ad8e7b451a49ada6851cfd23bccaff", 
+                    "child_type": "sequential"
                 }, 
                 {
-                    "child_id": "sequential", 
-                    "child_type": "1e303a15cbed4ef2aed1175b9b6f2ebd"
+                    "child_id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
+                    "child_type": "sequential"
                 }
-            ], 
-            "content_type": "chapter"
+            ]
         }, 
         {
-            "content_id": "b8867a79166446fa9e432681adde1ba2", 
-            "content_name": "Dropdown", 
-            "children": [], 
-            "content_type": "problem"
+            "block_name": "Dropdown", 
+            "block_type": "problem", 
+            "block_id": "b8867a79166446fa9e432681adde1ba2", 
+            "children": []
         }, 
         {
-            "content_id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
-            "content_name": "Unit 1.2.1", 
+            "block_name": "Unit 1.2.1", 
+            "block_type": "vertical", 
+            "block_id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
             "children": [
                 {
-                    "child_id": "problem", 
-                    "child_type": "5fcc159afeff4d54bee7b5c685f6a9fd"
+                    "child_id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
+                    "child_type": "problem"
                 }
-            ], 
-            "content_type": "vertical"
+            ]
         }, 
         {
-            "content_id": "entrance_exam_enabled", 
-            "content_name": null, 
-            "children": [], 
-            "content_type": "about"
+            "block_name": null, 
+            "block_type": "about", 
+            "block_id": "entrance_exam_enabled", 
+            "children": []
         }, 
         {
-            "content_id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
-            "content_name": "Checkboxes", 
-            "children": [], 
-            "content_type": "problem"
+            "block_name": "Checkboxes", 
+            "block_type": "problem", 
+            "block_id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
+            "children": []
         }, 
         {
-            "content_id": "9c3e26c73c2848a29930c01215f6eea6", 
-            "content_name": "Unit 1.2.2", 
+            "block_name": "Unit 1.2.2", 
+            "block_type": "vertical", 
+            "block_id": "9c3e26c73c2848a29930c01215f6eea6", 
             "children": [
                 {
-                    "child_id": "problem", 
-                    "child_type": "b8867a79166446fa9e432681adde1ba2"
+                    "child_id": "b8867a79166446fa9e432681adde1ba2", 
+                    "child_type": "problem"
                 }
-            ], 
-            "content_type": "vertical"
+            ]
         }, 
         {
-            "content_id": "entrance_exam_id", 
-            "content_name": null, 
-            "children": [], 
-            "content_type": "about"
+            "block_name": null, 
+            "block_type": "about", 
+            "block_id": "entrance_exam_id", 
+            "children": []
         }, 
         {
-            "content_id": "b8ad8e7b451a49ada6851cfd23bccaff", 
-            "content_name": "Subsection 1.1", 
+            "block_name": "Subsection 1.1", 
+            "block_type": "sequential", 
+            "block_id": "b8ad8e7b451a49ada6851cfd23bccaff", 
             "children": [
                 {
-                    "child_id": "vertical", 
-                    "child_type": "04614bedaa494176bbcb19ce34bed343"
+                    "child_id": "04614bedaa494176bbcb19ce34bed343", 
+                    "child_type": "vertical"
                 }
-            ], 
-            "content_type": "sequential"
+            ]
         }, 
         {
-            "content_id": "short_description", 
-            "content_name": null, 
-            "children": [], 
-            "content_type": "about"
+            "block_name": null, 
+            "block_type": "about", 
+            "block_id": "short_description", 
+            "children": []
         }, 
         {
-            "content_id": "course", 
-            "content_name": "Test Course", 
+            "block_name": "Test Course", 
+            "block_type": "course", 
+            "block_id": "course", 
             "children": [
                 {
-                    "child_id": "chapter", 
-                    "child_type": "6c49044bd98c4737a7ea75cd88b2d6fa"
+                    "child_id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
+                    "child_type": "chapter"
                 }
-            ], 
-            "content_type": "course"
+            ]
         }, 
         {
-            "content_id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
-            "content_name": "Subsection 1.2", 
+            "block_name": "Subsection 1.2", 
+            "block_type": "sequential", 
+            "block_id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
             "children": [
                 {
-                    "child_id": "vertical", 
-                    "child_type": "a91bdd6ceaf04082a7d26f6f9cf87901"
+                    "child_id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
+                    "child_type": "vertical"
                 }, 
                 {
-                    "child_id": "vertical", 
-                    "child_type": "9c3e26c73c2848a29930c01215f6eea6"
+                    "child_id": "9c3e26c73c2848a29930c01215f6eea6", 
+                    "child_type": "vertical"
                 }
-            ], 
-            "content_type": "sequential"
+            ]
         }
     ]
 }

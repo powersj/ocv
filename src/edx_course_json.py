@@ -7,7 +7,6 @@ import argparse
 import json
 import os
 
-from pprint import pprint
 from pymongo import MongoClient
 
 MONGODB_IP = None
@@ -59,18 +58,18 @@ def build_course_map(course_id, course_content):
     course_blocks = []
     for block in course_content['blocks']:
         block_data = {}
-        block_data['content_id'] = block['block_id'].encode('utf-8')
-        block_data['content_type'] = block['block_type'].encode('utf-8')
+        block_data['block_id'] = block['block_id'].encode('utf-8')
+        block_data['block_type'] = block['block_type'].encode('utf-8')
         try:
-            block_data['content_name'] = block['fields']['display_name'].encode('utf-8')
+            block_data['block_name'] = block['fields']['display_name'].encode('utf-8')
         except KeyError:
-            block_data['content_name'] = None
+            block_data['block_name'] = None
 
         block_children = []
         for child in block['fields']['children']:
             children_data = {}
-            children_data['child_id'] = child[0].encode('utf-8')
-            children_data['child_type'] = child[1].encode('utf-8')
+            children_data['child_id'] = child[1].encode('utf-8')
+            children_data['child_type'] = child[0].encode('utf-8')
             block_children.append(children_data)
 
         block_data['children'] = block_children

@@ -6,7 +6,47 @@ dump and produce valid couse represented in JSON format.
 import argparse
 import json
 
-from pdb import set_trace
+
+class Block(object):
+    def __init__(self, id, name, type, children):
+        self.id = id
+        self.name = name if name else id
+        self.type = type
+        self.children = children
+
+    def __str__(self):
+        return '%s (%s)' % (self.name, self.type)
+
+
+def print_header_info(course_dict):
+    """Simple header to print initial javascript code."""
+    print """var g = new dagreD3.graphlib.Graph()
+      .setGraph({})
+      .setDefaultEdgeLabel(function() { return {}; });
+      """
+
+    print '//',
+    print '-' * 38
+    print '// Course: %s (%s blocks)' % (course_dict['course_id'],
+                                         len(course_dict['blocks']))
+    print '//',
+    print '-' * 38
+
+
+def read_blocks(course_dict):
+    """Read in the course dictionary into Block objects."""
+    blocks = {}
+    for item in course_dict['blocks']:
+        blocks[item['block_id']] = Block(item['block_id'], item['block_name'],
+                                         item['block_type'], item['children'])
+
+    for id, block in blocks.iteritems():
+        list = []
+        for child in block.children:
+            list.append(blocks[child['child_id']])
+        block.children = list
+
+    return blocks
 
 
 def main(filename):
@@ -14,8 +54,18 @@ def main(filename):
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
-    print course_dict['course_id']
-    print len(course_dict['blocks'])
+    print_header_info(course_dict)
+    blocks = read_blocks(course_dict)
+
+    print '\n// printing nodes'
+    for id, block in blocks.iteritems():
+        print 'g.setNode("%s", { label: "%s" });' % (block.id, block.name)
+
+    print '\n// printing edges'
+    for id, block in blocks.iteritems():
+        for child in block.children:
+            print 'g.setEdge("%s", "%s");' % (block.id, child.id)
+
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()

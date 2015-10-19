@@ -1,0 +1,99 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<title>ocv - online course visualization</title>
+
+<script src="./js/d3.min.js" charset="utf-8"></script>
+<script src="./js/dagre-d3.min.js"></script>
+
+<style id="css">
+body {
+  font: 300 14px 'Helvetica Neue', Helvetica;
+}
+
+.node rect {
+  stroke: #333;
+  fill: #fff;
+}
+
+.edgePath path {
+  stroke: #333;
+  fill: #333;
+  stroke-width: 1.5px;
+}
+</style>
+
+<h1>ocv - online course visualization</h1>
+
+<svg width=1200 height=2000><g/></svg>
+
+<script id="js">
+// Create the input graph
+var g = new dagreD3.graphlib.Graph()
+      .setGraph({})
+      .setDefaultEdgeLabel(function() { return {}; });
+
+// --------------------------------------
+// Course: 561c649756c02c484b1bb5ec (15 blocks)
+// --------------------------------------
+
+// printing nodes
+g.setNode("b8ad8e7b451a49ada6851cfd23bccaff", { label: "Subsection 1.1" });
+g.setNode("course", { label: "Test Course" });
+g.setNode("04614bedaa494176bbcb19ce34bed343", { label: "Unit 1.1.1" });
+g.setNode("overview", { label: "overview" });
+g.setNode("short_description", { label: "short_description" });
+g.setNode("9c3e26c73c2848a29930c01215f6eea6", { label: "Unit 1.2.2" });
+g.setNode("9d6a3b976a1c461ab6a182eab3ee28e8", { label: "Checkboxes" });
+g.setNode("5fcc159afeff4d54bee7b5c685f6a9fd", { label: "Dropdown" });
+g.setNode("6c49044bd98c4737a7ea75cd88b2d6fa", { label: "Section 1" });
+g.setNode("a91bdd6ceaf04082a7d26f6f9cf87901", { label: "Unit 1.2.1" });
+g.setNode("entrance_exam_enabled", { label: "entrance_exam_enabled" });
+g.setNode("entrance_exam_id", { label: "entrance_exam_id" });
+g.setNode("entrance_exam_minimum_score_pct", { label: "entrance_exam_minimum_score_pct" });
+g.setNode("b8867a79166446fa9e432681adde1ba2", { label: "Dropdown" });
+g.setNode("1e303a15cbed4ef2aed1175b9b6f2ebd", { label: "Subsection 1.2" });
+
+// printing edges
+g.setEdge("b8ad8e7b451a49ada6851cfd23bccaff", "04614bedaa494176bbcb19ce34bed343");
+g.setEdge("course", "6c49044bd98c4737a7ea75cd88b2d6fa");
+g.setEdge("04614bedaa494176bbcb19ce34bed343", "9d6a3b976a1c461ab6a182eab3ee28e8");
+g.setEdge("9c3e26c73c2848a29930c01215f6eea6", "b8867a79166446fa9e432681adde1ba2");
+g.setEdge("6c49044bd98c4737a7ea75cd88b2d6fa", "b8ad8e7b451a49ada6851cfd23bccaff");
+g.setEdge("6c49044bd98c4737a7ea75cd88b2d6fa", "1e303a15cbed4ef2aed1175b9b6f2ebd");
+g.setEdge("a91bdd6ceaf04082a7d26f6f9cf87901", "5fcc159afeff4d54bee7b5c685f6a9fd");
+g.setEdge("1e303a15cbed4ef2aed1175b9b6f2ebd", "a91bdd6ceaf04082a7d26f6f9cf87901");
+g.setEdge("1e303a15cbed4ef2aed1175b9b6f2ebd", "9c3e26c73c2848a29930c01215f6eea6");
+
+
+// Round the corners of the nodes
+g.nodes().forEach(function(v) {
+  var node = g.node(v);
+  node.rx = node.ry = 5;
+});
+
+// Create the renderer
+var render = new dagreD3.render();
+
+// Set up an SVG group so that we can translate the final g.
+var svg = d3.select("svg"),
+    svgGroup = svg.append("g");
+
+// Set up zoom support
+var zoom = d3.behavior.zoom().on("zoom", function() {
+      d3.select("svg g").attr("transform", "translate(" + d3.event.translate + ")" +
+                                  "scale(" + d3.event.scale + ")");
+    });
+svg.call(zoom);
+
+// Run the renderer. This is what draws the final g.
+render(d3.select("svg g"), g);
+
+// Center the graph
+var initialScale = 0.75;
+zoom
+  .translate([(svg.attr("width") - g.graph().width * initialScale) / 2, 20])
+  .scale(initialScale)
+  .event(svg);
+svg.attr('height', g.graph().height * initialScale + 40);
+</script>
