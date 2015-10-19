@@ -1,0 +1,1497 @@
+{
+    "course_id": "55c3e2db56c02c317615a894", 
+    "blocks": [
+        {
+            "content_id": "501aed9d902349eeb2191fa505548de2", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "html_49b4494da2f7", 
+            "content_name": "Discussion Forums", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "vertical_0270f6de40fc", 
+            "content_name": "Introduction: Video and Sequences", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "030e35c4756a4ddc8d40b95fbbfff4d4"
+                }, 
+                {
+                    "child_id": "video", 
+                    "child_type": "0b9e39477cf34507a7a48f74be381fdd"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "651e0945b77f42e0a4c89b8c3e6f5b3b", 
+            "content_name": "Answering More Than Once", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "d0d804e8863c4a95a659c04d8a2b2bc0", 
+            "content_name": "Lesson 2 - Let's Get Interactive! ", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "78d7d3642f3a4dbabbd1b017861aa5f2"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "4a1bba2a403f40bca5ec245e945b0d76", 
+            "content_name": "Video Demonstrations", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "ed5dccf14ae94353961f46fa07217491"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "9f9e1373cc8243b985c8750cc8acec7d"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "d6cee45205a449369d7ef8f159b22bdf", 
+            "content_name": "Labs and Demos", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "2bee8c4248e842a19ba1e73ed8d426c2"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "b8cec2a19ebf463f90cd3544c7927b0e", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "312cb4faed17420e82ab3178fc3e251a", 
+            "content_name": "Getting Help", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "8bb218cccf8d40519a971ff0e4901ccf"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "edx_introduction", 
+            "content_name": "Demo Course Overview", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_0270f6de40fc"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "discussion_5deb6081620d", 
+            "content_name": "Discussion Forums", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "4d672c5893cb4f1dad0de67d2008522e", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "e8a5cc2aed424838853defab7be45e42", 
+            "content_name": "Text input", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "0d759dee4f9d459c8956136dbde55f02"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "6244918637ed4ff4b5f94a840a7e4b43"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "6bcccc2d7343416e9e03fd7325b2f232", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "722085be27c84ac693cfebc8ac5da700", 
+            "content_name": "Videos on edX", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "vertical_0fab6aa52165", 
+            "content_name": "Molecule Editor", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "2b94658d2eee4d85ae13f83bc24cfca9"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "700x_editmolB"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "0aa7a3bdbe18427795b0c1a1d7c3cb9a"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "ddede76df71045ffa16de9d1481d2119", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "4aba537a78774bd5a862485a8563c345", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "6018785795994726950614ce7d0f38c5", 
+            "content_name": "Find Your Study Buddy", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "6244918637ed4ff4b5f94a840a7e4b43", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "d8a6192ade314473a78242dfeedfbf5b", 
+            "content_name": "Introduction", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "edx_introduction"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "d6eaa391d2be41dea20b8b1bfbcb1c45", 
+            "content_name": "Getting Your edX Certificate", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "148ae8fa73ea460eb6f05505da0ba6e6"
+                }, 
+                {
+                    "child_id": "html", 
+                    "child_type": "6b6bee43c7c641509da71c9299cc9f5a"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "fb79dcbad35b466a8c6364f8ffee9050", 
+            "content_name": "Peer Assessed Essays", 
+            "children": [
+                {
+                    "child_id": "openassessment", 
+                    "child_type": "b24c33ea35954c7889e1d2944d3fe397"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "12ad4f3ff4c14114a6e629b00e000976"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "graded_interactions", 
+            "content_name": "Example Week 2: Get Interactive", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "simulations"
+                }, 
+                {
+                    "child_id": "sequential", 
+                    "child_type": "graded_simulations"
+                }, 
+                {
+                    "child_id": "sequential", 
+                    "child_type": "175e76c4951144a29d46211361266e0e"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "f9f3a25e7bab46e583fd1fbbd7a2f6a0", 
+            "content_name": "Be Social", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "19a30717eff543078a5d94ae9d6c18a5", 
+            "content_name": "Lesson 1 - Getting Started", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "867dddb6f55d410caaa9c1eb9c6743ec"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "4f6c1b4e316a419ab5b6bf30e6c708e9"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "3dc16db8d14842e38324e95d4030b8a0"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "4a1bba2a403f40bca5ec245e945b0d76"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "256f17a44983429fb1a60802203ee4e0"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "e3601c0abee6427d8c17e6d6f8fdddd1"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "134df56c516a4a0dbb24dd5facef746e"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "Sample_ChemFormula_Problem", 
+            "content_name": "Chemical Equations", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "html_07d547513285", 
+            "content_name": "An Interactive Reference Table", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "54bb9b142c6c4c22afc62bcb628f0e68", 
+            "content_name": "Multiple Choice Questions", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "a0effb954cca4759994f1ac9e9434bf4"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "67c26b1e826e47aaa29757f62bcd1ad0"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "934cc32c177d41b580c8413e561346b3", 
+            "content_name": "EdX Exams", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "8293139743f34377817d537b69911530"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "vertical_d32bf9b2242c", 
+            "content_name": "Electronic Sound Experiment", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "Lab_5B_Mosfet_Amplifier_Experiment"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "03f051f9a8814881a3783d2511613aa6"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "891211e17f9a472290a5f12c7a6626d7", 
+            "content_name": "Code Grader", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "updates", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "course_info"
+        }, 
+        {
+            "content_id": "26d89b08f75d48829a63520ed8b0037d", 
+            "content_name": "Homework - Find Your Study Buddy", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "6018785795994726950614ce7d0f38c5"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "1b0e2c2c84884b95b1c99fb678cc964c", 
+            "content_name": "Overall Grade Performance", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "f4a39219742149f781a1dda6f43a623c"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "1a810b1a3b2447b998f0917d0e5a802b"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "256f17a44983429fb1a60802203ee4e0", 
+            "content_name": "Video Presentation Styles", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "c2f7008c9ccf4bd09d5d800c98fb0722"
+                }, 
+                {
+                    "child_id": "video", 
+                    "child_type": "636541acbae448d98ab484b028c9a7f6"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "e2cb0e0994f84b0abfa5f4ae42ed9d44"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "8293139743f34377817d537b69911530", 
+            "content_name": "EdX Exams", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "vertical_f04afeac0131", 
+            "content_name": "Immediate Feedback", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "ex_practice_2"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "4aba537a78774bd5a862485a8563c345"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "700x_editmolB", 
+            "content_name": "Molecule Editor", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "47dbd5f836544e61877a483c0b75606c", 
+            "content_name": "Drag and Drop", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "d2e35c1d294b4ba0b3b1048615605d2a"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "5ab88e67d46049b9aa694cb240c39cef"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "9cee77a606ea4c1aa5440e0ea5d0f618", 
+            "content_name": "Interactive Questions", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "simulations", 
+            "content_name": "Lesson 2 - Let's Get Interactive!", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "d0d804e8863c4a95a659c04d8a2b2bc0"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_2dbb0072785e"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_98cf62510471"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_d32bf9b2242c"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "0d759dee4f9d459c8956136dbde55f02", 
+            "content_name": "Text Input", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "ex_practice_3", 
+            "content_name": "Randomized Questions", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "6b6bee43c7c641509da71c9299cc9f5a", 
+            "content_name": "Blank HTML Page", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "23e6eda482c04335af2bb265beacaf59", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "e5eac7e1a5a24f5fa7ed77bb6d136591", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "78d7d3642f3a4dbabbd1b017861aa5f2", 
+            "content_name": "Lesson 2: Let's Get Interactive!", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "e2cb0e0994f84b0abfa5f4ae42ed9d44", 
+            "content_name": "Video Presentation Styles", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "logic_gate_problem", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "75f9562c77bc4858b61f907bb810d974", 
+            "content_name": "Numerical Input", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "67c26b1e826e47aaa29757f62bcd1ad0", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "0a3b4139f51a4917a3aff9d519b1eeb6", 
+            "content_name": "Videos on edX", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "a0effb954cca4759994f1ac9e9434bf4", 
+            "content_name": "Multiple Choice Questions", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "c554538a57664fac80783b99d9d6da7c", 
+            "content_name": "Pointing on a Picture", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "cd177caa62444fbca48aa8f843f09eac", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "d5a5caaf35e84ebc9a747038465dcfb4", 
+            "content_name": "Electronic Circuit Simulator", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "d45779ad3d024a40a09ad8cc317c0970", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "c7e98fd39a6944edb6b286c32e1150ff", 
+            "content_name": "Passing a Course", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "5e009378f0b64585baa0a14b155974b9"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "23e6eda482c04335af2bb265beacaf59"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "030e35c4756a4ddc8d40b95fbbfff4d4", 
+            "content_name": "Blank HTML Page", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "f4a39219742149f781a1dda6f43a623c", 
+            "content_name": "Overall Grade", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "vertical_36e0beb03f0a", 
+            "content_name": "Randomized Questions", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "ex_practice_3"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "ddede76df71045ffa16de9d1481d2119"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "870371212ba04dcf9536d7c7b8f3109e", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "ex_practice_limited_checks", 
+            "content_name": "Limited Checks", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "vertical_ac391cde8a91", 
+            "content_name": "Limited Checks", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "ex_practice_limited_checks"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "d1b84dcd39b0423d9e288f27f0f7f242"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "cd177caa62444fbca48aa8f843f09eac"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "4f06b358a96f4d1dae57d6d81acd06f2", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "ffa5817d49e14fec83ad6187cbe16358", 
+            "content_name": "Reading Sample", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "f91d8d31f7cf48ce990f8d8745ae4cfa", 
+            "content_name": "Answering More Than Once", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "651e0945b77f42e0a4c89b8c3e6f5b3b"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "b8cec2a19ebf463f90cd3544c7927b0e"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "07bc32474380492cb34f76e5f9d9a135", 
+            "content_name": "New Subsection", 
+            "children": [], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "45d46192272c4f6db6b63586520bbdf4", 
+            "content_name": "Getting Answers", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "python_grader", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "Sample_Algebraic_Problem", 
+            "content_name": "Mathematical Expressions", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "vertical_2dbb0072785e", 
+            "content_name": "An Interactive Reference Table", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "html_07d547513285"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "6f7a6670f87147149caeff6afa07a526"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "2b94658d2eee4d85ae13f83bc24cfca9", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "8bb218cccf8d40519a971ff0e4901ccf", 
+            "content_name": "Getting Help", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "course", 
+            "content_name": "edX Demonstration Course", 
+            "children": [
+                {
+                    "child_id": "chapter", 
+                    "child_type": "d8a6192ade314473a78242dfeedfbf5b"
+                }, 
+                {
+                    "child_id": "chapter", 
+                    "child_type": "interactive_demonstrations"
+                }, 
+                {
+                    "child_id": "chapter", 
+                    "child_type": "graded_interactions"
+                }, 
+                {
+                    "child_id": "chapter", 
+                    "child_type": "social_integration"
+                }, 
+                {
+                    "child_id": "chapter", 
+                    "child_type": "1414ffd5143b4b508f739b563ab468b7"
+                }, 
+                {
+                    "child_id": "chapter", 
+                    "child_type": "9fca584977d04885bc911ea76a9ef29e"
+                }
+            ], 
+            "content_type": "course"
+        }, 
+        {
+            "content_id": "867dddb6f55d410caaa9c1eb9c6743ec", 
+            "content_name": "Getting Started", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "82d599b014b246c7a9b5dfc750dc08a9"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "d1b84dcd39b0423d9e288f27f0f7f242", 
+            "content_name": "Few Checks", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "workflow", 
+            "content_name": "edX Exams", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "934cc32c177d41b580c8413e561346b3"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_f04afeac0131"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "b6662b497c094bcc9b870d8270c90c93"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "f91d8d31f7cf48ce990f8d8745ae4cfa"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_ac391cde8a91"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_36e0beb03f0a"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "1b0e2c2c84884b95b1c99fb678cc964c"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "c7e98fd39a6944edb6b286c32e1150ff"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "d6eaa391d2be41dea20b8b1bfbcb1c45"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "303034da25524878a2e66fb57c91cf85", 
+            "content_name": "Attributing Blame", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "vertical_aae927868e55", 
+            "content_name": "Code Grader", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "891211e17f9a472290a5f12c7a6626d7"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "python_grader"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "c6cd4bea43454aaea60ad01beb0cf213"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "social_integration", 
+            "content_name": "Example Week 3: Be Social", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "48ecb924d7fe4b66a230137626bfa93e"
+                }, 
+                {
+                    "child_id": "sequential", 
+                    "child_type": "dbe8fc027bcb4fe9afb744d2e8415855"
+                }, 
+                {
+                    "child_id": "sequential", 
+                    "child_type": "6ab9c442501d472c8ed200e367b4edfa"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "0b9e39477cf34507a7a48f74be381fdd", 
+            "content_name": "Welcome!", 
+            "children": [], 
+            "content_type": "video"
+        }, 
+        {
+            "content_id": "handouts", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "course_info"
+        }, 
+        {
+            "content_id": "graded_simulations", 
+            "content_name": "Homework - Labs and Demos", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "d6cee45205a449369d7ef8f159b22bdf"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_0fab6aa52165"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_aae927868e55"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_c037f3757df1"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_bc69a47c6fae"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "c2f7008c9ccf4bd09d5d800c98fb0722", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "7e9b434e6de3435ab99bd3fb25bde807", 
+            "content_name": "Science and Cooking Chef Profile: JOS\u00c9 ANDR\u00c9S", 
+            "children": [], 
+            "content_type": "video"
+        }, 
+        {
+            "content_id": "e3601c0abee6427d8c17e6d6f8fdddd1", 
+            "content_name": "Interactive Questions", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "9cee77a606ea4c1aa5440e0ea5d0f618"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "3169f89efde2452993f2f2d9bc74f5b2"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "ed01bcd164e64038a78964a16eac3edc", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "6ab9c442501d472c8ed200e367b4edfa", 
+            "content_name": "More Ways to Connect", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "3f2c11aba9434e459676a7d7acc4d960"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "12ad4f3ff4c14114a6e629b00e000976", 
+            "content_name": "Peer Grading", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "vertical_98cf62510471", 
+            "content_name": "Zooming Diagrams", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "700x_pathways"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "e0d7423118ab432582d03e8e8dad8e36"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "700x_pathways", 
+            "content_name": "Zooming Diagrams", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "2574c523e97b477a9d72fbb37bfb995f", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "vertical_bc69a47c6fae", 
+            "content_name": "Protein Creator", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "78e3719e864e45f3bee938461f3c3de6"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "700x_proteinmake"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "ed01bcd164e64038a78964a16eac3edc"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "e0254b911fa246218bd98bbdadffef06", 
+            "content_name": "Reading Assignments", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "1a810b1a3b2447b998f0917d0e5a802b", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "9f9e1373cc8243b985c8750cc8acec7d", 
+            "content_name": "Video Demonstrations", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "vertical_0c92347a5c00", 
+            "content_name": "Mathematical Expressions", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "Sample_Algebraic_Problem"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "870371212ba04dcf9536d7c7b8f3109e"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "basic_questions", 
+            "content_name": "Homework - Question Styles", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "2152d4a4aadc4cb0af5256394a3d1fc7"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "47dbd5f836544e61877a483c0b75606c"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "54bb9b142c6c4c22afc62bcb628f0e68"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_0c92347a5c00"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_1fef54c2b23b"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "2889db1677a549abb15eb4d886f95d1c"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "e8a5cc2aed424838853defab7be45e42"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "2889db1677a549abb15eb4d886f95d1c", 
+            "content_name": "Numerical Input", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "75f9562c77bc4858b61f907bb810d974"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "501aed9d902349eeb2191fa505548de2"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "2152d4a4aadc4cb0af5256394a3d1fc7", 
+            "content_name": "Pointing on a Picture", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "c554538a57664fac80783b99d9d6da7c"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "e5eac7e1a5a24f5fa7ed77bb6d136591"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "6f7a6670f87147149caeff6afa07a526", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "134df56c516a4a0dbb24dd5facef746e", 
+            "content_name": "Reading Assignments", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "e0254b911fa246218bd98bbdadffef06"
+                }, 
+                {
+                    "child_id": "html", 
+                    "child_type": "2574c523e97b477a9d72fbb37bfb995f"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "932e6f2ce8274072a355a94560216d1a"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "303034da25524878a2e66fb57c91cf85"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "ffa5817d49e14fec83ad6187cbe16358"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "5e009378f0b64585baa0a14b155974b9", 
+            "content_name": "Passing a Course", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "636541acbae448d98ab484b028c9a7f6", 
+            "content_name": "Connecting a Circuit and a Circuit Diagram", 
+            "children": [], 
+            "content_type": "video"
+        }, 
+        {
+            "content_id": "ex_practice_2", 
+            "content_name": "Immediate Feedback", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "b24c33ea35954c7889e1d2944d3fe397", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "openassessment"
+        }, 
+        {
+            "content_id": "dbe8fc027bcb4fe9afb744d2e8415855", 
+            "content_name": "Homework - Find Your Study Buddy", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "26d89b08f75d48829a63520ed8b0037d"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "175e76c4951144a29d46211361266e0e", 
+            "content_name": "Homework - Essays", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "fb79dcbad35b466a8c6364f8ffee9050"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "interactive_demonstrations", 
+            "content_name": "Example Week 1: Getting Started", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "19a30717eff543078a5d94ae9d6c18a5"
+                }, 
+                {
+                    "child_id": "sequential", 
+                    "child_type": "basic_questions"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "3f2c11aba9434e459676a7d7acc4d960", 
+            "content_name": "Google Hangout", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "d45779ad3d024a40a09ad8cc317c0970"
+                }, 
+                {
+                    "child_id": "html", 
+                    "child_type": "55cbc99f262443d886a25cf84594eafb"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "ade92343df3d4953a40ab3adc8805390"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "vertical_c037f3757df1", 
+            "content_name": "Electric Circuit Simulator", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "d5a5caaf35e84ebc9a747038465dcfb4"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "free_form_simulation"
+                }, 
+                {
+                    "child_id": "problem", 
+                    "child_type": "logic_gate_problem"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "4f06b358a96f4d1dae57d6d81acd06f2"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "periodic_table", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "static_tab"
+        }, 
+        {
+            "content_id": "ade92343df3d4953a40ab3adc8805390", 
+            "content_name": "Google Hangout", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "148ae8fa73ea460eb6f05505da0ba6e6", 
+            "content_name": "Getting Your edX Certificate", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "overview", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "about"
+        }, 
+        {
+            "content_id": "4f6c1b4e316a419ab5b6bf30e6c708e9", 
+            "content_name": "Working with Videos", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "6bcccc2d7343416e9e03fd7325b2f232"
+                }, 
+                {
+                    "child_id": "video", 
+                    "child_type": "7e9b434e6de3435ab99bd3fb25bde807"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "412dc8dbb6674014862237b23c1f643f"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "48ecb924d7fe4b66a230137626bfa93e", 
+            "content_name": "Lesson 3 - Be Social", 
+            "children": [
+                {
+                    "child_id": "vertical", 
+                    "child_type": "3c4b575924bf4b75a2f3542df5c354fc"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "vertical_3888db0bc286"
+                }, 
+                {
+                    "child_id": "vertical", 
+                    "child_type": "312cb4faed17420e82ab3178fc3e251a"
+                }
+            ], 
+            "content_type": "sequential"
+        }, 
+        {
+            "content_id": "55cbc99f262443d886a25cf84594eafb", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "932e6f2ce8274072a355a94560216d1a", 
+            "content_name": "Perchance to Dream", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "be2f396016c94427a5c3c4ea141155b7", 
+            "content_name": null, 
+            "children": [], 
+            "content_type": "static_tab"
+        }, 
+        {
+            "content_id": "412dc8dbb6674014862237b23c1f643f", 
+            "content_name": "Working with Videos", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "e0d7423118ab432582d03e8e8dad8e36", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "5c90cffecd9b48b188cbfea176bf7fe9", 
+            "content_name": "Video", 
+            "children": [], 
+            "content_type": "video"
+        }, 
+        {
+            "content_id": "1414ffd5143b4b508f739b563ab468b7", 
+            "content_name": "About Exams and Certificates", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "workflow"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "vertical_1fef54c2b23b", 
+            "content_name": "Chemical Equations", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "Sample_ChemFormula_Problem"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "4d672c5893cb4f1dad0de67d2008522e"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "b6662b497c094bcc9b870d8270c90c93", 
+            "content_name": "Getting Answers", 
+            "children": [
+                {
+                    "child_id": "problem", 
+                    "child_type": "45d46192272c4f6db6b63586520bbdf4"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "f480df4ce91347c5ae4301ddf6146238"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "d2e35c1d294b4ba0b3b1048615605d2a", 
+            "content_name": "Drag and Drop", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "9fca584977d04885bc911ea76a9ef29e", 
+            "content_name": "holding section", 
+            "children": [
+                {
+                    "child_id": "sequential", 
+                    "child_type": "07bc32474380492cb34f76e5f9d9a135"
+                }
+            ], 
+            "content_type": "chapter"
+        }, 
+        {
+            "content_id": "5ab88e67d46049b9aa694cb240c39cef", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "0aa7a3bdbe18427795b0c1a1d7c3cb9a", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "3dc16db8d14842e38324e95d4030b8a0", 
+            "content_name": "Videos on edX", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "0a3b4139f51a4917a3aff9d519b1eeb6"
+                }, 
+                {
+                    "child_id": "video", 
+                    "child_type": "5c90cffecd9b48b188cbfea176bf7fe9"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "722085be27c84ac693cfebc8ac5da700"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "f480df4ce91347c5ae4301ddf6146238", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "78e3719e864e45f3bee938461f3c3de6", 
+            "content_name": "Protein Builder", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "vertical_3888db0bc286", 
+            "content_name": "Discussion Forums", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "html_49b4494da2f7"
+                }, 
+                {
+                    "child_id": "discussion", 
+                    "child_type": "discussion_5deb6081620d"
+                }
+            ], 
+            "content_type": "vertical"
+        }, 
+        {
+            "content_id": "82d599b014b246c7a9b5dfc750dc08a9", 
+            "content_name": "Getting Started", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "03f051f9a8814881a3783d2511613aa6", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "Lab_5B_Mosfet_Amplifier_Experiment", 
+            "content_name": "Electronic Sound Experiment", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "2bee8c4248e842a19ba1e73ed8d426c2", 
+            "content_name": "Labs and Demos", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "ed5dccf14ae94353961f46fa07217491", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "html"
+        }, 
+        {
+            "content_id": "700x_proteinmake", 
+            "content_name": "Designing Proteins in Two Dimensions", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "free_form_simulation", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "problem"
+        }, 
+        {
+            "content_id": "c6cd4bea43454aaea60ad01beb0cf213", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "3169f89efde2452993f2f2d9bc74f5b2", 
+            "content_name": "", 
+            "children": [], 
+            "content_type": "discussion"
+        }, 
+        {
+            "content_id": "3c4b575924bf4b75a2f3542df5c354fc", 
+            "content_name": "Be Social", 
+            "children": [
+                {
+                    "child_id": "html", 
+                    "child_type": "f9f3a25e7bab46e583fd1fbbd7a2f6a0"
+                }
+            ], 
+            "content_type": "vertical"
+        }
+    ]
+}
