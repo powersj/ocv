@@ -14,13 +14,16 @@ In addition, writing good well thought out assessments is incredibly difficult. 
 ## Objective
 The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, liked edX.
 
+## Example
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/draft_2015_10_18.png "Initial draft")
+
 ## Technologies Used
 * **edX**
   * Used as the open source online course platform that the visualizations are based off of
   * Find more information at: https://www.edx.org/
-* **dagre-d3**
+* **d3 and dagre-d3**
   * Used to create the visualizations themselves
-  * Find more information at: https://github.com/cpettitt/dagre-d3
+  * Find more information at: http://d3js.org/ and https://github.com/cpettitt/dagre-d3
 * **Python**
   * Used as the primary coding language of choice
   * The author's favorite
