@@ -29,7 +29,7 @@ The goal of this project is to create visualizations of components of an online 
   * The author's favorite
 
 ## Tests
-There are example edX course output in the src/test directory that can be used to build the
+There are example edX course output in the src/data directory that can be used to build the
 visualizations without the need for standing up the entire edX environment.
 
 ## Contributors
