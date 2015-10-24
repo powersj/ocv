@@ -12,7 +12,7 @@ This type of online education however does not take full advantage of new techno
 In addition, writing good well thought out assessments is incredibly difficult. A teacher needs to spend time refining and crafting an assessment to help guide a student’s learning. As such enabling teachers to take advantage of the tools and processes available to them enables them to be more effective teachers.
 
 ## Objective
-The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, liked edX.
+The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, like edX.
 
 ## Example
 ![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/draft_2015_10_18.png "Initial draft")
