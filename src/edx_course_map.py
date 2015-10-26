@@ -18,42 +18,19 @@ class Block(object):
         return '%s, %s' % (self.type, self.name)
 
 
-class Node(object):
-    def __init__(self, id, label, type):
-        self.id = id
-        self.label = label
-        self.type = type
-
-    def __str__(self):
-        return '%s %s' % (self.id.encode('utf-8'), self.label.encode('utf-8'))
-
-
-class Edge(object):
-    def __init__(self, parent, child):
-        self.parent = parent
-        self.child = child
-
-    def __str__(self):
-        return '%s ---> %s' % (self.parent.encode('utf-8'), self.child.encode('utf-8'))
-
-
-def get_children(block, nodes, edges):
+def get_children(dict, block):
     """Recursive function to produce the nodes and edges for a particular block."""
     for child in block.children:
-        nodes.append(Node(child.id, child.name, child.type))
-        edges.append(Edge(block.id, child.id))
-        get_children(child, nodes, edges)
+        print '    { "name": "%s", "parent": "%s", "type": "%s"},' % (child.name,
+                                                                      block.name,
+                                                                      child.type)
+        get_children(dict, child)
 
 
 def create_chapter_maps(block):
     """Given a single block, go build all the nodes and edges."""
-    nodes = []
-    edges = []
-
-    nodes.append(Node(block.id, block.name, block.type))
-    get_children(block, nodes, edges)
-
-    return nodes, edges
+    print '    { "name": "%s", "parent": "null", "type": "%s"},' % (block.name, block.type)
+    get_children(dict, block)
 
 
 def read_blocks(course_dict):
@@ -79,8 +56,10 @@ def main(filename):
     blocks = read_blocks(course_dict)
     for block in blocks:
         if block.type == 'chapter':
-            nodes, edges = create_chapter_maps(block)
-
+            print 'var data = ['
+            create_chapter_maps(block)
+            print '];'
+            print
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
