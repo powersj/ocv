@@ -18,21 +18,6 @@ class Block(object):
         return '%s (%s)' % (self.name, self.type)
 
 
-def print_header_info(course_dict):
-    """Simple header to print initial javascript code."""
-    print """var g = new dagreD3.graphlib.Graph()
-      .setGraph({})
-      .setDefaultEdgeLabel(function() { return {}; });
-      """
-
-    print '//',
-    print '-' * 38
-    print '// Course: %s (%s blocks)' % (course_dict['course_id'],
-                                         len(course_dict['blocks']))
-    print '//',
-    print '-' * 38
-
-
 def read_blocks(course_dict):
     """Read in the course dictionary into Block objects."""
     blocks = {}
@@ -54,8 +39,14 @@ def main(filename):
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
-    print_header_info(course_dict)
     blocks = read_blocks(course_dict)
+
+    print '//',
+    print '-' * 58
+    print '// Course: %s (%s blocks)' % (course_dict['course_id'],
+                                         len(course_dict['blocks']))
+    print '//',
+    print '-' * 58
 
     print '\n// printing nodes'
     for id, block in blocks.iteritems():
