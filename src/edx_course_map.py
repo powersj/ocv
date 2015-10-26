@@ -8,54 +8,78 @@ import json
 
 
 class Block(object):
-    def __init__(self, id, name, type, children):
+    def __init__(self, id, name, type):
         self.id = id
         self.name = name if name else id
         self.type = type
-        self.children = children
+        self.children = []
 
     def __str__(self):
-        return '%s (%s)' % (self.name, self.type)
+        return '%s, %s' % (self.type, self.name)
+
+
+class Node(object):
+    def __init__(self, id, label, type):
+        self.id = id
+        self.label = label
+        self.type = type
+
+    def __str__(self):
+        return '%s %s' % (self.id.encode('utf-8'), self.label.encode('utf-8'))
+
+
+class Edge(object):
+    def __init__(self, parent, child):
+        self.parent = parent
+        self.child = child
+
+    def __str__(self):
+        return '%s ---> %s' % (self.parent.encode('utf-8'), self.child.encode('utf-8'))
+
+
+def get_children(block, nodes, edges):
+    """Recursive function to produce the nodes and edges for a particular block."""
+    for child in block.children:
+        nodes.append(Node(child.id, child.name, child.type))
+        edges.append(Edge(block.id, child.id))
+        get_children(child, nodes, edges)
+
+
+def create_chapter_maps(block):
+    """Given a single block, go build all the nodes and edges."""
+    nodes = []
+    edges = []
+
+    nodes.append(Node(block.id, block.name, block.type))
+    get_children(block, nodes, edges)
+
+    return nodes, edges
 
 
 def read_blocks(course_dict):
-    """Read in the course dictionary into Block objects."""
+    """Read entire course dictionary into Block objects and set children."""
     blocks = {}
     for item in course_dict['blocks']:
-        blocks[item['block_id']] = Block(item['block_id'], item['block_name'],
-                                         item['block_type'], item['children'])
+        blocks[item['block_id']] = Block(item['block_id'], item['block_name'], item['block_type'])
 
-    for id, block in blocks.iteritems():
-        list = []
-        for child in block.children:
-            list.append(blocks[child['child_id']])
-        block.children = list
+    # now go through and add refrences to each parent to the children blocks
+    for item in course_dict['blocks']:
+        parent_id = item['block_id']
+        for child in item['children']:
+            blocks[parent_id].children.append(blocks[child['child_id']])
 
-    return blocks
+    return blocks.values()
 
 
 def main(filename):
-    """Read in a file and print JSON of the course content."""
+    """Read in a file and print each course by chapter."""
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
     blocks = read_blocks(course_dict)
-
-    print '//',
-    print '-' * 58
-    print '// Course: %s (%s blocks)' % (course_dict['course_id'],
-                                         len(course_dict['blocks']))
-    print '//',
-    print '-' * 58
-
-    print '\n// printing nodes'
-    for id, block in blocks.iteritems():
-        print 'g.setNode("%s", { label: "%s" });' % (block.id, block.name)
-
-    print '\n// printing edges'
-    for id, block in blocks.iteritems():
-        for child in block.children:
-            print 'g.setEdge("%s", "%s");' % (block.id, child.id)
+    for block in blocks:
+        if block.type == 'chapter':
+            nodes, edges = create_chapter_maps(block)
 
 
 if __name__ == "__main__":
