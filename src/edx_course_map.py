@@ -76,7 +76,7 @@ def main(filename):
     chapters = get_chapter_data(filename)
     for k, v in chapters.iteritems():
         print k
-        print v
+        print v.encode('utf-8')
 
 
 if __name__ == "__main__":
