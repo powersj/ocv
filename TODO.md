@@ -14,3 +14,6 @@
 * Build JSON representation of Udacity course, like KBAI
 * Integrate visualization process into edX studio/course development tool
 * Integrate visualization process into edX LMS platform
+
+
+* Make sure all argparses work as expected (e.g. expect a value and fail when it is not there)

@@ -99,7 +99,7 @@ def main(ip):
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
-    PARSER.add_argument('-i', '--ip', help='IP Address for valid MongoDB')
+    PARSER.add_argument('ip', help='IP Address for valid MongoDB')
     ARGS = PARSER.parse_args()
 
     main(ARGS.ip)
