@@ -52,7 +52,6 @@ def get_course_content(database, branch_ids):
 
 def build_course_map(course_id, course_content):
     """Parse out the data for each block."""
-
     course_dict = {}
     course_dict['course_id'] = course_id.__str__()
     course_blocks = []
