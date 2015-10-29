@@ -77,14 +77,12 @@ def get_children(data, dict, block):
 
 def create_chapter_maps(block):
     """Given a single block, go build all the nodes and edges."""
-    data = 'var data = ['
     icon = get_awesome_icon(block.type)
-    data += '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s"},' % (
+    data = '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s"},' % (
         block.name, block.type, icon)
-    data += get_children(data, dict, block)
-    data += '\n\t];'
+    children = get_children(data, dict, block)
 
-    return data
+    return '%s%s%s%s' % ('var data = [', data, children, '\n\t];')
 
 
 def read_blocks(course_dict):

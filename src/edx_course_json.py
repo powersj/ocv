@@ -16,7 +16,7 @@ MONGODB_DB = 'edxapp'
 
 def connect_mongo():
     """Connect to MongoDB."""
-    client = MongoClient('mongodb://' + MONGODB_IP + ':' + str(MONGODB_PORT))
+    client = MongoClient('mongodb://%s:%s' % (MONGODB_IP, str(MONGODB_PORT)))
     database = client[MONGODB_DB]
     return database
 
@@ -90,7 +90,7 @@ def main(ip):
 
     for course_id, course_content in course_dump.iteritems():
         course_dict = build_course_map(course_id, course_content)
-        filename = course_id.__str__() + '.json'
+        filename = '%s.json' % str(course_id)
         filepath = os.path.join('./data/', filename)
 
         with open(filepath, 'w') as outfile:

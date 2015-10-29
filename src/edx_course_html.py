@@ -11,13 +11,13 @@ from edx_course_map import get_chapter_data
 
 def print_html_header():
     """Print the header and start of the body of the HTML document."""
-    header = """<!doctype html>
+    print """<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>OCV</title>
     <meta name="description" content="Online Course Visualizer">
 
@@ -48,20 +48,16 @@ def print_html_header():
 
 <body>
 <h1>Online Course Visualizations</h1>
-<p>Below is a visualization for each chapter (printed alphabetically) found in the edX demo course. This course was picked due to the size, scope,
-and variety of components it offers.</p>
+<p>Below is a visualization for each chapter (printed alphabetically) found in the edX demo course.
+This course was picked due to the size, scope,and variety of components it offers.</p>
 """
-
-    print header
 
 
 def print_html_footer():
     """Finish off the HTML tags."""
-    footer = """
+    print """
 </body>
 </html>"""
-
-    print footer
 
 
 def print_javascript_function(div_id):
