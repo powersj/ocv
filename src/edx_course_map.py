@@ -5,113 +5,16 @@ dump and produce valid couse represented in JSON format.
 """
 import argparse
 import json
-import re
-import sys
 
 
-class Block(object):
-
-    def __init__(self, id, name, type):
-        self.id = id
-        self.name = name if name else id
-        self.type = type
-        self.children = []
-
-    def __str__(self):
-        return '%s, %s' % (self.type, self.name)
-
-
-def get_awesome_icon(type):
-    """Return unicode value of the icon for the particular type."""
-    if type == 'annotatable':
-        return '\uf0cb'
-    elif type == 'chapter':
-        return '\uf0c8'
-    elif type == 'conditional':
-        return '\uf128'
-    elif type == 'course':
-        return '\uf19c'
-    elif type == 'discussion':
-        return '\uf0c0'
-    elif type == 'edx_sga':
-        return '\uf0cb'
-    elif type == 'google-calendar' or type == 'google-document':
-        return '\uf1a0'
-    elif type == 'html':
-        return '\uf02e'
-    elif type == 'openassessment' or type == 'split_test':
-        return '\uf044'
-    elif type == 'poll':
-        return '\uf0cb'
-    elif type == 'survey':
-        return '\uf0cb'
-    elif type == 'problem':
-        return '\uf046'
-    elif type == 'recommender':
-        return '\uf128'
-    elif type == 'sequential':
-        return '\uf02d'
-    elif type == 'vertical':
-        return '\uf0c9'
-    elif type == 'video':
-        return '\uf008'
-    elif type == 'word_cloud':
-        return '\uf0c2'
-    else:
-        return '\uf111'
-
-
-def is_id(name):
-    """Check names to see if they match UUID syntax of alphanumeric, 32 chars long."""
-    regex = re.compile('[0-9a-f]{32}\Z', re.I)
-    if bool(regex.match(name)):
-        return True
-
-    return False
-
-
-def get_friendly_name(name, type):
-    """Checking for UUID strings and replacing with more friendly names."""
-    if type == 'openassessment' and is_id(name):
-        return 'Open Assessment'
-    elif type == 'discussion' and is_id(name):
-        return 'Discussion'
-    else:
-        return name
-
-
-def get_children(data, dict, block):
-    """Recursive function to produce the nodes and edges for a particular block."""
-    str = ''
-
-    for child in block.children:
-        icon = get_awesome_icon(child.type)
-        name = get_friendly_name(child.name, child.type)
-        # name = child.name
-        str += '\n\t{ "name": "%s", "parent": "%s", "type": "%s", "icon": "%s", "tip": "This is a cool tip!"},' % (
-            name, block.name, child.type, icon)
-
-        str += get_children(data, dict, child)
-
-    return str
-
-
-def create_course_map(block):
-    """Given a single block, go build all the nodes and edges."""
-    icon = get_awesome_icon(block.type)
-    data = '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s", "tip": ""},' % (
-        block.name, block.type, icon)
-    children = get_children(data, dict, block)
-
-    return '%s%s%s%s' % ('var data = [', data, children, '\n\t];')
+from edx_block import Block
 
 
 def read_blocks(course_dict):
     """Read entire course dictionary into Block objects and set children."""
     blocks = {}
     for item in course_dict['blocks']:
-        blocks[item['block_id']] = Block(
-            item['block_id'], item['block_name'], item['block_type'])
+        blocks[item['block_id']] = Block(item)
 
     # now go through and add refrences to each parent to the children blocks
     for item in course_dict['blocks']:
@@ -122,26 +25,36 @@ def read_blocks(course_dict):
     return blocks.values()
 
 
-def get_course_data(filename):
-    """Gets each chapter data."""
+def get_children(block):
+    """Finds all children and children's children recursively."""
+    tree = []
+    for child in block.children:
+        tree.append(child)
+        tree.append(get_children(child))
+
+    return tree
+
+
+def build_course_tree(filename):
+    """Get all course data from a specific file. Assumes only one course per file."""
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
     blocks = read_blocks(course_dict)
 
-    course = []
+    tree = []
     for block in blocks:
         if block.type == 'course':
-            course.append(create_course_map(block))
+            tree.append(block)
+            tree.append(get_children(block))
 
-    return course
+    return tree
 
 
 def main(filename):
     """Read in a file and print each course by chapter."""
-    course_data = get_course_data(filename)
-    for item in course_data:
-        print item
+    course = build_course_tree(filename)
+    print course
 
 
 if __name__ == "__main__":

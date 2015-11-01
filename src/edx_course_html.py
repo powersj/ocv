@@ -6,7 +6,7 @@ download the d3.js script.
 import argparse
 import re
 
-from edx_course_map import get_course_data
+from edx_course_map import build_course_tree
 
 
 def print_html_header():
@@ -42,7 +42,7 @@ def print_html_header():
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <body>
 <script type="text/javascript">
@@ -285,11 +285,11 @@ def create_div_id(key):
 
 def main(filename):
     """Print working single, self contained HTML page with only external dependency on d3.js."""
-    course_data = get_course_data(filename)
+    course_data = build_course_tree(filename)
 
     print_html_header()
     for data in course_data:
-        print data.encode('utf-8')
+        print data
     print_javascript_function()
     print_html_footer()
 

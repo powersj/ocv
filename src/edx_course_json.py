@@ -57,18 +57,28 @@ def build_course_map(course_id, course_content):
     course_blocks = []
     for block in course_content['blocks']:
         block_data = {}
-        block_data['block_id'] = block['block_id'].encode('utf-8')
-        block_data['block_type'] = block['block_type'].encode('utf-8')
+        block_data['block_id'] = block['block_id']
+        block_data['block_type'] = block['block_type']
         try:
-            block_data['block_name'] = block['fields']['display_name'].encode('utf-8')
+            block_data['block_name'] = block['fields']['display_name']
         except KeyError:
             block_data['block_name'] = None
+
+        if block_data['block_type'] == 'discussion':
+            block_data['discussion_category'] = block['fields']['discussion_category']
+            block_data['discussion_target'] = block['fields']['discussion_target']
+        elif block_data['block_type'] == 'video':
+            block_data['youtube_id_1_0'] = block['fields']['youtube_id_1_0']
+            block_data['start_time'] = block['fields']['start_time']
+            block_data['end_time'] = block['fields']['end_time']
+        elif block_data['block_type'] == 'problem':
+            block_data['markdown'] = block['fields']['markdown']
 
         block_children = []
         for child in block['fields']['children']:
             children_data = {}
-            children_data['child_id'] = child[1].encode('utf-8')
-            children_data['child_type'] = child[0].encode('utf-8')
+            children_data['child_id'] = child[1]
+            children_data['child_type'] = child[0]
             block_children.append(children_data)
 
         block_data['children'] = block_children
