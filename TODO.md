@@ -1,25 +1,23 @@
 # TODO
 
 ## 2015-11-01
-* Create content class and subclasses
-  * Primary content class
-  * Subclass for assessments to parse out data
-  * Cool CSS for tool tip: http://stackoverflow.com/questions/10805184/d3-show-data-on-mouseover-of-circle/10806220#10806220
-* Create overview page on index that gives overview of what I've built
-    * http://themes.gohugo.io/creative/
-    * Objective
-    * Key of Icons
-    * Purpose
-    * How to use/Instructions
-
-## 2015-11-08
-* Trailer
 * Analyze Assessments
   * Provide additional data about the type and help given
 * Analyze Videos
   * Add in video lengths via YouTube API
   * https://github.com/s16h/py-must-watch/blob/master/add_youtube_durations.py
   * http://stackoverflow.com/questions/15596753/youtube-api-v3-how-to-get-video-durations
+* Create overview page on index that gives overview of what I've built
+    * Objective
+    * Key of Icons
+    * Purpose
+    * How to use/Instructions
+    * Add earlier papers
+
+## 2015-11-08
+* Trailer
+* Finish analyzing additional data and produce tool-tips
+  * Cool CSS for tool tip: http://stackoverflow.com/questions/10805184/d3-show-data-on-mouseover-of-circle/10806220#10806220
 
 ## 2015-11-15
 * Test with co-worker/family member
