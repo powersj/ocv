@@ -75,7 +75,7 @@ def get_children(data, dict, block):
     return str
 
 
-def create_chapter_maps(block):
+def create_course_map(block):
     """Given a single block, go build all the nodes and edges."""
     icon = get_awesome_icon(block.type)
     data = '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s"},' % (
@@ -101,27 +101,26 @@ def read_blocks(course_dict):
     return blocks.values()
 
 
-def get_chapter_data(filename):
+def get_course_data(filename):
     """Gets each chapter data."""
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
     blocks = read_blocks(course_dict)
 
-    chapters = {}
+    course = []
     for block in blocks:
-        if block.type == 'chapter':
-            chapters[block.name] = create_chapter_maps(block)
+        if block.type == 'course':
+            course.append(create_course_map(block))
 
-    return chapters
+    return course
 
 
 def main(filename):
     """Read in a file and print each course by chapter."""
-    chapters = get_chapter_data(filename)
-    for k, v in chapters.iteritems():
-        print k
-        print v.encode('utf-8')
+    course_data = get_course_data(filename)
+    for item in course_data:
+        print item
 
 
 if __name__ == "__main__":
