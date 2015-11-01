@@ -6,6 +6,7 @@ dump and produce valid couse represented in JSON format.
 import argparse
 import json
 import re
+import sys
 
 
 class Block(object):
@@ -22,24 +23,42 @@ class Block(object):
 
 def get_awesome_icon(type):
     """Return unicode value of the icon for the particular type."""
-    if type == 'chapter':
+    if type == 'annotatable':
+        return '\uf0cb'
+    elif type == 'chapter':
         return '\uf0c8'
-    if type == 'course':
+    elif type == 'conditional':
+        return '\uf128'
+    elif type == 'course':
         return '\uf19c'
     elif type == 'discussion':
         return '\uf0c0'
+    elif type == 'edx_sga':
+        return '\uf0cb'
+    elif type == 'google-calendar' or type == 'google-document':
+        return '\uf1a0'
     elif type == 'html':
         return '\uf02e'
-    elif type == 'openassessment':
+    elif type == 'openassessment' or type == 'split_test':
         return '\uf044'
+    elif type == 'poll':
+        return '\uf0cb'
+    elif type == 'survey':
+        return '\uf0cb'
     elif type == 'problem':
         return '\uf046'
+    elif type == 'recommender':
+        return '\uf128'
     elif type == 'sequential':
         return '\uf02d'
     elif type == 'vertical':
         return '\uf0c9'
     elif type == 'video':
         return '\uf008'
+    elif type == 'word_cloud':
+        return '\uf0c2'
+    else:
+        return '\uf111'
 
 
 def is_id(name):
@@ -69,7 +88,7 @@ def get_children(data, dict, block):
         icon = get_awesome_icon(child.type)
         name = get_friendly_name(child.name, child.type)
         # name = child.name
-        str += '\n\t{ "name": "%s", "parent": "%s", "type": "%s", "icon": "%s"},' % (
+        str += '\n\t{ "name": "%s", "parent": "%s", "type": "%s", "icon": "%s", "tip": "This is a cool tip!"},' % (
             name, block.name, child.type, icon)
 
         str += get_children(data, dict, child)
@@ -80,7 +99,7 @@ def get_children(data, dict, block):
 def create_course_map(block):
     """Given a single block, go build all the nodes and edges."""
     icon = get_awesome_icon(block.type)
-    data = '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s"},' % (
+    data = '\n\t{ "name": "%s", "parent": "null", "type": "%s", "icon": "%s", "tip": ""},' % (
         block.name, block.type, icon)
     children = get_children(data, dict, block)
 

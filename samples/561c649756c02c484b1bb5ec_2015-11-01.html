@@ -1,17 +1,4 @@
-#!/usr/bin/python
-"""
-Print out self-contained HTML page with visualization. However, does require internet access to
-download the d3.js script.
-"""
-import argparse
-import re
-
-from edx_course_map import get_course_data
-
-
-def print_html_header():
-    """Print the header and start of the body of the HTML document."""
-    print """<!DOCTYPE html>
+<!DOCTYPE html>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,21 +33,20 @@ def print_html_header():
 
 <body>
 <script type="text/javascript">
-"""
 
+var data = [
+	{ "name": "Test Course", "parent": "null", "type": "course", "icon": "\uf19c", "tip": ""},
+	{ "name": "Section 1", "parent": "Test Course", "type": "chapter", "icon": "\uf0c8", "tip": "This is a cool tip!"},
+	{ "name": "Subsection 1.1", "parent": "Section 1", "type": "sequential", "icon": "\uf02d", "tip": "This is a cool tip!"},
+	{ "name": "Unit 1.1.1", "parent": "Subsection 1.1", "type": "vertical", "icon": "\uf0c9", "tip": "This is a cool tip!"},
+	{ "name": "Checkboxes", "parent": "Unit 1.1.1", "type": "problem", "icon": "\uf046", "tip": "This is a cool tip!"},
+	{ "name": "Subsection 1.2", "parent": "Section 1", "type": "sequential", "icon": "\uf02d", "tip": "This is a cool tip!"},
+	{ "name": "Unit 1.2.1", "parent": "Subsection 1.2", "type": "vertical", "icon": "\uf0c9", "tip": "This is a cool tip!"},
+	{ "name": "Dropdown", "parent": "Unit 1.2.1", "type": "problem", "icon": "\uf046", "tip": "This is a cool tip!"},
+	{ "name": "Unit 1.2.2", "parent": "Subsection 1.2", "type": "vertical", "icon": "\uf0c9", "tip": "This is a cool tip!"},
+	{ "name": "Dropdown", "parent": "Unit 1.2.2", "type": "problem", "icon": "\uf046", "tip": "This is a cool tip!"},
+	];
 
-def print_html_footer():
-    """Finish off the HTML tags."""
-    print """
-</script>
-</body>
-</html>
-"""
-
-
-def print_javascript_function():
-    """Print all the icky javascript."""
-    print """
     var margin = {
             top: 0,
             right: 0,
@@ -270,32 +256,9 @@ def print_javascript_function():
 
     update(root);
 
-"""
 
 
-def create_div_id(key):
-    """
-    One method to take course name and do the following:
-    1) make lower case
-    2) remove white space
-    3) remove non-alphanumeric charachters
-    """
-    return re.sub(r'\W+', '', key.lower().replace(' ', ''))
+</script>
+</body>
+</html>
 
-
-def main(filename):
-    """Print working single, self contained HTML page with only external dependency on d3.js."""
-    course_data = get_course_data(filename)
-
-    print_html_header()
-    for data in course_data:
-        print data.encode('utf-8')
-    print_javascript_function()
-    print_html_footer()
-
-if __name__ == "__main__":
-    PARSER = argparse.ArgumentParser()
-    PARSER.add_argument('filename', help='MongoDB data dumped to file')
-    ARGS = PARSER.parse_args()
-
-    main(ARGS.filename)
