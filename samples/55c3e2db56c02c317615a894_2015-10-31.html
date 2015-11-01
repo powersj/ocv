@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>OCV</title>
+<meta name="description" content="Online Course Visualizer">
+
+<style type="text/css">
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        font-family: 'Cantarell';
+        font-size: 100%;
+        vertical-align: middle;
+    }
+
+    .node {
+        cursor: pointer;
+    }
+
+    .overlay {
+        background-color: #DDD;
+    }
+
+    .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .node text {
+        font-size: 10px;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+    }
+
+    .templink {
+        fill: none;
+        stroke: red;
+        stroke-width: 3px;
+    }
+
+    .ghostCircle.show {
+        display: block;
+    }
+
+    .ghostCircle,
+    .activeDrag .ghostCircle {
+        display: none;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<body>
+<script type="text/javascript">
+
+var data = [
+	{ "name": "edX Demonstration Course", "parent": "null", "type": "course", "icon": "None"},
+	{ "name": "Introduction", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Demo Course Overview", "parent": "Introduction", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Introduction: Video and Sequences", "parent": "Demo Course Overview", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Blank HTML Page", "parent": "Introduction: Video and Sequences", "type": "html", "icon": "\uf02e"},
+	{ "name": "Welcome!", "parent": "Introduction: Video and Sequences", "type": "video", "icon": "\uf008"},
+	{ "name": "Example Week 1: Getting Started", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Lesson 1 - Getting Started", "parent": "Example Week 1: Getting Started", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Getting Started", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Getting Started", "parent": "Getting Started", "type": "html", "icon": "\uf02e"},
+	{ "name": "Working with Videos", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "6bcccc2d7343416e9e03fd7325b2f232", "parent": "Working with Videos", "type": "html", "icon": "\uf02e"},
+	{ "name": "Science and Cooking Chef Profile: JOSÉ ANDRÉS", "parent": "Working with Videos", "type": "video", "icon": "\uf008"},
+	{ "name": "Working with Videos", "parent": "Working with Videos", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Videos on edX", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Videos on edX", "parent": "Videos on edX", "type": "html", "icon": "\uf02e"},
+	{ "name": "Video", "parent": "Videos on edX", "type": "video", "icon": "\uf008"},
+	{ "name": "Videos on edX", "parent": "Videos on edX", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Video Demonstrations", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "ed5dccf14ae94353961f46fa07217491", "parent": "Video Demonstrations", "type": "html", "icon": "\uf02e"},
+	{ "name": "Video Demonstrations", "parent": "Video Demonstrations", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Video Presentation Styles", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "c2f7008c9ccf4bd09d5d800c98fb0722", "parent": "Video Presentation Styles", "type": "html", "icon": "\uf02e"},
+	{ "name": "Connecting a Circuit and a Circuit Diagram", "parent": "Video Presentation Styles", "type": "video", "icon": "\uf008"},
+	{ "name": "Video Presentation Styles", "parent": "Video Presentation Styles", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Interactive Questions", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Interactive Questions", "parent": "Interactive Questions", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Interactive Questions", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Reading Assignments", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Reading Assignments", "parent": "Reading Assignments", "type": "html", "icon": "\uf02e"},
+	{ "name": "2574c523e97b477a9d72fbb37bfb995f", "parent": "Reading Assignments", "type": "html", "icon": "\uf02e"},
+	{ "name": "Perchance to Dream", "parent": "Reading Assignments", "type": "problem", "icon": "\uf046"},
+	{ "name": "Attributing Blame", "parent": "Reading Assignments", "type": "problem", "icon": "\uf046"},
+	{ "name": "Reading Sample", "parent": "Reading Assignments", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Homework - Question Styles", "parent": "Example Week 1: Getting Started", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Pointing on a Picture", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Pointing on a Picture", "parent": "Pointing on a Picture", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Pointing on a Picture", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Drag and Drop", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Drag and Drop", "parent": "Drag and Drop", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Drag and Drop", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Multiple Choice Questions", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Multiple Choice Questions", "parent": "Multiple Choice Questions", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Multiple Choice Questions", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Mathematical Expressions", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Mathematical Expressions", "parent": "Mathematical Expressions", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Mathematical Expressions", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Chemical Equations", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Chemical Equations", "parent": "Chemical Equations", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Chemical Equations", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Numerical Input", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Numerical Input", "parent": "Numerical Input", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Numerical Input", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Text input", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Text Input", "parent": "Text input", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Text input", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Example Week 2: Get Interactive", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Lesson 2 - Let's Get Interactive!", "parent": "Example Week 2: Get Interactive", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Lesson 2 - Let's Get Interactive! ", "parent": "Lesson 2 - Let's Get Interactive!", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Lesson 2: Let's Get Interactive!", "parent": "Lesson 2 - Let's Get Interactive! ", "type": "html", "icon": "\uf02e"},
+	{ "name": "An Interactive Reference Table", "parent": "Lesson 2 - Let's Get Interactive!", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "An Interactive Reference Table", "parent": "An Interactive Reference Table", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion", "parent": "An Interactive Reference Table", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Zooming Diagrams", "parent": "Lesson 2 - Let's Get Interactive!", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Zooming Diagrams", "parent": "Zooming Diagrams", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion", "parent": "Zooming Diagrams", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Electronic Sound Experiment", "parent": "Lesson 2 - Let's Get Interactive!", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Electronic Sound Experiment", "parent": "Electronic Sound Experiment", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion", "parent": "Electronic Sound Experiment", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Homework - Labs and Demos", "parent": "Example Week 2: Get Interactive", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Labs and Demos", "parent": "Homework - Labs and Demos", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Labs and Demos", "parent": "Labs and Demos", "type": "html", "icon": "\uf02e"},
+	{ "name": "Molecule Editor", "parent": "Homework - Labs and Demos", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "2b94658d2eee4d85ae13f83bc24cfca9", "parent": "Molecule Editor", "type": "html", "icon": "\uf02e"},
+	{ "name": "Molecule Editor", "parent": "Molecule Editor", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Molecule Editor", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Code Grader", "parent": "Homework - Labs and Demos", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Code Grader", "parent": "Code Grader", "type": "html", "icon": "\uf02e"},
+	{ "name": "python_grader", "parent": "Code Grader", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Code Grader", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Electric Circuit Simulator", "parent": "Homework - Labs and Demos", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Electronic Circuit Simulator", "parent": "Electric Circuit Simulator", "type": "html", "icon": "\uf02e"},
+	{ "name": "free_form_simulation", "parent": "Electric Circuit Simulator", "type": "problem", "icon": "\uf046"},
+	{ "name": "logic_gate_problem", "parent": "Electric Circuit Simulator", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Electric Circuit Simulator", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Protein Creator", "parent": "Homework - Labs and Demos", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Protein Builder", "parent": "Protein Creator", "type": "html", "icon": "\uf02e"},
+	{ "name": "Designing Proteins in Two Dimensions", "parent": "Protein Creator", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Protein Creator", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Homework - Essays", "parent": "Example Week 2: Get Interactive", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Peer Assessed Essays", "parent": "Homework - Essays", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Open Assessment", "parent": "Peer Assessed Essays", "type": "openassessment", "icon": "\uf044"},
+	{ "name": "Peer Grading", "parent": "Peer Assessed Essays", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Example Week 3: Be Social", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Lesson 3 - Be Social", "parent": "Example Week 3: Be Social", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Be Social", "parent": "Lesson 3 - Be Social", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Be Social", "parent": "Be Social", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion Forums", "parent": "Lesson 3 - Be Social", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Discussion Forums", "parent": "Discussion Forums", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion Forums", "parent": "Discussion Forums", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Getting Help", "parent": "Lesson 3 - Be Social", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Getting Help", "parent": "Getting Help", "type": "html", "icon": "\uf02e"},
+	{ "name": "Homework - Find Your Study Buddy", "parent": "Example Week 3: Be Social", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Homework - Find Your Study Buddy", "parent": "Homework - Find Your Study Buddy", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Find Your Study Buddy", "parent": "Homework - Find Your Study Buddy", "type": "html", "icon": "\uf02e"},
+	{ "name": "More Ways to Connect", "parent": "Example Week 3: Be Social", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "Google Hangout", "parent": "More Ways to Connect", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "d45779ad3d024a40a09ad8cc317c0970", "parent": "Google Hangout", "type": "html", "icon": "\uf02e"},
+	{ "name": "55cbc99f262443d886a25cf84594eafb", "parent": "Google Hangout", "type": "html", "icon": "\uf02e"},
+	{ "name": "Google Hangout", "parent": "Google Hangout", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "About Exams and Certificates", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "edX Exams", "parent": "About Exams and Certificates", "type": "sequential", "icon": "\uf02d"},
+	{ "name": "EdX Exams", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "EdX Exams", "parent": "EdX Exams", "type": "html", "icon": "\uf02e"},
+	{ "name": "Immediate Feedback", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Immediate Feedback", "parent": "Immediate Feedback", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Immediate Feedback", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Getting Answers", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Getting Answers", "parent": "Getting Answers", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Getting Answers", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Answering More Than Once", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Answering More Than Once", "parent": "Answering More Than Once", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Answering More Than Once", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Limited Checks", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Limited Checks", "parent": "Limited Checks", "type": "problem", "icon": "\uf046"},
+	{ "name": "Few Checks", "parent": "Limited Checks", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Limited Checks", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Randomized Questions", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Randomized Questions", "parent": "Randomized Questions", "type": "problem", "icon": "\uf046"},
+	{ "name": "Discussion", "parent": "Randomized Questions", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Overall Grade Performance", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Overall Grade", "parent": "Overall Grade Performance", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion", "parent": "Overall Grade Performance", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Passing a Course", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Passing a Course", "parent": "Passing a Course", "type": "html", "icon": "\uf02e"},
+	{ "name": "Discussion", "parent": "Passing a Course", "type": "discussion", "icon": "\uf0c0"},
+	{ "name": "Getting Your edX Certificate", "parent": "edX Exams", "type": "vertical", "icon": "\uf0c9"},
+	{ "name": "Getting Your edX Certificate", "parent": "Getting Your edX Certificate", "type": "html", "icon": "\uf02e"},
+	{ "name": "Blank HTML Page", "parent": "Getting Your edX Certificate", "type": "html", "icon": "\uf02e"},
+	{ "name": "holding section", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "New Subsection", "parent": "holding section", "type": "sequential", "icon": "\uf02d"},
+	];
+
+    var margin = {
+            top: 20,
+            right: 0,
+            bottom: 40,
+            left: 200
+        },
+        width = $(document).width(),
+        height = $(document).height();
+
+    var i = 0;
+    var duration = 750;
+    var root;
+
+    var tree = d3.layout.tree()
+        .size([height, width]);
+
+    var tree = d3.layout.tree()
+        .size([height, width]);
+
+    var diagonal = d3.svg.diagonal()
+        .projection(function (d) {
+            return [d.y, d.x];
+        });
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.right + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + ")"); //"," + margin.top + ")");
+
+    d3.select(self.frameElement).style("height", "800px");
+
+    var collapse = function (d) {
+        if (d.children) {
+            d._children = d.children;
+            d._children.forEach(collapse);
+            d.children = null;
+        }
+    };
+
+    var zoom = function() {
+        var scale = d3.event.scale,
+            translation = d3.event.translate,
+            tbound = -height * scale,
+            bbound = height * scale,
+            lbound = (-width + margin.right) * scale,
+            rbound = (width - margin.left) * scale;
+        // limit translation to thresholds
+        translation = [
+            Math.max(Math.min(translation[0], rbound), lbound),
+            Math.max(Math.min(translation[1], bbound), tbound)
+        ];
+        svg.attr("transform", "translate(" + translation + ")" + " scale(" + scale + ")");
+    };
+
+    // Toggle children on click.
+    var click = function(d) {
+        if (d.children) {
+            d._children = d.children;
+            d.children = null;
+        } else {
+            d.children = d._children;
+            d._children = null;
+        }
+        update(d);
+    };
+
+    var update = function(source) {
+        // Compute the new tree layout.
+        var nodes = tree.nodes(root).reverse(),
+            links = tree.links(nodes);
+
+        // Normalize for fixed-depth.
+        nodes.forEach(function(d) {
+            d.y = d.depth * 180;
+        });
+
+        // Update the nodes...
+        var node = svg.selectAll("g.node")
+            .data(nodes, function(d) {
+                return d.id || (d.id = ++i);
+            });
+
+        // Enter any new nodes at the parent's previous position.
+        var nodeEnter = node.enter().append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) {
+                return "translate(" + source.y0 + "," + source.x0 + ")";
+            })
+            .on("click", click);
+
+        nodeEnter.append("circle")
+            .attr("r", 1e-6)
+            .style("fill", function(d) {
+                return d._children ? "lightsteelblue" : "#fff";
+            });
+
+        nodeEnter.append("text")
+            .attr("x", function(d) {
+                return d.children || d._children ? -10 : 10;
+            })
+            .attr("dy", ".35em")
+            .attr("text-anchor", function(d) {
+                return d.children || d._children ? "end" : "start";
+            })
+            .text(function(d) {
+                return d.icon + " " + d.name;
+            })
+            .style("fill-opacity", 1e-6);
+
+        // Transition nodes to their new position.
+        var nodeUpdate = node.transition()
+            .duration(duration)
+            .attr("transform", function(d) {
+                return "translate(" + d.y + "," + d.x + ")";
+            });
+
+        nodeUpdate.select("circle")
+            .attr("r", 4.5)
+            .style("fill", function(d) {
+                return d._children ? "lightsteelblue" : "#fff";
+            });
+
+        nodeUpdate.select("text")
+            .style("fill-opacity", 1);
+
+        // Transition exiting nodes to the parent's new position.
+        var nodeExit = node.exit().transition()
+            .duration(duration)
+            .attr("transform", function(d) {
+                return "translate(" + source.y + "," + source.x + ")";
+            })
+            .remove();
+
+        nodeExit.select("circle")
+            .attr("r", 1e-6);
+
+        nodeExit.select("text")
+            .style("fill-opacity", 1e-6);
+
+        // Update the links...
+        var link = svg.selectAll("path.link")
+            .data(links, function(d) {
+                return d.target.id;
+            });
+
+        // Enter any new links at the parent's previous position.
+        link.enter().insert("path", "g")
+            .attr("class", "link")
+            .attr("d", function(d) {
+                var o = {
+                    x: source.x0,
+                    y: source.y0
+                };
+                return diagonal({
+                    source: o,
+                    target: o
+                });
+            });
+
+        // Transition links to their new position.
+        link.transition()
+            .duration(duration)
+            .attr("d", diagonal);
+
+        // Transition exiting nodes to the parent's new position.
+        link.exit().transition()
+            .duration(duration)
+            .attr("d", function(d) {
+                var o = {
+                    x: source.x,
+                    y: source.y
+                };
+                return diagonal({
+                    source: o,
+                    target: o
+                });
+            })
+            .remove();
+
+        // Stash the old positions for transition.
+        nodes.forEach(function(d) {
+            d.x0 = d.x;
+            d.y0 = d.y;
+        });
+
+        d3.select("svg")
+            .call(d3.behavior.zoom()
+                .scaleExtent([0.5, 5])
+                .on("zoom", zoom));
+    };
+
+
+    var dataMap = data.reduce(function(map, node) {
+        map[node.name] = node;
+        return map;
+    }, {});
+
+    var treeData = [];
+    data.forEach(function(node) {
+        // add to parent
+        var parent = dataMap[node.parent];
+        if (parent) {
+            // create child array if it doesn't exist
+            (parent.children || (parent.children = []))
+            // add node to child array
+            .push(node);
+        } else {
+            // parent is null or missing
+            treeData.push(node);
+        }
+    });
+
+    root = treeData[0];
+    root.x0 = height / 2;
+    root.y0 = 0;
+
+    root.children.forEach(collapse);
+
+    update(root);
+
+
+
+</script>
+</body>
+</html>
+
