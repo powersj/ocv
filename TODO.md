@@ -21,8 +21,8 @@
 * Analyze Assessments
   * Provide additional data about the type and help given
 * Analyze Videos
-* Add in video lengths via YouTube API
-* http://stackoverflow.com/questions/15596753/youtube-api-v3-how-to-get-video-durations
+  * Add in video lengths via YouTube API
+  * http://stackoverflow.com/questions/15596753/youtube-api-v3-how-to-get-video-durations
 
 ## 2015-11-15
 * Test with co-worker/family member
