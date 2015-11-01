@@ -67,8 +67,8 @@
 <script type="text/javascript">
 
 var data = [
-	{ "name": "Test Course", "parent": "null", "type": "course", "icon": "None"},
-	{ "name": "Section 1", "parent": "Test Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Test Course", "parent": "null", "type": "course", "icon": "\uf19c"},
+	{ "name": "Section 1", "parent": "Test Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Subsection 1.1", "parent": "Section 1", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Unit 1.1.1", "parent": "Subsection 1.1", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Checkboxes", "parent": "Unit 1.1.1", "type": "problem", "icon": "\uf046"},
@@ -107,7 +107,7 @@ var data = [
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + ")"); //"," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + ")");
 
     d3.select(self.frameElement).style("height", "800px");
 
@@ -197,7 +197,7 @@ var data = [
             });
 
         nodeUpdate.select("circle")
-            .attr("r", 4.5)
+            .attr("r", 8)
             .style("fill", function(d) {
                 return d._children ? "lightsteelblue" : "#fff";
             });
@@ -265,10 +265,7 @@ var data = [
             d.y0 = d.y;
         });
 
-        d3.select("svg")
-            .call(d3.behavior.zoom()
-                .scaleExtent([0.5, 5])
-                .on("zoom", zoom));
+        d3.select("svg").call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom));
     };
 
 

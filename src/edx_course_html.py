@@ -121,7 +121,7 @@ def print_javascript_function():
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + ")"); //"," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + ")");
 
     d3.select(self.frameElement).style("height", "800px");
 
@@ -211,7 +211,7 @@ def print_javascript_function():
             });
 
         nodeUpdate.select("circle")
-            .attr("r", 4.5)
+            .attr("r", 8)
             .style("fill", function(d) {
                 return d._children ? "lightsteelblue" : "#fff";
             });
@@ -279,10 +279,7 @@ def print_javascript_function():
             d.y0 = d.y;
         });
 
-        d3.select("svg")
-            .call(d3.behavior.zoom()
-                .scaleExtent([0.5, 5])
-                .on("zoom", zoom));
+        d3.select("svg").call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom));
     };
 
 

@@ -23,6 +23,8 @@ class Block(object):
 def get_awesome_icon(type):
     """Return unicode value of the icon for the particular type."""
     if type == 'chapter':
+        return '\uf0c8'
+    if type == 'course':
         return '\uf19c'
     elif type == 'discussion':
         return '\uf0c0'

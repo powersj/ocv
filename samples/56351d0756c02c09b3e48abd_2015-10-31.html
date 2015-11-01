@@ -67,8 +67,8 @@
 <script type="text/javascript">
 
 var data = [
-	{ "name": "Testing Course", "parent": "null", "type": "course", "icon": "None"},
-	{ "name": "HTML", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Testing Course", "parent": "null", "type": "course", "icon": "\uf19c"},
+	{ "name": "HTML", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Text", "parent": "HTML", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Introduction", "parent": "Text", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e"},
@@ -148,7 +148,7 @@ var data = [
 	{ "name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9"},
-	{ "name": "Problem (Basic)", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Problem (Basic)", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Blank Common Problem", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Default", "parent": "Blank Common Problem", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Blank Common Problem", "parent": "Default", "type": "problem", "icon": "\uf046"},
@@ -186,7 +186,7 @@ var data = [
 	{ "name": "Text Input with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Default", "parent": "Text Input with Hints and Feedback", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Text Input with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046"},
-	{ "name": "Problem (Advanced)", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Problem (Advanced)", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Blank Advanced Problem", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Blank Advanced Problem", "parent": "Blank Advanced Problem", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Default", "parent": "Blank Advanced Problem", "type": "problem", "icon": "\uf046"},
@@ -252,7 +252,7 @@ var data = [
 	{ "name": "Protein builder tool", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "basic problem", "parent": "Protein builder tool", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Protein Builder Tool", "parent": "basic problem", "type": "problem", "icon": "\uf046"},
-	{ "name": "Video", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Video", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Transcripts", "parent": "Video", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "single language", "parent": "Transcripts", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Video with transcript in a single language", "parent": "single language", "type": "video", "icon": "\uf008"},
@@ -261,11 +261,11 @@ var data = [
 	{ "name": "No Transcripts", "parent": "Video", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Video with no transcripts", "parent": "No Transcripts", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Video", "parent": "Video with no transcripts", "type": "video", "icon": "\uf008"},
-	{ "name": "Inline Discussion", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Inline Discussion", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Forum", "parent": "Inline Discussion", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "01", "parent": "Forum", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Discussion Forum", "parent": "01", "type": "discussion", "icon": "\uf0c0"},
-	{ "name": "Advanced Modules", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Advanced Modules", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Polls", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Introduction", "parent": "Polls", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e"},
@@ -357,7 +357,7 @@ var data = [
 	{ "name": "cohorted content", "parent": "Cohort-Specific Courseware", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "81dc9d278a184f61829b3afe334ef9fd", "parent": "cohorted content", "type": "html", "icon": "\uf02e"},
 	{ "name": "e9ba5766c2cb4d0c90c91025458803b3", "parent": "cohorted content", "type": "html", "icon": "\uf02e"},
-	{ "name": "Other", "parent": "Testing Course", "type": "chapter", "icon": "\uf19c"},
+	{ "name": "Other", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8"},
 	{ "name": "Jasmine tests", "parent": "Other", "type": "sequential", "icon": "\uf02d"},
 	{ "name": "Introduction", "parent": "Jasmine tests", "type": "vertical", "icon": "\uf0c9"},
 	{ "name": "95d12befe5f74123bbe80191bfbe1897", "parent": "Introduction", "type": "html", "icon": "\uf02e"},
@@ -395,7 +395,7 @@ var data = [
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
-        .attr("transform", "translate(" + margin.left + ")"); //"," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + ")");
 
     d3.select(self.frameElement).style("height", "800px");
 
@@ -485,7 +485,7 @@ var data = [
             });
 
         nodeUpdate.select("circle")
-            .attr("r", 4.5)
+            .attr("r", 8)
             .style("fill", function(d) {
                 return d._children ? "lightsteelblue" : "#fff";
             });
@@ -553,10 +553,7 @@ var data = [
             d.y0 = d.y;
         });
 
-        d3.select("svg")
-            .call(d3.behavior.zoom()
-                .scaleExtent([0.5, 5])
-                .on("zoom", zoom));
+        d3.select("svg").call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom));
     };
 
 
