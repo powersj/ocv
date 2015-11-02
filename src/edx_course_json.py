@@ -6,8 +6,11 @@ content nicely printed to it.
 import argparse
 import json
 import os
+import re
+
 
 from pymongo import MongoClient
+
 
 MONGODB_IP = None
 MONGODB_PORT = 27017
@@ -50,6 +53,84 @@ def get_course_content(database, branch_ids):
     return content
 
 
+def is_id(string):
+    """Check string to see if matches UUID syntax of alphanumeric, 32 chars long."""
+    regex = re.compile('[0-9a-f]{32}\Z', re.I)
+    if bool(regex.match(string)):
+        return True
+
+    return False
+
+
+def customize_discussion(block, block_data):
+    if not block_data['name']:
+        block_data['name'] = 'Discussion'
+
+    try:
+        block_data['name'] = block['fields']['discussion_target']
+    except KeyError:
+        block_data['name'] = block['fields']['discussion_category']
+
+
+def customize_html(block, block_data):
+    if is_id(block_data['name']) or not block_data['name']:
+        block_data['name'] = 'HTML Page'
+
+
+def customize_openassessment(block, block_data):
+    if is_id(block_data['name']):
+        block_data['name'] = 'Open Assessment'
+
+
+def customize_problem(block, block_data):
+    if not block_data['name']:
+        block_data['name'] = 'Problem'
+
+    try:
+        block_data['markdown'] = block['fields']['markdown']
+    except:
+        block_data['markdown'] = None
+
+
+def customize_video(block, block_data):
+    try:
+        block_data['youtube_id'] = block['fields']['youtube_id_1_0']
+    except KeyError:
+        block_data['youtube_id'] = None
+    try:
+        block_data['start_time'] = block['fields']['start_time']
+    except KeyError:
+        block_data['start_time'] = None
+    try:
+        block_data['end_time'] = block['fields']['end_time']
+    except KeyError:
+        block_data['end_time'] = None
+
+
+def customize_by_type(block, block_data):
+    if block_data['type'] == 'discussion':
+        customize_discussion(block, block_data)
+    if block_data['type'] == 'html':
+        customize_html(block, block_data)
+    elif block_data['type'] == 'openassessment':
+        customize_openassessment(block, block_data)
+    elif block_data['type'] == 'problem':
+        customize_problem(block, block_data)
+    elif block_data['type'] == 'video':
+        customize_video(block, block_data)
+
+
+def add_children(block, block_data):
+    block_children = []
+    for child in block['fields']['children']:
+        children_data = {}
+        children_data['child_id'] = child[1]
+        children_data['child_type'] = child[0]
+        block_children.append(children_data)
+
+    block_data['children'] = block_children
+
+
 def build_course_map(course_id, course_content):
     """Parse out the data for each block."""
     course_dict = {}
@@ -57,31 +138,17 @@ def build_course_map(course_id, course_content):
     course_blocks = []
     for block in course_content['blocks']:
         block_data = {}
-        block_data['block_id'] = block['block_id']
-        block_data['block_type'] = block['block_type']
+
+        block_data['id'] = block['block_id']
+        block_data['type'] = block['block_type']
         try:
-            block_data['block_name'] = block['fields']['display_name']
+            block_data['name'] = block['fields']['display_name']
         except KeyError:
-            block_data['block_name'] = None
+            block_data['name'] = block_data['id']
 
-        if block_data['block_type'] == 'discussion':
-            block_data['discussion_category'] = block['fields']['discussion_category']
-            block_data['discussion_target'] = block['fields']['discussion_target']
-        elif block_data['block_type'] == 'video':
-            block_data['youtube_id_1_0'] = block['fields']['youtube_id_1_0']
-            block_data['start_time'] = block['fields']['start_time']
-            block_data['end_time'] = block['fields']['end_time']
-        elif block_data['block_type'] == 'problem':
-            block_data['markdown'] = block['fields']['markdown']
+        customize_by_type(block, block_data)
+        add_children(block, block_data)
 
-        block_children = []
-        for child in block['fields']['children']:
-            children_data = {}
-            children_data['child_id'] = child[1]
-            children_data['child_type'] = child[0]
-            block_children.append(children_data)
-
-        block_data['children'] = block_children
         course_blocks.append(block_data)
 
     course_dict['blocks'] = course_blocks

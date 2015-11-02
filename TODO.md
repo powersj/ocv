@@ -16,6 +16,7 @@
 
 ## 2015-11-08
 * Trailer
+* Review Icon choices
 * Finish analyzing additional data and produce tool-tips
   * Cool CSS for tool tip: http://stackoverflow.com/questions/10805184/d3-show-data-on-mouseover-of-circle/10806220#10806220
 

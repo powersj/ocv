@@ -2,71 +2,68 @@
     "course_id": "56351d0756c02c09b3e48abd", 
     "blocks": [
         {
-            "block_name": "Custom Python-Evaluated Input", 
-            "block_type": "sequential", 
-            "block_id": "48092a11409349a7b05d3597b6c8e782", 
             "children": [
                 {
                     "child_id": "d6228703748b4f76b1c73565e16f6a70", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "48092a11409349a7b05d3597b6c8e782", 
+            "name": "Custom Python-Evaluated Input"
         }, 
         {
-            "block_name": "Text Input", 
-            "block_type": "sequential", 
-            "block_id": "232dd4077d31471a93ffa36097c528a4", 
             "children": [
                 {
                     "child_id": "6a9d763dff274e8bacbe940faedca1f2", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "232dd4077d31471a93ffa36097c528a4", 
+            "name": "Text Input"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "cb4e20fd9444496e8f2422d95a6f5095", 
             "children": [
                 {
                     "child_id": "842ba3d0c0074ad4b664655fdf46f2fb", 
                     "child_type": "survey"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "cb4e20fd9444496e8f2422d95a6f5095", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "b0ca8741968141b1a7e63d27f1aaaccb", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "b0ca8741968141b1a7e63d27f1aaaccb", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "7c5efeac116c4134992adbfe45697bfc", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "7c5efeac116c4134992adbfe45697bfc", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Forum", 
-            "block_type": "sequential", 
-            "block_id": "8fa5faa84cb64909b906c9d51f5b85c1", 
             "children": [
                 {
                     "child_id": "c7cc52b8d3594746a194cb691f657aaf", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "8fa5faa84cb64909b906c9d51f5b85c1", 
+            "name": "Forum"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "df8285d2d00649ada0930bad8c74accc", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "df8285d2d00649ada0930bad8c74accc", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "split_test", 
-            "block_id": "e912eed00059429cbe08d5a4fa5e73bb", 
             "children": [
                 {
                     "child_id": "2eeda4b3431e41fa9d09c791dee19f6f", 
@@ -76,24 +73,24 @@
                     "child_id": "171b4e83746b436296728f8e266b59e3", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "split_test", 
+            "id": "e912eed00059429cbe08d5a4fa5e73bb", 
+            "name": "e912eed00059429cbe08d5a4fa5e73bb"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "de435b3ebe034513a36ebff706aed38f", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "de435b3ebe034513a36ebff706aed38f", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "6ad6058894b54eaf826b86c3e0a9e47d", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "6ad6058894b54eaf826b86c3e0a9e47d", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Google calendar", 
-            "block_type": "sequential", 
-            "block_id": "8237892894274213aa7416c45d98b920", 
             "children": [
                 {
                     "child_id": "0dae60b18919428591f84582528ad050", 
@@ -103,23 +100,23 @@
                     "child_id": "f597187ad0574a959acc4dfc57528717", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "8237892894274213aa7416c45d98b920", 
+            "name": "Google calendar"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "d1d3d54e51b849b7b3b70efcd33ac4b6", 
             "children": [
                 {
                     "child_id": "350e0f30b024495ba73c9301b14df558", 
                     "child_type": "word_cloud"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "d1d3d54e51b849b7b3b70efcd33ac4b6", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Zooming Image Tool", 
-            "block_type": "sequential", 
-            "block_id": "08e8dac288e54ba480d078a3ed4c8a18", 
             "children": [
                 {
                     "child_id": "01796409fe694f3ea91391a788816e1c", 
@@ -129,46 +126,46 @@
                     "child_id": "e53d31eb1f1447469143ac6d16596dc3", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "08e8dac288e54ba480d078a3ed4c8a18", 
+            "name": "Zooming Image Tool"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "5d38bcaa817a4dba84afad318883698d", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "5d38bcaa817a4dba84afad318883698d", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Group ID 1762115162", 
-            "block_type": "vertical", 
-            "block_id": "171b4e83746b436296728f8e266b59e3", 
             "children": [
                 {
                     "child_id": "6de4b7d571ff473c8c0f6e8dae695629", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "171b4e83746b436296728f8e266b59e3", 
+            "name": "Group ID 1762115162"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "e971dd901a304d7ea6db386e7a0a0520", 
             "children": [
                 {
                     "child_id": "99e81d4d6b4e45af864755681230045d", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "e971dd901a304d7ea6db386e7a0a0520", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "6de4b7d571ff473c8c0f6e8dae695629", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "6de4b7d571ff473c8c0f6e8dae695629", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Recommendation", 
-            "block_type": "sequential", 
-            "block_id": "76e752842c9c40b0b7ae11324ea3ef20", 
             "children": [
                 {
                     "child_id": "6d011b8376e44bc3a2c4f77568456e86", 
@@ -178,46 +175,46 @@
                     "child_id": "ea5d2e927cd04d58a6cd329957d87324", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "76e752842c9c40b0b7ae11324ea3ef20", 
+            "name": "Recommendation"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "c64ebe41278044d09b4547cd10e5d0f1", 
             "children": [
                 {
                     "child_id": "65320375d609465fb4a5e008b4119f42", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c64ebe41278044d09b4547cd10e5d0f1", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Staff Graded Assignments", 
-            "block_type": "sequential", 
-            "block_id": "550d5f75375b4b0d9fa8b54ee5383470", 
             "children": [
                 {
                     "child_id": "5605835eb5694813a90f6da24ffafee2", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "550d5f75375b4b0d9fa8b54ee5383470", 
+            "name": "Staff Graded Assignments"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "69de2e1d4d8c4350b17a9298b28e1ac9", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "69de2e1d4d8c4350b17a9298b28e1ac9", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "8ff96e174f244539b25c911e71231b3b", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "8ff96e174f244539b25c911e71231b3b", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Problem (Basic)", 
-            "block_type": "chapter", 
-            "block_id": "7f265d1f6e26472190eaa7909ce8ad32", 
             "children": [
                 {
                     "child_id": "523719d8129a44c5b23dd45b4e7122cb", 
@@ -263,115 +260,119 @@
                     "child_id": "612754d9f5b24d57b0a6135d6e8ed816", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "7f265d1f6e26472190eaa7909ce8ad32", 
+            "name": "Problem (Basic)"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "6d011b8376e44bc3a2c4f77568456e86", 
             "children": [
                 {
                     "child_id": "46c7875beaa047429d99e2e4955dfaec", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "6d011b8376e44bc3a2c4f77568456e86", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Blank Advanced Problem", 
-            "block_type": "vertical", 
-            "block_id": "2482c374a9094972aa98bfea51d49f0f", 
             "children": [
                 {
                     "child_id": "5352cfcbee66410d9517ee76bc7e870b", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "2482c374a9094972aa98bfea51d49f0f", 
+            "name": "Blank Advanced Problem"
         }, 
         {
-            "block_name": "HTML for attempted problems", 
-            "block_type": "html", 
-            "block_id": "HTML_for_attempted_problems", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_attempted_problems", 
+            "name": "HTML for attempted problems"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "a291abb1a8344756a9c5125f39166d2e", 
             "children": [
                 {
                     "child_id": "c27d1ded1c984667a48fc67c79d413e5", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "a291abb1a8344756a9c5125f39166d2e", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Drag Text only - squares", 
-            "block_type": "problem", 
-            "block_id": "72a7b6e71d5b4476848eeda0e54330c2", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "72a7b6e71d5b4476848eeda0e54330c2", 
+            "name": "Drag Text only - squares"
         }, 
         {
-            "block_name": "One rectangular region", 
-            "block_type": "problem", 
-            "block_id": "6f5d1a7dc42740a1b0ab21a3e8157d25", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "6f5d1a7dc42740a1b0ab21a3e8157d25", 
+            "name": "One rectangular region"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "6a1d8ffa3dd2493f997993dcb90d7548", 
             "children": [
                 {
                     "child_id": "4ad0337664104b738b790a8b8cd06a15", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "6a1d8ffa3dd2493f997993dcb90d7548", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "b48c816d98ea4756bb30297819111b66", 
             "children": [
                 {
                     "child_id": "fc144aa1accd4c9abf909db2920edfa6", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "b48c816d98ea4756bb30297819111b66", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "998c895cdd134c5e871388cefb4b4be1", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "998c895cdd134c5e871388cefb4b4be1", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "html", 
-            "block_id": "fc144aa1accd4c9abf909db2920edfa6", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "fc144aa1accd4c9abf909db2920edfa6", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Images only - unordered_equal rule", 
-            "block_type": "problem", 
-            "block_id": "dbec24c43a8b4d34a0186714cd8b1828", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "dbec24c43a8b4d34a0186714cd8b1828", 
+            "name": "Images only - unordered_equal rule"
         }, 
         {
-            "block_name": null, 
-            "block_type": "course_info", 
-            "block_id": "updates", 
-            "children": []
+            "children": [], 
+            "type": "course_info", 
+            "id": "updates", 
+            "name": "updates"
         }, 
         {
-            "block_name": "Dropdown with Hints and Feedback", 
-            "block_type": "problem", 
-            "block_id": "91e1a9ed821f4279bb68e8bbc28eeeb3", 
-            "children": []
+            "children": [], 
+            "markdown": "\nYou can provide feedback for each available option in a dropdown problem.\n\nYou can also add hints for learners.\n\nBe sure to select Settings to specify a Display Name and other values that apply.\n\nUse the following example problem as a model.\n\n>> A/an ________ is a vegetable.<<\n\n[[\n    apple {{An apple is the fertilized ovary that comes from an apple tree and contains seeds, meaning it is a fruit.}}\n    pumpkin {{A pumpkin is the fertilized ovary of a squash plant and contains seeds, meaning it is a fruit.}}\n    (potato) {{A potato is an edible part of a plant in tuber form and is a vegetable.}}\n    tomato {{Many people mistakenly think a tomato is a vegetable. However, because a tomato is the fertilized ovary of a tomato plant and contains seeds, it is a fruit.}}\n]]\n\n||A fruit is the fertilized ovary from a flower.||\n||A fruit contains seeds of the plant.||\n", 
+            "type": "problem", 
+            "id": "91e1a9ed821f4279bb68e8bbc28eeeb3", 
+            "name": "Dropdown with Hints and Feedback"
         }, 
         {
-            "block_name": "conditionals based on poll", 
-            "block_type": "vertical", 
-            "block_id": "48e7e3bd97fc4f6aafcebb925ef378c4", 
             "children": [
                 {
                     "child_id": "conditional_89eba066a519", 
@@ -381,18 +382,21 @@
                     "child_id": "conditional_bc445272f7cf", 
                     "child_type": "conditional"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "48e7e3bd97fc4f6aafcebb925ef378c4", 
+            "name": "conditionals based on poll"
         }, 
         {
-            "block_name": "Video", 
-            "block_type": "video", 
-            "block_id": "4282f15ddf3a4211b705d1d0beb47367", 
-            "children": []
+            "name": "Video", 
+            "start_time": "00:00:05", 
+            "children": [], 
+            "end_time": "00:00:15", 
+            "youtube_id": "C0DPdy98e4c", 
+            "type": "video", 
+            "id": "4282f15ddf3a4211b705d1d0beb47367"
         }, 
         {
-            "block_name": "Staff Graded Assignments", 
-            "block_type": "vertical", 
-            "block_id": "5605835eb5694813a90f6da24ffafee2", 
             "children": [
                 {
                     "child_id": "595aec70a9754d6b82b7973ef84277c7", 
@@ -406,63 +410,65 @@
                     "child_id": "5f641b97f17741ddab10de5663941e7d", 
                     "child_type": "edx_sga"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "5605835eb5694813a90f6da24ffafee2", 
+            "name": "Staff Graded Assignments"
         }, 
         {
-            "block_name": null, 
-            "block_type": "recommender", 
-            "block_id": "89ea444137c74375805a15ad1dde3ec8", 
-            "children": []
+            "children": [], 
+            "type": "recommender", 
+            "id": "89ea444137c74375805a15ad1dde3ec8", 
+            "name": "89ea444137c74375805a15ad1dde3ec8"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_6797c26ea916", 
             "children": [
                 {
                     "child_id": "HTML_for_problems_not_aswered_correctly", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_6797c26ea916", 
+            "name": "conditional_6797c26ea916"
         }, 
         {
-            "block_name": "Multiple rectangular regions", 
-            "block_type": "problem", 
-            "block_id": "65600ca921544d34880306e3d2ec5897", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "65600ca921544d34880306e3d2ec5897", 
+            "name": "Multiple rectangular regions"
         }, 
         {
-            "block_name": "Text Input", 
-            "block_type": "problem", 
-            "block_id": "62a40d9279164bb0a3afe6a081a3aa16", 
-            "children": []
+            "children": [], 
+            "markdown": "In text input problems, also known as \"fill-in-the-blank\" problems, learners enter text into a response field. The text can include letters and characters such as punctuation marks. The text that the learner enters must match your specified answer text exactly. You can specify more than one correct answer. Learners must enter a response that matches one of the correct answers exactly.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n>>What was the first post-secondary school in China to allow both male and female students?<<\n\n= Nanjing Higher Normal Institute\nor= National Central University\nor= Nanjing University\n\n[explanation]\nNanjing Higher Normal Institute first admitted female students in 1920.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "62a40d9279164bb0a3afe6a081a3aa16", 
+            "name": "Text Input"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "ea5d2e927cd04d58a6cd329957d87324", 
             "children": [
                 {
                     "child_id": "89ea444137c74375805a15ad1dde3ec8", 
                     "child_type": "recommender"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "ea5d2e927cd04d58a6cd329957d87324", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "1ec511e048a34fb4b7dd40b86bafa13b", 
             "children": [
                 {
                     "child_id": "b61df73564234e148d42519cd2f94330", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1ec511e048a34fb4b7dd40b86bafa13b", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Text", 
-            "block_type": "sequential", 
-            "block_id": "95a47c4804f1488096dccfff708b98ad", 
             "children": [
                 {
                     "child_id": "00b230a982974a7682648ca737e38bcc", 
@@ -472,80 +478,81 @@
                     "child_id": "b48c816d98ea4756bb30297819111b66", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "95a47c4804f1488096dccfff708b98ad", 
+            "name": "Text"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "01796409fe694f3ea91391a788816e1c", 
             "children": [
                 {
                     "child_id": "b9e8385c1e4d47669ebe8fb195defd70", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "01796409fe694f3ea91391a788816e1c", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Images only - any rule", 
-            "block_type": "problem", 
-            "block_id": "cde3f0f8f08c40b884eebb86586033b0", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "cde3f0f8f08c40b884eebb86586033b0", 
+            "name": "Images only - any rule"
         }, 
         {
-            "block_name": "No Transcripts", 
-            "block_type": "sequential", 
-            "block_id": "3c8a75ed87cd4a34b412647b4881520b", 
             "children": [
                 {
                     "child_id": "f29b97786e7840dbb532bdd248d792d1", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "3c8a75ed87cd4a34b412647b4881520b", 
+            "name": "No Transcripts"
         }, 
         {
-            "block_name": null, 
-            "block_type": "survey", 
-            "block_id": "842ba3d0c0074ad4b664655fdf46f2fb", 
-            "children": []
+            "children": [], 
+            "type": "survey", 
+            "id": "842ba3d0c0074ad4b664655fdf46f2fb", 
+            "name": "842ba3d0c0074ad4b664655fdf46f2fb"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_612ca2737e9d", 
             "children": [
                 {
                     "child_id": "HTML_for_problems_aswered_correctly", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_612ca2737e9d", 
+            "name": "conditional_612ca2737e9d"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "ea0116904696493db6811f77b20b61e2", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "ea0116904696493db6811f77b20b61e2", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "b9e8385c1e4d47669ebe8fb195defd70", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "b9e8385c1e4d47669ebe8fb195defd70", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Other", 
-            "block_type": "chapter", 
-            "block_id": "e89863444cb9474783dbb233d6584efd", 
             "children": [
                 {
                     "child_id": "69f6c9ad4cc2441eb7263faba8087c1e", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "e89863444cb9474783dbb233d6584efd", 
+            "name": "Other"
         }, 
         {
-            "block_name": "Google Hangout", 
-            "block_type": "sequential", 
-            "block_id": "983398678c0b4d919f87102afffa485b", 
             "children": [
                 {
                     "child_id": "4c1aca3887d147bcb45809982c8c4331", 
@@ -555,35 +562,35 @@
                     "child_id": "f6a81a3c3fcd48b08cc64fb58c1965c3", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "983398678c0b4d919f87102afffa485b", 
+            "name": "Google Hangout"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "6a9d763dff274e8bacbe940faedca1f2", 
             "children": [
                 {
                     "child_id": "62a40d9279164bb0a3afe6a081a3aa16", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "6a9d763dff274e8bacbe940faedca1f2", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "8d4ed4d34daa46f79523f88eada32768", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "8d4ed4d34daa46f79523f88eada32768", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "html_6f2e646913d2", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "html_6f2e646913d2", 
+            "name": "html_6f2e646913d2"
         }, 
         {
-            "block_name": "Chemical Equation", 
-            "block_type": "sequential", 
-            "block_id": "ac9cdee083f244a7b59b70d510591bd9", 
             "children": [
                 {
                     "child_id": "b54a965a8512441798cd4eebbcdbc915", 
@@ -593,29 +600,29 @@
                     "child_id": "6a1d8ffa3dd2493f997993dcb90d7548", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "ac9cdee083f244a7b59b70d510591bd9", 
+            "name": "Chemical Equation"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "dd6eea97cf9545d1bbc08704c0e94837", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "dd6eea97cf9545d1bbc08704c0e94837", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Inline Discussion", 
-            "block_type": "chapter", 
-            "block_id": "21b3ced5b4c04f479dd340e3b6615c5f", 
             "children": [
                 {
                     "child_id": "8fa5faa84cb64909b906c9d51f5b85c1", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "21b3ced5b4c04f479dd340e3b6615c5f", 
+            "name": "Inline Discussion"
         }, 
         {
-            "block_name": "Polls", 
-            "block_type": "sequential", 
-            "block_id": "d999b4365121433fbe69c78806209140", 
             "children": [
                 {
                     "child_id": "b6c68ebc31bb473280d975204010882b", 
@@ -625,68 +632,68 @@
                     "child_id": "10bea4bb1f524ed3a2543099cbb434c4", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "d999b4365121433fbe69c78806209140", 
+            "name": "Polls"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_d6eb0bbb3096", 
             "children": [
                 {
                     "child_id": "HTML_for_problem_aswered_correctly", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_d6eb0bbb3096", 
+            "name": "conditional_d6eb0bbb3096"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "1bc572a983a649f88013548f5044457e", 
             "children": [
                 {
                     "child_id": "b4281a3a06eb4420873beb6c9150facf", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1bc572a983a649f88013548f5044457e", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "911717fd3fca43d3ad297f93ddfb747c", 
             "children": [
                 {
                     "child_id": "f5204e74fd7e4d7486fd8daa8602b973", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "911717fd3fca43d3ad297f93ddfb747c", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "google-calendar", 
-            "block_id": "08c37d99bbba4695ab61a773cf532271", 
-            "children": []
+            "children": [], 
+            "type": "google-calendar", 
+            "id": "08c37d99bbba4695ab61a773cf532271", 
+            "name": "08c37d99bbba4695ab61a773cf532271"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "4c47366c88e04128b594579976cecb71", 
             "children": [
                 {
                     "child_id": "59a617ff338f43409ba24aced61da888", 
                     "child_type": "word_cloud"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "4c47366c88e04128b594579976cecb71", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Announcement", 
-            "block_type": "html", 
-            "block_id": "312af9ffa3534ff4ad9002535783d955", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "312af9ffa3534ff4ad9002535783d955", 
+            "name": "Announcement"
         }, 
         {
-            "block_name": "Advanced Modules", 
-            "block_type": "chapter", 
-            "block_id": "039df3d8458844e68635ebe68681d9d3", 
             "children": [
                 {
                     "child_id": "d999b4365121433fbe69c78806209140", 
@@ -736,78 +743,78 @@
                     "child_id": "9201e73fc08941f0aae166727f0fd4aa", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "039df3d8458844e68635ebe68681d9d3", 
+            "name": "Advanced Modules"
         }, 
         {
-            "block_name": "Images only - unordered_equal rule", 
-            "block_type": "vertical", 
-            "block_id": "8bf63ba569dc46aca2326adcfc757fff", 
             "children": [
                 {
                     "child_id": "dbec24c43a8b4d34a0186714cd8b1828", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "8bf63ba569dc46aca2326adcfc757fff", 
+            "name": "Images only - unordered_equal rule"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "f597187ad0574a959acc4dfc57528717", 
             "children": [
                 {
                     "child_id": "08c37d99bbba4695ab61a773cf532271", 
                     "child_type": "google-calendar"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "f597187ad0574a959acc4dfc57528717", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "4df43d116c3048858d561ff5d9429093", 
             "children": [
                 {
                     "child_id": "b0ca8741968141b1a7e63d27f1aaaccb", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "4df43d116c3048858d561ff5d9429093", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Dropdown with Hints and Feedback", 
-            "block_type": "sequential", 
-            "block_id": "a7311f46363e43e3bba50e7c0c79c784", 
             "children": [
                 {
                     "child_id": "87d083d268914f469b394e151e2397df", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "a7311f46363e43e3bba50e7c0c79c784", 
+            "name": "Dropdown with Hints and Feedback"
         }, 
         {
-            "block_name": "Numerical Input with Hints and Feedback", 
-            "block_type": "sequential", 
-            "block_id": "a9e760199c6b4f74ad9a6a3b0e6f82eb", 
             "children": [
                 {
                     "child_id": "911717fd3fca43d3ad297f93ddfb747c", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "a9e760199c6b4f74ad9a6a3b0e6f82eb", 
+            "name": "Numerical Input with Hints and Feedback"
         }, 
         {
-            "block_name": "Text only - Unordered equal rule", 
-            "block_type": "vertical", 
-            "block_id": "3589bda1e3f0474486ee27e2168a56e8", 
             "children": [
                 {
                     "child_id": "e44889e3fd3a4230ba0ac7d2da927ff1", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "3589bda1e3f0474486ee27e2168a56e8", 
+            "name": "Text only - Unordered equal rule"
         }, 
         {
-            "block_name": "conditionals based on a single problem", 
-            "block_type": "vertical", 
-            "block_id": "87eed8b08b4a4a068e2cd4b25a79eb08", 
             "children": [
                 {
                     "child_id": "conditional_f8cfa10217cb", 
@@ -825,23 +832,23 @@
                     "child_id": "conditional_1de5b85d1647", 
                     "child_type": "conditional"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "87eed8b08b4a4a068e2cd4b25a79eb08", 
+            "name": "conditionals based on a single problem"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "61d7ec580d074b0fbbf9b5fd11bbce1c", 
             "children": [
                 {
                     "child_id": "cdc4c3edc8b34fe399805c3c4ae5565a", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "61d7ec580d074b0fbbf9b5fd11bbce1c", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Surveys", 
-            "block_type": "sequential", 
-            "block_id": "6612e94e96904ff99e0fcec3079676df", 
             "children": [
                 {
                     "child_id": "1bc572a983a649f88013548f5044457e", 
@@ -851,138 +858,140 @@
                     "child_id": "cb4e20fd9444496e8f2422d95a6f5095", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "6612e94e96904ff99e0fcec3079676df", 
+            "name": "Surveys"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "d6228703748b4f76b1c73565e16f6a70", 
             "children": [
                 {
                     "child_id": "a5585f3785814916a2f553e07e1c5703", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "d6228703748b4f76b1c73565e16f6a70", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "openassessment", 
-            "block_id": "b9f982058eca45f48b5e3a8b7bcdd46f", 
-            "children": []
+            "children": [], 
+            "type": "openassessment", 
+            "id": "b9f982058eca45f48b5e3a8b7bcdd46f", 
+            "name": "Open Assessment"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_86bd6336f4f5", 
             "children": [
                 {
                     "child_id": "HTML_for_not_attempted_problems", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_86bd6336f4f5", 
+            "name": "conditional_86bd6336f4f5"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_minimum_score_pct", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_minimum_score_pct", 
+            "name": "entrance_exam_minimum_score_pct"
         }, 
         {
-            "block_name": "single language", 
-            "block_type": "vertical", 
-            "block_id": "778a9491ca0d438f94440401b3ede984", 
             "children": [
                 {
                     "child_id": "9434985845ea475793f9ac564bfb04fd", 
                     "child_type": "video"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "778a9491ca0d438f94440401b3ede984", 
+            "name": "single language"
         }, 
         {
-            "block_name": "HTML for not attempted problems", 
-            "block_type": "html", 
-            "block_id": "HTML_for_not_attempted_problems", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_not_attempted_problems", 
+            "name": "HTML for not attempted problems"
         }, 
         {
-            "block_name": "Anonymous User ID", 
-            "block_type": "html", 
-            "block_id": "d0edfbc7a6ee48498f907f83cd30669c", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "d0edfbc7a6ee48498f907f83cd30669c", 
+            "name": "Anonymous User ID"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "b92f3f5792d149be860dabe8b768c54f", 
             "children": [
                 {
                     "child_id": "197fffa596a74b018f0f94a3834e2416", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "b92f3f5792d149be860dabe8b768c54f", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "874122e4c89a4272a941500a1296fc7a", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "874122e4c89a4272a941500a1296fc7a", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Math Expression Input", 
-            "block_type": "sequential", 
-            "block_id": "e3434b52204742aabe2a388beadecf5f", 
             "children": [
                 {
                     "child_id": "13a30a70a2584f6a8aaf2eae2753ad34", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "e3434b52204742aabe2a388beadecf5f", 
+            "name": "Math Expression Input"
         }, 
         {
-            "block_name": "Molecular Structure", 
-            "block_type": "sequential", 
-            "block_id": "d430f8e414a34d3d83eab867fa64a0d9", 
             "children": [
                 {
                     "child_id": "c6fc113dfe4946fb870665a42311df0b", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "d430f8e414a34d3d83eab867fa64a0d9", 
+            "name": "Molecular Structure"
         }, 
         {
-            "block_name": "Multiple Choice with Hints and Feedback", 
-            "block_type": "problem", 
-            "block_id": "8d6c884f29884971b884a32e5932a489", 
-            "children": []
+            "children": [], 
+            "markdown": "\nYou can provide feedback for each option in a multiple choice problem.\n\nYou can also add hints for learners.\n\nBe sure to select Settings to specify a Display Name and other values that apply.\n\nUse the following example problem as a model.\n\n>>Which of the following is a vegetable?<<\n( ) apple {{An apple is the fertilized ovary that comes from an apple tree and contains seeds, meaning it is a fruit.}}\n( ) pumpkin {{A pumpkin is the fertilized ovary of a squash plant and contains seeds, meaning it is a fruit.}}\n(x) potato {{A potato is an edible part of a plant in tuber form and is a vegetable.}}\n( ) tomato {{Many people mistakenly think a tomato is a vegetable. However, because a tomato is the fertilized ovary of a tomato plant and contains seeds, it is a fruit.}}\n\n||A fruit is the fertilized ovary from a flower.||\n||A fruit contains seeds of the plant.||\n", 
+            "type": "problem", 
+            "id": "8d6c884f29884971b884a32e5932a489", 
+            "name": "Multiple Choice with Hints and Feedback"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "d99833bc9c1e47e6a6c7b3fd5dc92abd", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "d99833bc9c1e47e6a6c7b3fd5dc92abd", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "URL Param", 
-            "block_type": "html", 
-            "block_id": "6b65bc3f37fe481c84d2bd9be49196e8", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "6b65bc3f37fe481c84d2bd9be49196e8", 
+            "name": "URL Param"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "b1aa2a18e078487c9fd81fbf35485d28", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "b1aa2a18e078487c9fd81fbf35485d28", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "problem", 
-            "block_id": "5352cfcbee66410d9517ee76bc7e870b", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "5352cfcbee66410d9517ee76bc7e870b", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Annonymous User ID", 
-            "block_type": "sequential", 
-            "block_id": "37300e98a39e43a8a8d8fb5dca15db5a", 
             "children": [
                 {
                     "child_id": "63bf60aabdd14fee9fcce4f3d05019d7", 
@@ -996,18 +1005,19 @@
                     "child_id": "d40b7ae0b1864823a918ad52784d53da", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "37300e98a39e43a8a8d8fb5dca15db5a", 
+            "name": "Annonymous User ID"
         }, 
         {
-            "block_name": "Image Mapped Input", 
-            "block_type": "problem", 
-            "block_id": "cdc4c3edc8b34fe399805c3c4ae5565a", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "cdc4c3edc8b34fe399805c3c4ae5565a", 
+            "name": "Image Mapped Input"
         }, 
         {
-            "block_name": "Video", 
-            "block_type": "chapter", 
-            "block_id": "0e9b99d9b93d433d9ab02f4fd839c4f4", 
             "children": [
                 {
                     "child_id": "adcab904fbf9489d8c4822b1e3527a96", 
@@ -1017,18 +1027,18 @@
                     "child_id": "3c8a75ed87cd4a34b412647b4881520b", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "0e9b99d9b93d433d9ab02f4fd839c4f4", 
+            "name": "Video"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "c4fda46ffa39419fbd6fb08aa3ea954d", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "c4fda46ffa39419fbd6fb08aa3ea954d", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "iFrame Tool", 
-            "block_type": "sequential", 
-            "block_id": "5165f0548bbc400895803e083f205088", 
             "children": [
                 {
                     "child_id": "a49da38f29f94c5998cd8ecd51b4369a", 
@@ -1042,12 +1052,12 @@
                     "child_id": "1aad58dfb6854b039865024ee3a76e4e", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "5165f0548bbc400895803e083f205088", 
+            "name": "iFrame Tool"
         }, 
         {
-            "block_name": "Many Sequentials", 
-            "block_type": "sequential", 
-            "block_id": "03c844123ebb4c168dde2e64b86775a3", 
             "children": [
                 {
                     "child_id": "7cc8d7d497ee4a028589af3085d99225", 
@@ -1221,143 +1231,145 @@
                     "child_id": "94292353c4bd4591a36838f7489eb8a2", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "03c844123ebb4c168dde2e64b86775a3", 
+            "name": "Many Sequentials"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "dac909972da04871b266e81e6e763b1b", 
             "children": [
                 {
                     "child_id": "1943d5fb4f0c4a8eb7245c368fd7c820", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "dac909972da04871b266e81e6e763b1b", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "b6c68ebc31bb473280d975204010882b", 
             "children": [
                 {
                     "child_id": "f30de29927c7423da84d12588fe521ee", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "b6c68ebc31bb473280d975204010882b", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "58cbdd6364154c76a3903eb444425af5", 
             "children": [
                 {
                     "child_id": "40bd1fdddf36414083e9bd8be76eb57d", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "58cbdd6364154c76a3903eb444425af5", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "a49da38f29f94c5998cd8ecd51b4369a", 
             "children": [
                 {
                     "child_id": "d6bdab2b511c4149a8298b1bb6d26fda", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "a49da38f29f94c5998cd8ecd51b4369a", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "d02b061196784e1da4bada7fe1dff82f", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "d02b061196784e1da4bada7fe1dff82f", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "76f2e5bc18414184887cf336793cb979", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "76f2e5bc18414184887cf336793cb979", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "595aec70a9754d6b82b7973ef84277c7", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "595aec70a9754d6b82b7973ef84277c7", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "c81de11b21744bc7aa6ffc831f06a938", 
             "children": [
                 {
                     "child_id": "0d84509acee342b2a8068e6e68e28d99", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c81de11b21744bc7aa6ffc831f06a938", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Announcement", 
-            "block_type": "sequential", 
-            "block_id": "1954816353264ec6ad83234f4d347a65", 
             "children": [
                 {
                     "child_id": "73c61e9a26e342a69eef4ebd9ca39acf", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "1954816353264ec6ad83234f4d347a65", 
+            "name": "Announcement"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "b26c52dad8e4407ab7d16f3613c3acba", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "b26c52dad8e4407ab7d16f3613c3acba", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Math Expression Input", 
-            "block_type": "problem", 
-            "block_id": "f0575f2d54314071a83c902880431c8e", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "f0575f2d54314071a83c902880431c8e", 
+            "name": "Math Expression Input"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "c3bd5a1f504b471a8b9cfd08165d43af", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "c3bd5a1f504b471a8b9cfd08165d43af", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Numerical Input with Hints and Feedback", 
-            "block_type": "problem", 
-            "block_id": "f5204e74fd7e4d7486fd8daa8602b973", 
-            "children": []
+            "children": [], 
+            "markdown": "\nYou can provide feedback for correct answers in numerical input problems. You cannot provide feedback for incorrect answers.\n\nUse feedback for the correct answer to reinforce the process for arriving at the numerical value.\n\nYou can also add hints for learners.\n\nBe sure to select Settings to specify a Display Name and other values that apply.\n\nUse the following example problem as a model.\n\n>>What is the arithmetic mean for the following set of numbers? (1, 5, 6, 3, 5)<<\n\n= 4 {{The mean for this set of numbers is 20 / 5, which equals 4.}}\n\n||The mean is calculated by summing the set of numbers and dividing by n.||\n||n is the count of items in the set.||\n\n[explanation]\nThe mean is calculated by summing the set of numbers and dividing by n. In this case: (1 + 5 + 6 + 3 + 5) / 5 = 20 / 5 = 4.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "f5204e74fd7e4d7486fd8daa8602b973", 
+            "name": "Numerical Input with Hints and Feedback"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "3996546723754719b8a7e08aff19605f", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "3996546723754719b8a7e08aff19605f", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Multiple languages", 
-            "block_type": "vertical", 
-            "block_id": "82aa1e017d314e17b962618f806d8425", 
             "children": [
                 {
                     "child_id": "335eac625f8344cea177ade64e5d9a72", 
                     "child_type": "video"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "82aa1e017d314e17b962618f806d8425", 
+            "name": "Multiple languages"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "81dc9d278a184f61829b3afe334ef9fd", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "81dc9d278a184f61829b3afe334ef9fd", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Problem (Advanced)", 
-            "block_type": "chapter", 
-            "block_id": "8a739d24e6564781ac534d085b2bebee", 
             "children": [
                 {
                     "child_id": "db4fe716ee5e45398e3e139949b8eeb7", 
@@ -1411,52 +1423,53 @@
                     "child_id": "53571ba940da48d0a8334cca26cc8b6a", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "8a739d24e6564781ac534d085b2bebee", 
+            "name": "Problem (Advanced)"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "e53d31eb1f1447469143ac6d16596dc3", 
             "children": [
                 {
                     "child_id": "4cb1c30c1d2c45b9ba65511b16e46e79", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "e53d31eb1f1447469143ac6d16596dc3", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Jasmine tests: JS Input problem edition (same origin)", 
-            "block_type": "problem", 
-            "block_id": "61142fab24b04062a6b51bc1bc9c62c2", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "61142fab24b04062a6b51bc1bc9c62c2", 
+            "name": "Jasmine tests: JS Input problem edition (same origin)"
         }, 
         {
-            "block_name": "Protein builder tool", 
-            "block_type": "sequential", 
-            "block_id": "53571ba940da48d0a8334cca26cc8b6a", 
             "children": [
                 {
                     "child_id": "671e3fc4a40c4cdeaa5cb1e899b5bd65", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "53571ba940da48d0a8334cca26cc8b6a", 
+            "name": "Protein builder tool"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "5e2735931f4342498b713c86c0c6272c", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "5e2735931f4342498b713c86c0c6272c", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "cb0bb1dda60b4acf9eb5c06e076c364a", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "cb0bb1dda60b4acf9eb5c06e076c364a", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Word cloud", 
-            "block_type": "sequential", 
-            "block_id": "788b997bba1c4e4583c4ae684ae3dbab", 
             "children": [
                 {
                     "child_id": "1ba5fd94bb3548e5a37c8531b0486919", 
@@ -1470,81 +1483,85 @@
                     "child_id": "4c47366c88e04128b594579976cecb71", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "788b997bba1c4e4583c4ae684ae3dbab", 
+            "name": "Word cloud"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "1c99fce9077a4e54a992d09d4d4cd484", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "1c99fce9077a4e54a992d09d4d4cd484", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Video with transcript in multiple languages", 
-            "block_type": "video", 
-            "block_id": "335eac625f8344cea177ade64e5d9a72", 
-            "children": []
+            "name": "Video with transcript in multiple languages", 
+            "start_time": null, 
+            "children": [], 
+            "end_time": null, 
+            "youtube_id": "3_yD_cEKoCk", 
+            "type": "video", 
+            "id": "335eac625f8344cea177ade64e5d9a72"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "46c7875beaa047429d99e2e4955dfaec", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "46c7875beaa047429d99e2e4955dfaec", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "42bb69e9a91d47c6aff0d14d82259f2d", 
             "children": [
                 {
                     "child_id": "0f820c189d14406aaab2c30e19278ae7", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "42bb69e9a91d47c6aff0d14d82259f2d", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "41246cfb5b7f441daef32d8c4f93318c", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "41246cfb5b7f441daef32d8c4f93318c", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "01", 
-            "block_type": "vertical", 
-            "block_id": "c7cc52b8d3594746a194cb691f657aaf", 
             "children": [
                 {
                     "child_id": "5f5dc137c24241c095326813bb4d7d6e", 
                     "child_type": "discussion"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c7cc52b8d3594746a194cb691f657aaf", 
+            "name": "01"
         }, 
         {
-            "block_name": "Frame with external content", 
-            "block_type": "html", 
-            "block_id": "6ae3e9668a964197a8b10a40121eb51c", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "6ae3e9668a964197a8b10a40121eb51c", 
+            "name": "Frame with external content"
         }, 
         {
-            "block_name": "Video with no transcripts", 
-            "block_type": "vertical", 
-            "block_id": "f29b97786e7840dbb532bdd248d792d1", 
             "children": [
                 {
                     "child_id": "4282f15ddf3a4211b705d1d0beb47367", 
                     "child_type": "video"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "f29b97786e7840dbb532bdd248d792d1", 
+            "name": "Video with no transcripts"
         }, 
         {
-            "block_name": "Protein Builder Tool", 
-            "block_type": "problem", 
-            "block_id": "6eee6907bf1c4711a60e637377ccc62a", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "6eee6907bf1c4711a60e637377ccc62a", 
+            "name": "Protein Builder Tool"
         }, 
         {
-            "block_name": "Conditionals based on multiple problems", 
-            "block_type": "vertical", 
-            "block_id": "09d7001d0da543798bf7f9d9ea7ecc4d", 
             "children": [
                 {
                     "child_id": "conditional_1cb09a78fa65", 
@@ -1562,76 +1579,76 @@
                     "child_id": "conditional_6797c26ea916", 
                     "child_type": "conditional"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "09d7001d0da543798bf7f9d9ea7ecc4d", 
+            "name": "Conditionals based on multiple problems"
         }, 
         {
-            "block_name": "Raw HTML", 
-            "block_type": "html", 
-            "block_id": "a04844f3f3494b72b35be38561be3eb7", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "a04844f3f3494b72b35be38561be3eb7", 
+            "name": "Raw HTML"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "29cddcb783fb443aafd19c72c9baea3b", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "29cddcb783fb443aafd19c72c9baea3b", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "short_description", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "short_description", 
+            "name": "short_description"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "87d083d268914f469b394e151e2397df", 
             "children": [
                 {
                     "child_id": "91e1a9ed821f4279bb68e8bbc28eeeb3", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "87d083d268914f469b394e151e2397df", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "b9fc43c7891243bc8c6f89bf434dae8f", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "b9fc43c7891243bc8c6f89bf434dae8f", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "95d12befe5f74123bbe80191bfbe1897", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "95d12befe5f74123bbe80191bfbe1897", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": null, 
-            "block_type": "word_cloud", 
-            "block_id": "350e0f30b024495ba73c9301b14df558", 
-            "children": []
+            "children": [], 
+            "type": "word_cloud", 
+            "id": "350e0f30b024495ba73c9301b14df558", 
+            "name": "350e0f30b024495ba73c9301b14df558"
         }, 
         {
-            "block_name": "Numerical Input", 
-            "block_type": "sequential", 
-            "block_id": "6df1d242cf5742138df9d2df7155370c", 
             "children": [
                 {
                     "child_id": "527bf2c80c0d4dad9e13e80ff4256da4", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "6df1d242cf5742138df9d2df7155370c", 
+            "name": "Numerical Input"
         }, 
         {
-            "block_name": "Jasmine tests: HTML module edition", 
-            "block_type": "html", 
-            "block_id": "e08477890e0a4d7aaf2b4ab68d502f2c", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "e08477890e0a4d7aaf2b4ab68d502f2c", 
+            "name": "Jasmine tests: HTML module edition"
         }, 
         {
-            "block_name": "Peer Assessment", 
-            "block_type": "sequential", 
-            "block_id": "82f5cb3ebd1f41bf8cf31c774ea05550", 
             "children": [
                 {
                     "child_id": "d61ce075223648da8346752bc5a46e95", 
@@ -1641,69 +1658,70 @@
                     "child_id": "dac909972da04871b266e81e6e763b1b", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "82f5cb3ebd1f41bf8cf31c774ea05550", 
+            "name": "Peer Assessment"
         }, 
         {
-            "block_name": "basic problem", 
-            "block_type": "vertical", 
-            "block_id": "671e3fc4a40c4cdeaa5cb1e899b5bd65", 
             "children": [
                 {
                     "child_id": "6eee6907bf1c4711a60e637377ccc62a", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "671e3fc4a40c4cdeaa5cb1e899b5bd65", 
+            "name": "basic problem"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "d6bdab2b511c4149a8298b1bb6d26fda", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "d6bdab2b511c4149a8298b1bb6d26fda", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_1cb09a78fa65", 
             "children": [
                 {
                     "child_id": "HTML_for_attempted_problems", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_1cb09a78fa65", 
+            "name": "conditional_1cb09a78fa65"
         }, 
         {
-            "block_name": "introduction", 
-            "block_type": "html", 
-            "block_id": "99e81d4d6b4e45af864755681230045d", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "99e81d4d6b4e45af864755681230045d", 
+            "name": "introduction"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "3afb7c8e6c48403fa51ab01e505f6cd5", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "3afb7c8e6c48403fa51ab01e505f6cd5", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Gene Explorer tool", 
-            "block_type": "problem", 
-            "block_id": "f882de960c104d7b839373c62b87bc76", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "f882de960c104d7b839373c62b87bc76", 
+            "name": "Gene Explorer tool"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "da8e1bb387c84f68b9f2326f95a21d2c", 
             "children": [
                 {
                     "child_id": "de435b3ebe034513a36ebff706aed38f", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "da8e1bb387c84f68b9f2326f95a21d2c", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Circuit Schematic Builder", 
-            "block_type": "sequential", 
-            "block_id": "0c51c43c25fb412eacd915d6db6097d9", 
             "children": [
                 {
                     "child_id": "1c89c806fbc94fd1bc220d3112b8057b", 
@@ -1713,53 +1731,53 @@
                     "child_id": "42bb69e9a91d47c6aff0d14d82259f2d", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "0c51c43c25fb412eacd915d6db6097d9", 
+            "name": "Circuit Schematic Builder"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "7f66b96dcea24bc2bb9e6bea2ed2905e", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "7f66b96dcea24bc2bb9e6bea2ed2905e", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "b4281a3a06eb4420873beb6c9150facf", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "b4281a3a06eb4420873beb6c9150facf", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "8e799ed879474076b760a617ccd3e508", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "8e799ed879474076b760a617ccd3e508", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "ebb7aba6af934f12912f31d479cae6d6", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "ebb7aba6af934f12912f31d479cae6d6", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "baaf3e3154b94b77b177b55d1708c0ae", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "baaf3e3154b94b77b177b55d1708c0ae", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "c4b4cdd9ebf64caeab9abae631498d77", 
             "children": [
                 {
                     "child_id": "cb0bb1dda60b4acf9eb5c06e076c364a", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c4b4cdd9ebf64caeab9abae631498d77", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Transcripts", 
-            "block_type": "sequential", 
-            "block_id": "adcab904fbf9489d8c4822b1e3527a96", 
             "children": [
                 {
                     "child_id": "778a9491ca0d438f94440401b3ede984", 
@@ -1769,12 +1787,12 @@
                     "child_id": "82aa1e017d314e17b962618f806d8425", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "adcab904fbf9489d8c4822b1e3527a96", 
+            "name": "Transcripts"
         }, 
         {
-            "block_name": "Testing Course", 
-            "block_type": "course", 
-            "block_id": "course", 
             "children": [
                 {
                     "child_id": "e3f904e672574a32a16328061041bf65", 
@@ -1804,23 +1822,23 @@
                     "child_id": "e89863444cb9474783dbb233d6584efd", 
                     "child_type": "chapter"
                 }
-            ]
+            ], 
+            "type": "course", 
+            "id": "course", 
+            "name": "Testing Course"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "28e1aa0193294eb2be172985f3e6761a", 
             "children": [
                 {
                     "child_id": "325193d54bfd4c5cb6d64c1498fd3fa3", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "28e1aa0193294eb2be172985f3e6761a", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Full Screen Image Tool", 
-            "block_type": "sequential", 
-            "block_id": "32351917950541819d3deee279525eab", 
             "children": [
                 {
                     "child_id": "1ec511e048a34fb4b7dd40b86bafa13b", 
@@ -1830,42 +1848,45 @@
                     "child_id": "c64ebe41278044d09b4547cd10e5d0f1", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "32351917950541819d3deee279525eab", 
+            "name": "Full Screen Image Tool"
         }, 
         {
-            "block_name": "HTML for problems aswered correctly", 
-            "block_type": "html", 
-            "block_id": "HTML_for_problems_aswered_correctly", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_problems_aswered_correctly", 
+            "name": "HTML for problems aswered correctly"
         }, 
         {
-            "block_name": "Frame with problem", 
-            "block_type": "html", 
-            "block_id": "9dc857e8d1174b5abeb985297af6e0cd", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "9dc857e8d1174b5abeb985297af6e0cd", 
+            "name": "Frame with problem"
         }, 
         {
-            "block_name": "Video with transcript in a single language", 
-            "block_type": "video", 
-            "block_id": "9434985845ea475793f9ac564bfb04fd", 
-            "children": []
+            "name": "Video with transcript in a single language", 
+            "start_time": null, 
+            "children": [], 
+            "end_time": null, 
+            "youtube_id": "3_yD_cEKoCk", 
+            "type": "video", 
+            "id": "9434985845ea475793f9ac564bfb04fd"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "997544fe12d840339acbfed9b302ec45", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "997544fe12d840339acbfed9b302ec45", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_id", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_id", 
+            "name": "entrance_exam_id"
         }, 
         {
-            "block_name": "Image Mapped Input", 
-            "block_type": "sequential", 
-            "block_id": "46144bfce04b4df3a957177f1a9c4536", 
             "children": [
                 {
                     "child_id": "61d7ec580d074b0fbbf9b5fd11bbce1c", 
@@ -1883,156 +1904,160 @@
                     "child_id": "905f77b64a8b4d5ca1e92bc7f8eaa22c", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "46144bfce04b4df3a957177f1a9c4536", 
+            "name": "Image Mapped Input"
         }, 
         {
-            "block_name": "Multiple rectangular regions", 
-            "block_type": "vertical", 
-            "block_id": "89a5c54a29f24a50b31ca5bce58bb177", 
             "children": [
                 {
                     "child_id": "65600ca921544d34880306e3d2ec5897", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "89a5c54a29f24a50b31ca5bce58bb177", 
+            "name": "Multiple rectangular regions"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "357011bd33f547a6a2373d56f00e0964", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "357011bd33f547a6a2373d56f00e0964", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "00b230a982974a7682648ca737e38bcc", 
             "children": [
                 {
                     "child_id": "d99833bc9c1e47e6a6c7b3fd5dc92abd", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "00b230a982974a7682648ca737e38bcc", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "3d63bf356f15464e9c4cf247d575771b", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "3d63bf356f15464e9c4cf247d575771b", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "1254a3fa52284019818196c0d39a4ab7", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "1254a3fa52284019818196c0d39a4ab7", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "poll", 
-            "block_id": "e538b63aa9b24c8ab1e756be8c7abecb", 
-            "children": []
+            "children": [], 
+            "type": "poll", 
+            "id": "e538b63aa9b24c8ab1e756be8c7abecb", 
+            "name": "e538b63aa9b24c8ab1e756be8c7abecb"
         }, 
         {
-            "block_name": "Blank Common Problem", 
-            "block_type": "problem", 
-            "block_id": "68990661ba354cedb46bd284b9a07013", 
-            "children": []
+            "children": [], 
+            "markdown": "", 
+            "type": "problem", 
+            "id": "68990661ba354cedb46bd284b9a07013", 
+            "name": "Blank Common Problem"
         }, 
         {
-            "block_name": "Text only - Unordered equal rule", 
-            "block_type": "problem", 
-            "block_id": "e44889e3fd3a4230ba0ac7d2da927ff1", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "e44889e3fd3a4230ba0ac7d2da927ff1", 
+            "name": "Text only - Unordered equal rule"
         }, 
         {
-            "block_name": "Custom page 1", 
-            "block_type": "static_tab", 
-            "block_id": "661eafb0214445b2a0c7d4e3260c3b08", 
-            "children": []
+            "children": [], 
+            "type": "static_tab", 
+            "id": "661eafb0214445b2a0c7d4e3260c3b08", 
+            "name": "Custom page 1"
         }, 
         {
-            "block_name": "Drag and Drop", 
-            "block_type": "problem", 
-            "block_id": "325193d54bfd4c5cb6d64c1498fd3fa3", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "325193d54bfd4c5cb6d64c1498fd3fa3", 
+            "name": "Drag and Drop"
         }, 
         {
-            "block_name": "HTML for attempted problem", 
-            "block_type": "html", 
-            "block_id": "HTML_for_attempted_problem", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_attempted_problem", 
+            "name": "HTML for attempted problem"
         }, 
         {
-            "block_name": "External Content", 
-            "block_type": "vertical", 
-            "block_id": "1aad58dfb6854b039865024ee3a76e4e", 
             "children": [
                 {
                     "child_id": "6ae3e9668a964197a8b10a40121eb51c", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1aad58dfb6854b039865024ee3a76e4e", 
+            "name": "External Content"
         }, 
         {
-            "block_name": "Base problem 1", 
-            "block_type": "problem", 
-            "block_id": "15858bfed68148659cc19ab510450e78", 
-            "children": []
+            "children": [], 
+            "markdown": ">>Which of the following countries has the largest population?<<\n( ) Brazil {{ timely feedback -- explain why an almost correct answer is wrong }}\n( ) Germany\n(x) Indonesia\n( ) Russia\n\n", 
+            "type": "problem", 
+            "id": "15858bfed68148659cc19ab510450e78", 
+            "name": "Base problem 1"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "0dae60b18919428591f84582528ad050", 
             "children": [
                 {
                     "child_id": "8d4ed4d34daa46f79523f88eada32768", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "0dae60b18919428591f84582528ad050", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Blank Common Problem", 
-            "block_type": "sequential", 
-            "block_id": "523719d8129a44c5b23dd45b4e7122cb", 
             "children": [
                 {
                     "child_id": "2e2b2dc6e7b04a8d93a20efd16a49e37", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "523719d8129a44c5b23dd45b4e7122cb", 
+            "name": "Blank Common Problem"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "527bf2c80c0d4dad9e13e80ff4256da4", 
             "children": [
                 {
                     "child_id": "12643ee4335e4776861836cccb2b48cb", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "527bf2c80c0d4dad9e13e80ff4256da4", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "26c84f7daeef40219694ed2874146d69", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "26c84f7daeef40219694ed2874146d69", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Anonymous User ID", 
-            "block_type": "html", 
-            "block_id": "936f157b3cf0461f96569c8d6fc84e38", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "936f157b3cf0461f96569c8d6fc84e38", 
+            "name": "Anonymous User ID"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "f4a364f8e0754f96b07ec2c7413f12fe", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "f4a364f8e0754f96b07ec2c7413f12fe", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Cohort-Specific Courseware", 
-            "block_type": "sequential", 
-            "block_id": "9201e73fc08941f0aae166727f0fd4aa", 
             "children": [
                 {
                     "child_id": "e971dd901a304d7ea6db386e7a0a0520", 
@@ -2042,62 +2067,62 @@
                     "child_id": "2a140187df364cc08d0b61760cd5d8fb", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "9201e73fc08941f0aae166727f0fd4aa", 
+            "name": "Cohort-Specific Courseware"
         }, 
         {
-            "block_name": "Group ID 455306730", 
-            "block_type": "vertical", 
-            "block_id": "2eeda4b3431e41fa9d09c791dee19f6f", 
             "children": [
                 {
                     "child_id": "f4a364f8e0754f96b07ec2c7413f12fe", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "2eeda4b3431e41fa9d09c791dee19f6f", 
+            "name": "Group ID 455306730"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "90049c1c16aa46cf80383e488cf3e005", 
             "children": [
                 {
                     "child_id": "7d0679d59abe443c909d6abcc7f1c111", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "90049c1c16aa46cf80383e488cf3e005", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Text Input with Hints and Feedback", 
-            "block_type": "sequential", 
-            "block_id": "612754d9f5b24d57b0a6135d6e8ed816", 
             "children": [
                 {
                     "child_id": "27bb314ea7694957a5093e529b9a3d4c", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "612754d9f5b24d57b0a6135d6e8ed816", 
+            "name": "Text Input with Hints and Feedback"
         }, 
         {
-            "block_name": "Zooming Image Tool", 
-            "block_type": "html", 
-            "block_id": "4cb1c30c1d2c45b9ba65511b16e46e79", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "4cb1c30c1d2c45b9ba65511b16e46e79", 
+            "name": "Zooming Image Tool"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_1de5b85d1647", 
             "children": [
                 {
                     "child_id": "HTML_for_problem_not_aswered_correctly", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_1de5b85d1647", 
+            "name": "conditional_1de5b85d1647"
         }, 
         {
-            "block_name": "Checkboxes", 
-            "block_type": "sequential", 
-            "block_id": "8947d0c0c92b46fc9ec102b56e4f6f4f", 
             "children": [
                 {
                     "child_id": "a291abb1a8344756a9c5125f39166d2e", 
@@ -2107,45 +2132,45 @@
                     "child_id": "90049c1c16aa46cf80383e488cf3e005", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "8947d0c0c92b46fc9ec102b56e4f6f4f", 
+            "name": "Checkboxes"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_0977651c0f3d", 
             "children": [
                 {
                     "child_id": "HTML_for_not_attempted_problem", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_0977651c0f3d", 
+            "name": "conditional_0977651c0f3d"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "4e8cad9332a44d6cbe24a35e541287a5", 
             "children": [
                 {
                     "child_id": "8d6c884f29884971b884a32e5932a489", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "4e8cad9332a44d6cbe24a35e541287a5", 
+            "name": "Default"
         }, 
         {
-            "block_name": "basic problem", 
-            "block_type": "vertical", 
-            "block_id": "bce7180fec42448d868854490dcc20de", 
             "children": [
                 {
                     "child_id": "f882de960c104d7b839373c62b87bc76", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "bce7180fec42448d868854490dcc20de", 
+            "name": "basic problem"
         }, 
         {
-            "block_name": "Dropdown", 
-            "block_type": "sequential", 
-            "block_id": "1f5ec7a8401142b8a52c83f97398147c", 
             "children": [
                 {
                     "child_id": "4df43d116c3048858d561ff5d9429093", 
@@ -2155,97 +2180,97 @@
                     "child_id": "706dcdca7f334598a83e710c8c249f2c", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "1f5ec7a8401142b8a52c83f97398147c", 
+            "name": "Dropdown"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "63bf60aabdd14fee9fcce4f3d05019d7", 
             "children": [
                 {
                     "child_id": "d0edfbc7a6ee48498f907f83cd30669c", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "63bf60aabdd14fee9fcce4f3d05019d7", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "33eb4cb95dee48da8b0e286674a3bbe1", 
             "children": [
                 {
                     "child_id": "95d12befe5f74123bbe80191bfbe1897", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "33eb4cb95dee48da8b0e286674a3bbe1", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "960554cf7bcd4e7d807cd1b9ac968c62", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "960554cf7bcd4e7d807cd1b9ac968c62", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "93eebefc34284030b3d535bd9b4a6acc", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "93eebefc34284030b3d535bd9b4a6acc", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "33920fff1763469993813bf7c2c40c80", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "33920fff1763469993813bf7c2c40c80", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "7cc8d7d497ee4a028589af3085d99225", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "7cc8d7d497ee4a028589af3085d99225", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Blank Advanced Problem", 
-            "block_type": "sequential", 
-            "block_id": "db4fe716ee5e45398e3e139949b8eeb7", 
             "children": [
                 {
                     "child_id": "2482c374a9094972aa98bfea51d49f0f", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "db4fe716ee5e45398e3e139949b8eeb7", 
+            "name": "Blank Advanced Problem"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "2e2b2dc6e7b04a8d93a20efd16a49e37", 
             "children": [
                 {
                     "child_id": "68990661ba354cedb46bd284b9a07013", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "2e2b2dc6e7b04a8d93a20efd16a49e37", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "video", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "video", 
+            "name": "video"
         }, 
         {
-            "block_name": "Multiple Choice with Hints and Feedback", 
-            "block_type": "sequential", 
-            "block_id": "97e29f471c7f4fdc8b67d420023a466b", 
             "children": [
                 {
                     "child_id": "4e8cad9332a44d6cbe24a35e541287a5", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "97e29f471c7f4fdc8b67d420023a466b", 
+            "name": "Multiple Choice with Hints and Feedback"
         }, 
         {
-            "block_name": "Annotations", 
-            "block_type": "sequential", 
-            "block_id": "4bb6f3d83cec4d6abf2567f7f901005f", 
             "children": [
                 {
                     "child_id": "da8e1bb387c84f68b9f2326f95a21d2c", 
@@ -2255,244 +2280,247 @@
                     "child_id": "9604aa5b9320452a8d163a0a4eb312d7", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "4bb6f3d83cec4d6abf2567f7f901005f", 
+            "name": "Annotations"
         }, 
         {
-            "block_name": null, 
-            "block_type": "annotatable", 
-            "block_id": "acc9595b23fb4d9da7d01817715a9219", 
-            "children": []
+            "children": [], 
+            "type": "annotatable", 
+            "id": "acc9595b23fb4d9da7d01817715a9219", 
+            "name": "acc9595b23fb4d9da7d01817715a9219"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "40bd1fdddf36414083e9bd8be76eb57d", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "40bd1fdddf36414083e9bd8be76eb57d", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "BASE PROBLEM 2", 
-            "block_type": "problem", 
-            "block_id": "05976a80a8b04e898d27f34af7ff8501", 
-            "children": []
+            "children": [], 
+            "markdown": " >>Which of the following countries celebrates its independence on August 15?<<\n\n [[(India), Spain, China, Bermuda]]\n\n [explanation]\n India became an independent nation on August 15, 1947.\n [explanation]\n", 
+            "type": "problem", 
+            "id": "05976a80a8b04e898d27f34af7ff8501", 
+            "name": "BASE PROBLEM 2"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_f8cfa10217cb", 
             "children": [
                 {
                     "child_id": "HTML_for_attempted_problem", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_f8cfa10217cb", 
+            "name": "conditional_f8cfa10217cb"
         }, 
         {
-            "block_name": "Gene explorer tool", 
-            "block_type": "sequential", 
-            "block_id": "1b23ab0ff4ae465f970baf418fd1b417", 
             "children": [
                 {
                     "child_id": "bce7180fec42448d868854490dcc20de", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "1b23ab0ff4ae465f970baf418fd1b417", 
+            "name": "Gene explorer tool"
         }, 
         {
-            "block_name": "Custom Page 2", 
-            "block_type": "static_tab", 
-            "block_id": "184f9fcff5ca4d86bb648502e36df0f2", 
-            "children": []
+            "children": [], 
+            "type": "static_tab", 
+            "id": "184f9fcff5ca4d86bb648502e36df0f2", 
+            "name": "Custom Page 2"
         }, 
         {
-            "block_name": "HTML", 
-            "block_type": "vertical", 
-            "block_id": "b1b21c1cc59f4b048576b23ee3b62054", 
             "children": [
                 {
                     "child_id": "e08477890e0a4d7aaf2b4ab68d502f2c", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "b1b21c1cc59f4b048576b23ee3b62054", 
+            "name": "HTML"
         }, 
         {
-            "block_name": "Problem with Adaptive Hint", 
-            "block_type": "problem", 
-            "block_id": "d9f9b580afaf4b88b53dfb5d9dcb6bb4", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "d9f9b580afaf4b88b53dfb5d9dcb6bb4", 
+            "name": "Problem with Adaptive Hint"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "4e0afdf34f864863ad76922ae5670ab5", 
             "children": [
                 {
                     "child_id": "4ec5a82326f34f58ab6fe61635445ff3", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "4e0afdf34f864863ad76922ae5670ab5", 
+            "name": "Default"
         }, 
         {
-            "block_name": "URL Param", 
-            "block_type": "vertical", 
-            "block_id": "d40b7ae0b1864823a918ad52784d53da", 
             "children": [
                 {
                     "child_id": "6b65bc3f37fe481c84d2bd9be49196e8", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "d40b7ae0b1864823a918ad52784d53da", 
+            "name": "URL Param"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "1c89c806fbc94fd1bc220d3112b8057b", 
             "children": [
                 {
                     "child_id": "3afb7c8e6c48403fa51ab01e505f6cd5", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1c89c806fbc94fd1bc220d3112b8057b", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "e9ba5766c2cb4d0c90c91025458803b3", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "e9ba5766c2cb4d0c90c91025458803b3", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "irregular region", 
-            "block_type": "vertical", 
-            "block_id": "905f77b64a8b4d5ca1e92bc7f8eaa22c", 
             "children": [
                 {
                     "child_id": "298700a2aa2c4b43a1d96e9f5715b586", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "905f77b64a8b4d5ca1e92bc7f8eaa22c", 
+            "name": "irregular region"
         }, 
         {
-            "block_name": null, 
-            "block_type": "poll", 
-            "block_id": "01948ffd7e304ecda821e36e35ef5a93", 
-            "children": []
+            "children": [], 
+            "type": "poll", 
+            "id": "01948ffd7e304ecda821e36e35ef5a93", 
+            "name": "01948ffd7e304ecda821e36e35ef5a93"
         }, 
         {
-            "block_name": "One rectangular region", 
-            "block_type": "vertical", 
-            "block_id": "f98bbf7f63c04b0598b009fb1548716a", 
             "children": [
                 {
                     "child_id": "6f5d1a7dc42740a1b0ab21a3e8157d25", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "f98bbf7f63c04b0598b009fb1548716a", 
+            "name": "One rectangular region"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "13a30a70a2584f6a8aaf2eae2753ad34", 
             "children": [
                 {
                     "child_id": "f0575f2d54314071a83c902880431c8e", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "13a30a70a2584f6a8aaf2eae2753ad34", 
+            "name": "Default"
         }, 
         {
-            "block_name": "irregular region", 
-            "block_type": "problem", 
-            "block_id": "298700a2aa2c4b43a1d96e9f5715b586", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "298700a2aa2c4b43a1d96e9f5715b586", 
+            "name": "irregular region"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "dc227e63bebc4469b0a6dd35fafc7b9a", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "dc227e63bebc4469b0a6dd35fafc7b9a", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Multiple Choice", 
-            "block_type": "sequential", 
-            "block_id": "a532b86a3168420dab65c59a99289fbd", 
             "children": [
                 {
                     "child_id": "4e0afdf34f864863ad76922ae5670ab5", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "a532b86a3168420dab65c59a99289fbd", 
+            "name": "Multiple Choice"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "f6a81a3c3fcd48b08cc64fb58c1965c3", 
             "children": [
                 {
                     "child_id": "8c1f5b453b53492a93ab1c1907796cee", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "f6a81a3c3fcd48b08cc64fb58c1965c3", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "4d0e1d26dc4344eea281eb819a42c4bc", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "4d0e1d26dc4344eea281eb819a42c4bc", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "1943d5fb4f0c4a8eb7245c368fd7c820", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "1943d5fb4f0c4a8eb7245c368fd7c820", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Images only - any rule", 
-            "block_type": "vertical", 
-            "block_id": "78f0269ea5d1424184b28ff248387cf7", 
             "children": [
                 {
                     "child_id": "cde3f0f8f08c40b884eebb86586033b0", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "78f0269ea5d1424184b28ff248387cf7", 
+            "name": "Images only - any rule"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "7cc2ed6e127844d29f68695af5c757c7", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "7cc2ed6e127844d29f68695af5c757c7", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Frame with Problem", 
-            "block_type": "vertical", 
-            "block_id": "70beecf32eef4cbe9541d36e919a50ff", 
             "children": [
                 {
                     "child_id": "9dc857e8d1174b5abeb985297af6e0cd", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "70beecf32eef4cbe9541d36e919a50ff", 
+            "name": "Frame with Problem"
         }, 
         {
-            "block_name": "Qualtrics", 
-            "block_type": "vertical", 
-            "block_id": "6c5d2c506a764ad8a22e45e9c45f8d2f", 
             "children": [
                 {
                     "child_id": "936f157b3cf0461f96569c8d6fc84e38", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "6c5d2c506a764ad8a22e45e9c45f8d2f", 
+            "name": "Qualtrics"
         }, 
         {
-            "block_name": "Full Screen Image Tool", 
-            "block_type": "html", 
-            "block_id": "65320375d609465fb4a5e008b4119f42", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "65320375d609465fb4a5e008b4119f42", 
+            "name": "Full Screen Image Tool"
         }, 
         {
-            "block_name": "Content experiments", 
-            "block_type": "sequential", 
-            "block_id": "05d0f0fac4af4f328e40cf6673439df5", 
             "children": [
                 {
                     "child_id": "c81de11b21744bc7aa6ffc831f06a938", 
@@ -2502,30 +2530,30 @@
                     "child_id": "c51c90f2a1e647eb963360cc649cbe75", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "05d0f0fac4af4f328e40cf6673439df5", 
+            "name": "Content experiments"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "49a5463fb37c434f9ce0355bd2aa796e", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "49a5463fb37c434f9ce0355bd2aa796e", 
+            "name": "HTML Page"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "f30de29927c7423da84d12588fe521ee", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "f30de29927c7423da84d12588fe521ee", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "overview", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "overview", 
+            "name": "overview"
         }, 
         {
-            "block_name": "introduction", 
-            "block_type": "vertical", 
-            "block_id": "e2ecacd3f2f743c09cfd5b87f49d75c1", 
             "children": [
                 {
                     "child_id": "8ff96e174f244539b25c911e71231b3b", 
@@ -2543,35 +2571,35 @@
                     "child_id": "05976a80a8b04e898d27f34af7ff8501", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "e2ecacd3f2f743c09cfd5b87f49d75c1", 
+            "name": "introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "fe665a62c0fa498d80eb04a36c0d7dcf", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "fe665a62c0fa498d80eb04a36c0d7dcf", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Drag images only - exact rule", 
-            "block_type": "vertical", 
-            "block_id": "7d9bb6146eaf4a4b95440ccc9366e1bd", 
             "children": [
                 {
                     "child_id": "d488f754cd024e9c94b996faeb70f1de", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "7d9bb6146eaf4a4b95440ccc9366e1bd", 
+            "name": "Drag images only - exact rule"
         }, 
         {
-            "block_name": "HTML for problem not aswered correctly", 
-            "block_type": "html", 
-            "block_id": "HTML_for_problem_not_aswered_correctly", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_problem_not_aswered_correctly", 
+            "name": "HTML for problem not aswered correctly"
         }, 
         {
-            "block_name": "Drag and Drop", 
-            "block_type": "sequential", 
-            "block_id": "da0ffaa3ac8b456084caa88c1501d8e1", 
             "children": [
                 {
                     "child_id": "58cbdd6364154c76a3903eb444425af5", 
@@ -2601,46 +2629,47 @@
                     "child_id": "8bf63ba569dc46aca2326adcfc757fff", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "da0ffaa3ac8b456084caa88c1501d8e1", 
+            "name": "Drag and Drop"
         }, 
         {
-            "block_name": "HTML for problems not aswered correctly", 
-            "block_type": "html", 
-            "block_id": "HTML_for_problems_not_aswered_correctly", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_problems_not_aswered_correctly", 
+            "name": "HTML for problems not aswered correctly"
         }, 
         {
-            "block_name": "Dropdown", 
-            "block_type": "problem", 
-            "block_id": "a80d8f3d6b334a07875f4a8ed8595684", 
-            "children": []
+            "children": [], 
+            "markdown": "Dropdown problems allow learners to select only one option from a list of options.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n >>Which of the following countries celebrates its independence on August 15?<<\n\n [[(India), Spain, China, Bermuda]]\n\n [explanation]\n India became an independent nation on August 15, 1947.\n [explanation]\n", 
+            "type": "problem", 
+            "id": "a80d8f3d6b334a07875f4a8ed8595684", 
+            "name": "Dropdown"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "c6fc113dfe4946fb870665a42311df0b", 
             "children": [
                 {
                     "child_id": "bb200523478348e3af899005f9d94472", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c6fc113dfe4946fb870665a42311df0b", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "b54a965a8512441798cd4eebbcdbc915", 
             "children": [
                 {
                     "child_id": "086ec8769f8249f78c0384946aead23a", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "b54a965a8512441798cd4eebbcdbc915", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Custom Javascript Display and Grading", 
-            "block_type": "sequential", 
-            "block_id": "6b55008f0f8f486ebeda9ead7118d6cb", 
             "children": [
                 {
                     "child_id": "c4b4cdd9ebf64caeab9abae631498d77", 
@@ -2650,196 +2679,203 @@
                     "child_id": "7e026bae014a44b2b33d1a0e95fcd9b8", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "6b55008f0f8f486ebeda9ead7118d6cb", 
+            "name": "Custom Javascript Display and Grading"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "4c1aca3887d147bcb45809982c8c4331", 
             "children": [
                 {
                     "child_id": "26c84f7daeef40219694ed2874146d69", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "4c1aca3887d147bcb45809982c8c4331", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Discussion Forum", 
-            "block_type": "discussion", 
-            "block_id": "5f5dc137c24241c095326813bb4d7d6e", 
-            "children": []
+            "children": [], 
+            "type": "discussion", 
+            "id": "5f5dc137c24241c095326813bb4d7d6e", 
+            "name": "Discussion Forums Test"
         }, 
         {
-            "block_name": "Multiple Choice", 
-            "block_type": "problem", 
-            "block_id": "4ec5a82326f34f58ab6fe61635445ff3", 
-            "children": []
+            "children": [], 
+            "markdown": "Multiple choice problems allow learners to select only one option. Learners can see all the options along with the problem text.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n>>Which of the following countries has the largest population?<<\n( ) Brazil {{ timely feedback -- explain why an almost correct answer is wrong }}\n( ) Germany\n(x) Indonesia\n( ) Russia\n\n[explanation]\nAccording to September 2014 estimates:\nThe population of Indonesia is approximately 250 million.\nThe population of Brazil  is approximately 200 million.\nThe population of Russia is approximately 146 million.\nThe population of Germany is approximately 81 million.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "4ec5a82326f34f58ab6fe61635445ff3", 
+            "name": "Multiple Choice"
         }, 
         {
-            "block_name": "Checkboxes with Hints and Feedback", 
-            "block_type": "problem", 
-            "block_id": "197fffa596a74b018f0f94a3834e2416", 
-            "children": []
+            "children": [], 
+            "markdown": "\nYou can provide feedback for each option in a checkbox problem, with distinct feedback depending on whether or not the learner selects that option.\n\nYou can also provide compound feedback for a specific combination of answers. For example, if you have three possible answers in the problem, you can configure specific feedback for when a learner selects each combination of possible answers.\n\nYou can also add hints for learners.\n\nBe sure to select Settings to specify a Display Name and other values that apply.\n\nUse the following example problem as a model.\n\n>>Which of the following is a fruit? Check all that apply.<<\n\n[x] apple  {{ selected: You are correct that an apple is a fruit because it is the fertilized ovary that comes from an apple tree and contains seeds. }, { unselected: Remember that an apple is also a fruit.}}\n[x] pumpkin {{ selected: You are correct that a pumpkin is a fruit because it is the fertilized ovary of a squash plant and contains seeds. }, { unselected: Remember that a pumpkin is also a fruit.}}\n[ ] potato   {{ U: You are correct that a potato is a vegetable because it is an edible part of a plant in tuber form.}, { S: A potato is a vegetable, not a fruit, because it does not come from a flower and does not contain seeds.}}\n[x] tomato  {{ S: You are correct that a tomato is a fruit because it is the fertilized ovary of a tomato plant and contains seeds. }, { U: Many people mistakenly think a tomato is a vegetable. However, because a tomato is the fertilized ovary of a tomato plant and contains seeds, it is a fruit.}}\n\n\n{{ ((A B D)) An apple, pumpkin, and tomato are all fruits as they all are fertilized ovaries of a plant and contain seeds. }}\n{{ ((A B C D)) You are correct that an apple, pumpkin, and tomato are all fruits as they all are fertilized ovaries of a plant and contain seeds. However, a potato is not a fruit as it is an edible part of a plant in tuber form and is a vegetable.  }}\n\n||A fruit is the fertilized ovary from a flower.||\n||A fruit contains seeds of the plant.||\n", 
+            "type": "problem", 
+            "id": "197fffa596a74b018f0f94a3834e2416", 
+            "name": "Checkboxes with Hints and Feedback"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "f69ece081c704d578dbb52d6f3ae7c4a", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "f69ece081c704d578dbb52d6f3ae7c4a", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "1337c3cb9ea341589d3d2732967429e5", 
             "children": [
                 {
                     "child_id": "a04844f3f3494b72b35be38561be3eb7", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1337c3cb9ea341589d3d2732967429e5", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Custom Python-Evaluated Input", 
-            "block_type": "problem", 
-            "block_id": "a5585f3785814916a2f553e07e1c5703", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "a5585f3785814916a2f553e07e1c5703", 
+            "name": "Custom Python-Evaluated Input"
         }, 
         {
-            "block_name": "Custom Javascript Display and Grading", 
-            "block_type": "problem", 
-            "block_id": "577dd44e2f614afe993ee0964135d25d", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "577dd44e2f614afe993ee0964135d25d", 
+            "name": "Custom Javascript Display and Grading"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "0d84509acee342b2a8068e6e68e28d99", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "0d84509acee342b2a8068e6e68e28d99", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "HTML for problem aswered correctly", 
-            "block_type": "html", 
-            "block_id": "HTML_for_problem_aswered_correctly", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_problem_aswered_correctly", 
+            "name": "HTML for problem aswered correctly"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "7e026bae014a44b2b33d1a0e95fcd9b8", 
             "children": [
                 {
                     "child_id": "577dd44e2f614afe993ee0964135d25d", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "7e026bae014a44b2b33d1a0e95fcd9b8", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "27bb314ea7694957a5093e529b9a3d4c", 
             "children": [
                 {
                     "child_id": "f9fe4049bc1a44d783a774ebbd7fd1cd", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "27bb314ea7694957a5093e529b9a3d4c", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Chemical Equation", 
-            "block_type": "problem", 
-            "block_id": "4ad0337664104b738b790a8b8cd06a15", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "4ad0337664104b738b790a8b8cd06a15", 
+            "name": "Chemical Equation"
         }, 
         {
-            "block_name": "Google Hangouts", 
-            "block_type": "html", 
-            "block_id": "8c1f5b453b53492a93ab1c1907796cee", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "8c1f5b453b53492a93ab1c1907796cee", 
+            "name": "Google Hangouts"
         }, 
         {
-            "block_name": "Content experiment", 
-            "block_type": "vertical", 
-            "block_id": "c51c90f2a1e647eb963360cc649cbe75", 
             "children": [
                 {
                     "child_id": "e912eed00059429cbe08d5a4fa5e73bb", 
                     "child_type": "split_test"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "c51c90f2a1e647eb963360cc649cbe75", 
+            "name": "Content experiment"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_enabled", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_enabled", 
+            "name": "entrance_exam_enabled"
         }, 
         {
-            "block_name": null, 
-            "block_type": "word_cloud", 
-            "block_id": "59a617ff338f43409ba24aced61da888", 
-            "children": []
+            "children": [], 
+            "type": "word_cloud", 
+            "id": "59a617ff338f43409ba24aced61da888", 
+            "name": "59a617ff338f43409ba24aced61da888"
         }, 
         {
-            "block_name": "Checkboxes with Hints and Feedback", 
-            "block_type": "sequential", 
-            "block_id": "f49173fa19e348398861b7d01170d1a5", 
             "children": [
                 {
                     "child_id": "b92f3f5792d149be860dabe8b768c54f", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "f49173fa19e348398861b7d01170d1a5", 
+            "name": "Checkboxes with Hints and Feedback"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "d61ce075223648da8346752bc5a46e95", 
             "children": [
                 {
                     "child_id": "b9f982058eca45f48b5e3a8b7bcdd46f", 
                     "child_type": "openassessment"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "d61ce075223648da8346752bc5a46e95", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Drag images only - exact rule", 
-            "block_type": "problem", 
-            "block_id": "d488f754cd024e9c94b996faeb70f1de", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "d488f754cd024e9c94b996faeb70f1de", 
+            "name": "Drag images only - exact rule"
         }, 
         {
-            "block_name": "Numerical Input", 
-            "block_type": "problem", 
-            "block_id": "12643ee4335e4776861836cccb2b48cb", 
-            "children": []
+            "children": [], 
+            "markdown": "In a numerical input problem, learners enter numbers or a specific and relatively simple mathematical expression. Learners enter the response in plain text, and the system then converts the text to a symbolic expression that learners can see below the response field.\n\nThe system can handle several types of characters, including basic operators, fractions, exponents, and common constants such as \"i\". You can refer learners to \"Entering Mathematical and Scientific Expressions\" in the edX Guide for Students for more information.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problems as models.\n\n>>How many miles away from Earth is the sun? Use scientific notation to answer.<<\n\n= 9.3*10^7 \nor= 9.296*10^7 \n\n>>The square of what number is -100?<<\n\n= 10*i \n\n[explanation]\nThe sun is 93,000,000, or 9.3*10^7, miles away from Earth.\n-100 is the square of 10 times the imaginary number, i.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "12643ee4335e4776861836cccb2b48cb", 
+            "name": "Numerical Input"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "94292353c4bd4591a36838f7489eb8a2", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "94292353c4bd4591a36838f7489eb8a2", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Raw HTML", 
-            "block_type": "sequential", 
-            "block_id": "680b3abf79c046e1a62cc875290c0762", 
             "children": [
                 {
                     "child_id": "1337c3cb9ea341589d3d2732967429e5", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "680b3abf79c046e1a62cc875290c0762", 
+            "name": "Raw HTML"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "c27d1ded1c984667a48fc67c79d413e5", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "c27d1ded1c984667a48fc67c79d413e5", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Google drive", 
-            "block_type": "sequential", 
-            "block_id": "a93a7b15740f43e7a7446c8379282bf0", 
             "children": [
                 {
                     "child_id": "40fe9f0b822b422b860f464ea8cea6d8", 
@@ -2849,12 +2885,12 @@
                     "child_id": "2f7a45eb39214662b9fb051095c53524", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "a93a7b15740f43e7a7446c8379282bf0", 
+            "name": "Google drive"
         }, 
         {
-            "block_name": "cohorted content", 
-            "block_type": "vertical", 
-            "block_id": "2a140187df364cc08d0b61760cd5d8fb", 
             "children": [
                 {
                     "child_id": "81dc9d278a184f61829b3afe334ef9fd", 
@@ -2864,80 +2900,82 @@
                     "child_id": "e9ba5766c2cb4d0c90c91025458803b3", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "2a140187df364cc08d0b61760cd5d8fb", 
+            "name": "cohorted content"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "706dcdca7f334598a83e710c8c249f2c", 
             "children": [
                 {
                     "child_id": "a80d8f3d6b334a07875f4a8ed8595684", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "706dcdca7f334598a83e710c8c249f2c", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "40fe9f0b822b422b860f464ea8cea6d8", 
             "children": [
                 {
                     "child_id": "874122e4c89a4272a941500a1296fc7a", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "40fe9f0b822b422b860f464ea8cea6d8", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "2338dd59cd084dbbaca91fc043d22ebe", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "2338dd59cd084dbbaca91fc043d22ebe", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "10bea4bb1f524ed3a2543099cbb434c4", 
             "children": [
                 {
                     "child_id": "01948ffd7e304ecda821e36e35ef5a93", 
                     "child_type": "poll"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "10bea4bb1f524ed3a2543099cbb434c4", 
+            "name": "Default"
         }, 
         {
-            "block_name": "JS Input", 
-            "block_type": "vertical", 
-            "block_id": "90533179f2e9424a96967cf56631bd29", 
             "children": [
                 {
                     "child_id": "61142fab24b04062a6b51bc1bc9c62c2", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "90533179f2e9424a96967cf56631bd29", 
+            "name": "JS Input"
         }, 
         {
-            "block_name": "Checkboxes", 
-            "block_type": "problem", 
-            "block_id": "7d0679d59abe443c909d6abcc7f1c111", 
-            "children": []
+            "children": [], 
+            "markdown": "Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n>>The following languages are in the Indo-European family:<<\n[x] Urdu\n[ ] Finnish\n[x] Marathi\n[x] French\n[ ] Hungarian\n\nNote: Make sure you select all of the correct options\u2014there may be more than one!\n\n[explanation]\nUrdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "7d0679d59abe443c909d6abcc7f1c111", 
+            "name": "Checkboxes"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "a2216dbaf5434ac6867af9548cb3a2bc", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "a2216dbaf5434ac6867af9548cb3a2bc", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Text Input with Hints and Feedback", 
-            "block_type": "problem", 
-            "block_id": "f9fe4049bc1a44d783a774ebbd7fd1cd", 
-            "children": []
+            "children": [], 
+            "markdown": "\nYou can provide feedback for the correct answer in text input problems, as well as for specific incorrect answers.\n\nUse feedback on expected incorrect answers to address common misconceptions and to provide guidance on how to arrive at the correct answer.\n\nBe sure to select Settings to specify a Display Name and other values that apply.\n\nUse the following example problem as a model.\n\n>>Which U.S. state has the largest land area?<<\n\n=Alaska {{Alaska is 576,400 square miles, more than double the land area\nof the second largest state, Texas.}}\n\nnot=Texas {{While many people think Texas is the largest state, it is actually the second largest, with 261,797 square miles.}}\n\nnot=California {{California is the third largest state, with 155,959 square miles.}}\n\n||Consider the square miles, not population.||\n||Consider all 50 states, not just the continental United States.||\n", 
+            "type": "problem", 
+            "id": "f9fe4049bc1a44d783a774ebbd7fd1cd", 
+            "name": "Text Input with Hints and Feedback"
         }, 
         {
-            "block_name": "HTML", 
-            "block_type": "chapter", 
-            "block_id": "e3f904e672574a32a16328061041bf65", 
             "children": [
                 {
                     "child_id": "95a47c4804f1488096dccfff708b98ad", 
@@ -2971,149 +3009,151 @@
                     "child_id": "03c844123ebb4c168dde2e64b86775a3", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "e3f904e672574a32a16328061041bf65", 
+            "name": "HTML"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "c772023799ae4590b06a81facb9e206e", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "c772023799ae4590b06a81facb9e206e", 
+            "name": "Unit"
         }, 
         {
-            "block_name": null, 
-            "block_type": "edx_sga", 
-            "block_id": "5f641b97f17741ddab10de5663941e7d", 
-            "children": []
+            "children": [], 
+            "type": "edx_sga", 
+            "id": "5f641b97f17741ddab10de5663941e7d", 
+            "name": "5f641b97f17741ddab10de5663941e7d"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "086ec8769f8249f78c0384946aead23a", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "086ec8769f8249f78c0384946aead23a", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_89eba066a519", 
             "children": [
                 {
                     "child_id": "html_86e5ce30c03f", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_89eba066a519", 
+            "name": "conditional_89eba066a519"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "73c61e9a26e342a69eef4ebd9ca39acf", 
             "children": [
                 {
                     "child_id": "312af9ffa3534ff4ad9002535783d955", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "73c61e9a26e342a69eef4ebd9ca39acf", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Circuit Schematic Builder", 
-            "block_type": "problem", 
-            "block_id": "0f820c189d14406aaab2c30e19278ae7", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "0f820c189d14406aaab2c30e19278ae7", 
+            "name": "Circuit Schematic Builder"
         }, 
         {
-            "block_name": null, 
-            "block_type": "course_info", 
-            "block_id": "handouts", 
-            "children": []
+            "children": [], 
+            "type": "course_info", 
+            "id": "handouts", 
+            "name": "handouts"
         }, 
         {
-            "block_name": "HTML for not attempted problem", 
-            "block_type": "html", 
-            "block_id": "HTML_for_not_attempted_problem", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "HTML_for_not_attempted_problem", 
+            "name": "HTML for not attempted problem"
         }, 
         {
-            "block_name": null, 
-            "block_type": "html", 
-            "block_id": "html_86e5ce30c03f", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "html_86e5ce30c03f", 
+            "name": "html_86e5ce30c03f"
         }, 
         {
-            "block_name": "Molecular Structure", 
-            "block_type": "problem", 
-            "block_id": "bb200523478348e3af899005f9d94472", 
-            "children": []
+            "children": [], 
+            "markdown": null, 
+            "type": "problem", 
+            "id": "bb200523478348e3af899005f9d94472", 
+            "name": "Molecular Structure"
         }, 
         {
-            "block_name": "Drag Text only - squares", 
-            "block_type": "vertical", 
-            "block_id": "27ac6e041ce14dc6b8115ccad0d15aae", 
             "children": [
                 {
                     "child_id": "72a7b6e71d5b4476848eeda0e54330c2", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "27ac6e041ce14dc6b8115ccad0d15aae", 
+            "name": "Drag Text only - squares"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "2f7a45eb39214662b9fb051095c53524", 
             "children": [
                 {
                     "child_id": "92ec9fa89f9e459c93c64b027723a7fb", 
                     "child_type": "google-document"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "2f7a45eb39214662b9fb051095c53524", 
+            "name": "Default"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "vertical", 
-            "block_id": "1ba5fd94bb3548e5a37c8531b0486919", 
             "children": [
                 {
                     "child_id": "d02b061196784e1da4bada7fe1dff82f", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "1ba5fd94bb3548e5a37c8531b0486919", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "4d5d734186f947cf90fe9fc4eacc37bd", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "4d5d734186f947cf90fe9fc4eacc37bd", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "31ca384cb004473c925be604d1ce4b4a", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "31ca384cb004473c925be604d1ce4b4a", 
+            "name": "Unit"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "0c3d1bf2a7b544ef92484c2ecfac373d", 
             "children": [
                 {
                     "child_id": "d9f9b580afaf4b88b53dfb5d9dcb6bb4", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "0c3d1bf2a7b544ef92484c2ecfac373d", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "conditional", 
-            "block_id": "conditional_bc445272f7cf", 
             "children": [
                 {
                     "child_id": "html_6f2e646913d2", 
                     "child_type": "html"
                 }
-            ]
+            ], 
+            "type": "conditional", 
+            "id": "conditional_bc445272f7cf", 
+            "name": "conditional_bc445272f7cf"
         }, 
         {
-            "block_name": "Conditional module", 
-            "block_type": "sequential", 
-            "block_id": "9e4b9baa6e474b2eb6da89199349be9d", 
             "children": [
                 {
                     "child_id": "e2ecacd3f2f743c09cfd5b87f49d75c1", 
@@ -3131,12 +3171,12 @@
                     "child_id": "09d7001d0da543798bf7f9d9ea7ecc4d", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "9e4b9baa6e474b2eb6da89199349be9d", 
+            "name": "Conditional module"
         }, 
         {
-            "block_name": "Jasmine tests", 
-            "block_type": "sequential", 
-            "block_id": "69f6c9ad4cc2441eb7263faba8087c1e", 
             "children": [
                 {
                     "child_id": "33eb4cb95dee48da8b0e286674a3bbe1", 
@@ -3150,47 +3190,50 @@
                     "child_id": "90533179f2e9424a96967cf56631bd29", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "69f6c9ad4cc2441eb7263faba8087c1e", 
+            "name": "Jasmine tests"
         }, 
         {
-            "block_name": "Default", 
-            "block_type": "vertical", 
-            "block_id": "9604aa5b9320452a8d163a0a4eb312d7", 
             "children": [
                 {
                     "child_id": "acc9595b23fb4d9da7d01817715a9219", 
                     "child_type": "annotatable"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "9604aa5b9320452a8d163a0a4eb312d7", 
+            "name": "Default"
         }, 
         {
-            "block_name": null, 
-            "block_type": "google-document", 
-            "block_id": "92ec9fa89f9e459c93c64b027723a7fb", 
-            "children": []
+            "children": [], 
+            "type": "google-document", 
+            "id": "92ec9fa89f9e459c93c64b027723a7fb", 
+            "name": "92ec9fa89f9e459c93c64b027723a7fb"
         }, 
         {
-            "block_name": "Introduction", 
-            "block_type": "html", 
-            "block_id": "b61df73564234e148d42519cd2f94330", 
-            "children": []
+            "children": [], 
+            "type": "html", 
+            "id": "b61df73564234e148d42519cd2f94330", 
+            "name": "Introduction"
         }, 
         {
-            "block_name": "Problem with Adaptive Hint", 
-            "block_type": "sequential", 
-            "block_id": "76c1b8719bb14d76a7780a51258f40ab", 
             "children": [
                 {
                     "child_id": "0c3d1bf2a7b544ef92484c2ecfac373d", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "76c1b8719bb14d76a7780a51258f40ab", 
+            "name": "Problem with Adaptive Hint"
         }, 
         {
-            "block_name": "Unit", 
-            "block_type": "vertical", 
-            "block_id": "423bc7feae5e498290b6c3bdc49f1073", 
-            "children": []
+            "children": [], 
+            "type": "vertical", 
+            "id": "423bc7feae5e498290b6c3bdc49f1073", 
+            "name": "Unit"
         }
     ]
 }

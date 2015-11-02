@@ -2,38 +2,36 @@
     "course_id": "561c649756c02c484b1bb5ec", 
     "blocks": [
         {
-            "block_name": "Dropdown", 
-            "block_type": "problem", 
-            "block_id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
-            "children": []
+            "children": [], 
+            "markdown": "Dropdown problems allow learners to select only one option from a list of options.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n >>Which of the following countries celebrates its independence on August 15?<<\n\n [[(India), Spain, China, Bermuda]]\n\n [explanation]\n India became an independent nation on August 15, 1947.\n [explanation]\n", 
+            "type": "problem", 
+            "id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
+            "name": "Dropdown"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_minimum_score_pct", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_minimum_score_pct", 
+            "name": "entrance_exam_minimum_score_pct"
         }, 
         {
-            "block_name": "Unit 1.1.1", 
-            "block_type": "vertical", 
-            "block_id": "04614bedaa494176bbcb19ce34bed343", 
             "children": [
                 {
                     "child_id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "04614bedaa494176bbcb19ce34bed343", 
+            "name": "Unit 1.1.1"
         }, 
         {
-            "block_name": "overview", 
-            "block_type": "about", 
-            "block_id": "overview", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "overview", 
+            "name": "overview"
         }, 
         {
-            "block_name": "Section 1", 
-            "block_type": "chapter", 
-            "block_id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
             "children": [
                 {
                     "child_id": "b8ad8e7b451a49ada6851cfd23bccaff", 
@@ -43,86 +41,88 @@
                     "child_id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
                     "child_type": "sequential"
                 }
-            ]
+            ], 
+            "type": "chapter", 
+            "id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
+            "name": "Section 1"
         }, 
         {
-            "block_name": "Dropdown", 
-            "block_type": "problem", 
-            "block_id": "b8867a79166446fa9e432681adde1ba2", 
-            "children": []
+            "children": [], 
+            "markdown": "Dropdown problems allow learners to select only one option from a list of options.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n >>Which of the following countries celebrates its independence on August 15?<<\n\n [[(India), Spain, China, Bermuda]]\n\n [explanation]\n India became an independent nation on August 15, 1947.\n [explanation]\n", 
+            "type": "problem", 
+            "id": "b8867a79166446fa9e432681adde1ba2", 
+            "name": "Dropdown"
         }, 
         {
-            "block_name": "Unit 1.2.1", 
-            "block_type": "vertical", 
-            "block_id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
             "children": [
                 {
                     "child_id": "5fcc159afeff4d54bee7b5c685f6a9fd", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
+            "name": "Unit 1.2.1"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_enabled", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_enabled", 
+            "name": "entrance_exam_enabled"
         }, 
         {
-            "block_name": "Checkboxes", 
-            "block_type": "problem", 
-            "block_id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
-            "children": []
+            "children": [], 
+            "markdown": "Checkbox problems allow learners to select multiple options. Learners can see all the options along with the problem text.\n\nWhen you add the problem, be sure to select Settings to specify a Display Name and other values that apply.\n\nYou can use the following example problem as a model.\n\n>>The following languages are in the Indo-European family:<<\n[x] Urdu\n[ ] Finnish\n[x] Marathi\n[x] French\n[ ] Hungarian\n\nNote: Make sure you select all of the correct options\u2014there may be more than one!\n\n[explanation]\nUrdu, Marathi, and French are all Indo-European languages, while Finnish and Hungarian are in the Uralic family.\n[explanation]\n", 
+            "type": "problem", 
+            "id": "9d6a3b976a1c461ab6a182eab3ee28e8", 
+            "name": "Checkboxes"
         }, 
         {
-            "block_name": "Unit 1.2.2", 
-            "block_type": "vertical", 
-            "block_id": "9c3e26c73c2848a29930c01215f6eea6", 
             "children": [
                 {
                     "child_id": "b8867a79166446fa9e432681adde1ba2", 
                     "child_type": "problem"
                 }
-            ]
+            ], 
+            "type": "vertical", 
+            "id": "9c3e26c73c2848a29930c01215f6eea6", 
+            "name": "Unit 1.2.2"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "entrance_exam_id", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "entrance_exam_id", 
+            "name": "entrance_exam_id"
         }, 
         {
-            "block_name": "Subsection 1.1", 
-            "block_type": "sequential", 
-            "block_id": "b8ad8e7b451a49ada6851cfd23bccaff", 
             "children": [
                 {
                     "child_id": "04614bedaa494176bbcb19ce34bed343", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "b8ad8e7b451a49ada6851cfd23bccaff", 
+            "name": "Subsection 1.1"
         }, 
         {
-            "block_name": null, 
-            "block_type": "about", 
-            "block_id": "short_description", 
-            "children": []
+            "children": [], 
+            "type": "about", 
+            "id": "short_description", 
+            "name": "short_description"
         }, 
         {
-            "block_name": "Test Course", 
-            "block_type": "course", 
-            "block_id": "course", 
             "children": [
                 {
                     "child_id": "6c49044bd98c4737a7ea75cd88b2d6fa", 
                     "child_type": "chapter"
                 }
-            ]
+            ], 
+            "type": "course", 
+            "id": "course", 
+            "name": "Test Course"
         }, 
         {
-            "block_name": "Subsection 1.2", 
-            "block_type": "sequential", 
-            "block_id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
             "children": [
                 {
                     "child_id": "a91bdd6ceaf04082a7d26f6f9cf87901", 
@@ -132,7 +132,10 @@
                     "child_id": "9c3e26c73c2848a29930c01215f6eea6", 
                     "child_type": "vertical"
                 }
-            ]
+            ], 
+            "type": "sequential", 
+            "id": "1e303a15cbed4ef2aed1175b9b6f2ebd", 
+            "name": "Subsection 1.2"
         }
     ]
 }

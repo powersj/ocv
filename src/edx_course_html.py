@@ -46,6 +46,7 @@ def print_html_header():
 
 <body>
 <script type="text/javascript">
+var data = [
 """
 
 
@@ -61,6 +62,7 @@ def print_html_footer():
 def print_javascript_function():
     """Print all the icky javascript."""
     print """
+    ];
     var margin = {
             top: 0,
             right: 0,

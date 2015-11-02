@@ -14,25 +14,25 @@ def read_blocks(course_dict):
     """Read entire course dictionary into Block objects and set children."""
     blocks = {}
     for item in course_dict['blocks']:
-        blocks[item['block_id']] = Block(item)
+        blocks[item['id']] = Block(item)
 
     # now go through and add refrences to each parent to the children blocks
     for item in course_dict['blocks']:
-        parent_id = item['block_id']
+        parent_id = item['id']
         for child in item['children']:
             blocks[parent_id].children.append(blocks[child['child_id']])
 
     return blocks.values()
 
 
-def get_children(block):
+def get_children(tree, block):
     """Finds all children and children's children recursively."""
-    tree = []
     for child in block.children:
+        child.parent = block.name
         tree.append(child)
-        tree.append(get_children(child))
-
-    return tree
+        children = get_children(tree, child)
+        if children:
+            tree.append(children)
 
 
 def build_course_tree(filename):
@@ -45,8 +45,11 @@ def build_course_tree(filename):
     tree = []
     for block in blocks:
         if block.type == 'course':
+            block.parent = 'null'
             tree.append(block)
-            tree.append(get_children(block))
+            children = get_children(tree, block)
+            if children:
+                tree.append(children)
 
     return tree
 
@@ -54,7 +57,8 @@ def build_course_tree(filename):
 def main(filename):
     """Read in a file and print each course by chapter."""
     course = build_course_tree(filename)
-    print course
+    for block in course:
+        print block
 
 
 if __name__ == "__main__":
