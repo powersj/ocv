@@ -34,7 +34,6 @@
 * Integrate visualization process into edX studio/course development tool
 * Integrate visualization process into edX LMS platform
 
-
 ## 2015-11-22
 * Verify demo working
 * Final fit and finish testing
