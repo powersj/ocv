@@ -34,4 +34,4 @@ class Block(object):
         """Overload string function."""
         return '{"name": "%s", "parent": "%s", "type": "%s", "icon": "%s", "tip": "%s"},' % (
                self.name.encode('utf-8'), self.parent.encode('utf-8'), self.type.encode('utf-8'),
-               self.icon.encode('utf-8'), self.tip.encode('utf-8'))
+               self.icon, self.tip)

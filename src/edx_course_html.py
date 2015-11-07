@@ -164,11 +164,12 @@ def print_javascript_function():
                 return d.children || d._children ? -10 : 10;
             })
             .attr("dy", ".35em")
+            .attr('font-family', 'FontAwesome')
             .text(function(d) {
                 return d.icon + ' ' + d.name; ;
             })
-                  .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide)
       ;
 
         // Transition nodes to their new position.
@@ -192,6 +193,7 @@ def print_javascript_function():
             .remove();
 
         nodeExit.select('text')
+            .attr('font-family', 'FontAwesome')
             .text(function(d) { return d.icon + ' ' + d.name; ; });
 
         // Update the links...
