@@ -1,6 +1,6 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
-title = "Hugo Creative Theme"
+title = "Online Course Visualizer"
 theme = "hugo-creative-theme"
 
 [params]
@@ -19,26 +19,26 @@ theme = "hugo-creative-theme"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	name = "Joshua Powers"
+	description = "Seeing the paths online education takes"
 
 
 	# Navigation
 	[params.navigation]
-		brand = "Hugo Creative Theme"
+		brand = "Online Course Visualizer"
 
 		[params.navigation.links]
 			about     = "About"
-			services  = "Services"
-			portfolio = "Portfolio"
+			services  = "Purpose"
+			portfolio = "Demos"
 			contact   = "Contact"
 
 
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Your awesome slogan"
-		subtitle   = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
+		slogan     = "Seeing the paths online education takes"
+		subtitle   = "Help educators and students to see the paths and model for eduation."
 		buttonText = "Find out more"
 
 
@@ -83,15 +83,13 @@ theme = "hugo-creative-theme"
 
     # Aside section
 	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
+		headline = "Wanna fork us?"
 
 		[params.aside.button]
 			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+			link = "//github.com/powersj/ocv"
 
 	# Contact section
 	[params.contact]
 		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
+		description = "If you have ways of enhancements, extensions, or ideas please fork the project!"
