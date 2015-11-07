@@ -2,8 +2,6 @@
 
 ## 2015-11-08
 * Trailer
-* Review Icon choices
-  * View newly generated icon page, verify output
 * Analyze Assessments
   * Provide additional data about the type and help given
   * Print out all examples and analyze them
@@ -35,6 +33,7 @@
 * Build JSON representation of Udacity course, like KBAI or MLT
 * Integrate visualization process into edX studio/course development tool
 * Integrate visualization process into edX LMS platform
+* None unique names cause the generation to fail (see multivariable calculus example)
 
 ## 2015-11-22
 * Verify demo working

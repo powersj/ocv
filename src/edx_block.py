@@ -24,10 +24,10 @@ class Block(object):
             self.icon = '\uf111'
 
         if self.type == 'problem':
-            self.generate_problem_tooltip()
+            self.generate_problem_tooltip(block)
 
         if self.type == 'video':
-            self.generate_video_tooltip()
+            self.generate_video_tooltip(block)
 
     def __str__(self):
         """Overload string function."""
@@ -46,7 +46,7 @@ class Block(object):
         try:
             youtube_id = block['youtube_id']
         except KeyError:
-            youtube_id = None
+            youtube_id = ''
 
         try:
             video_start = block['start_time']
@@ -58,9 +58,9 @@ class Block(object):
         except KeyError:
             video_end = None
 
-        if video_start and video_end:
-            video_length = video_end - video_start
-        else:
-            video_length = query_youtube_api(youtube_id)
-            
+        # if video_start and video_end:
+        #     video_length = video_end - video_start
+        # else:
+        #     video_length = '' # query_youtube_api(youtube_id)
+
         self.tip = 'video tip: %s %s %s' % (youtube_id.encode('utf-8'), video_start, video_end)
