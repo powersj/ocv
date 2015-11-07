@@ -24,27 +24,10 @@ class Block(object):
             self.icon = '\uf111'
 
         if self.type == 'problem':
-            try:
-                self.markdown = block['markdown']
-            except KeyError:
-                self.markdown = ''
+            self.generate_problem_tooltip()
+
         if self.type == 'video':
-            try:
-                self.youtube_id = block['youtube_id']
-            except KeyError:
-                self.youtube_id = ''
-                
-            try:
-                self.video_start = block['start_time']
-            except KeyError:
-                self.video_start = ''
-
-            try:
-                self.video_end = block['end_time']
-            except KeyError:
-                self.video_end = ''
-
-        self.generate_tooltip()
+            self.generate_video_tooltip()
 
     def __str__(self):
         """Overload string function."""
@@ -52,10 +35,32 @@ class Block(object):
                self.name.encode('utf-8'), self.parent.encode('utf-8'), self.type.encode('utf-8'),
                self.icon, self.tip)
 
-    def generate_tooltip(self):
-        if self.type == 'video':
-            self.tip = 'video tip: %s %s %s' % (self.youtube_id.encode('utf-8'),
-                                                self.video_start,
-                                                self.video_end)
-        elif self.type == 'problem' and self.markdown:
-            self.tip = 'I HAVE MARKDOWN TO VIEW!!!'
+    def generate_problem_tooltip(self, block):
+        try:
+            if block['markdown']:
+                self.tip = 'I HAVE MARKDOWN TO VIEW!!!'
+        except KeyError:
+            return 0
+
+    def generate_video_tooltip(self, block):
+        try:
+            youtube_id = block['youtube_id']
+        except KeyError:
+            youtube_id = None
+
+        try:
+            video_start = block['start_time']
+        except KeyError:
+            video_start = None
+
+        try:
+            video_end = block['end_time']
+        except KeyError:
+            video_end = None
+
+        if video_start and video_end:
+            video_length = video_end - video_start
+        else:
+            video_length = query_youtube_api(youtube_id)
+            
+        self.tip = 'video tip: %s %s %s' % (youtube_id.encode('utf-8'), video_start, video_end)
