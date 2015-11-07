@@ -1,25 +1,31 @@
 #!/usr/bin/python
 """Used to determine YouTube video lengths."""
+import os
 import requests
 import re
+import sys
 
 
 def load_api_key():
     """Read in YouTube API Key from local file."""
     try:
-        return open('youtube_api.key', 'r').read().strip()
+        __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+        return open(os.path.join(__location__, 'youtube_api.key'), 'r').read().strip()
     except:
-        SystemExit('Error: No YouTube API Key file found.')
+        print >> sys.stderr, ('Error: No YouTube API Key file found.')
+        return None
 
 
-def get_duration(json_video):
+def get_duration_time(video_json):
     """
     Blatenly stole from:
     https://github.com/s16h/py-must-watch/blob/master/add_youtube_durations.py
     """
     hours, minutes, seconds = 0, 0, 0
-    duration = json_video['items'][0]['contentDetails']['duration']
+
+    duration = video_json['items'][0]['contentDetails']['duration']
     match = re.match(r'PT([0-5]?[\d])M([0-5]?[\d]?)S?', duration)
+
     if match:
         items = match.groups()
         minutes = items[0]
@@ -35,7 +41,7 @@ def get_duration(json_video):
     return hours, minutes, seconds
 
 
-def get_human_duration(duration):
+def get_human_readable(duration):
     """
     Blatenly stole from:
     https://github.com/s16h/py-must-watch/blob/master/add_youtube_durations.py
@@ -54,24 +60,26 @@ def get_human_duration(duration):
     if minutes == '':
         output += '00'
     elif int(minutes) < 10:
-        output += '0' + minutes
+        output += '0' + str(minutes)
     else:
-        output += minutes
+        output += str(minutes)
 
     output += ':'
     if seconds == '':
         output += '00'
     elif int(seconds) < 10:
-        output += '0' + seconds
+        output += '0' + str(seconds)
     else:
-        output += seconds
+        output += str(seconds)
 
     return output
 
 
-def main(youtube_id):
+def get_video_duration(youtube_id):
     """Given a specific YouTube video id, go print the duration of the video."""
     api_key = load_api_key()
+    if not api_key:
+        return ''
 
     url = 'https://www.googleapis.com/youtube/v3/videos?'
     uri = 'part=contentDetails&id=%s&fields=items&key=%s' % (youtube_id, api_key)
@@ -80,11 +88,17 @@ def main(youtube_id):
     try:
         request = requests.get(query)
     except:
-        print 'ERROR: Cannot get YouTube API data for: %s' % youtube_id
+        print >> sys.stderr, 'Could not retrive video: %s' % (youtube_id)
+        return ''
 
-    duration = get_duration(request.json())
-    return get_human_duration(duration)
+    http_code = request.status_code
+    if http_code != 200:
+        print >> sys.stderr, 'Could not retrive video: %s (HTTP Code: %s)' % (youtube_id, http_code)
+        return ''
+
+    duration = get_duration_time(request.json())
+    return get_human_readable(duration)
 
 
 if __name__ == '__main__':
-    print main('e8DFN3m8XGQ')
+    print get_video_duration('e8DFN3m8XGQ')

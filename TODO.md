@@ -7,10 +7,6 @@
   * Print out all examples and analyze them
   * Print out analysis in pretty fashion
     * http://stackoverflow.com/questions/10805184/d3-show-data-on-mouseover-of-circle/10806220#10806220
-* Analyze Videos
-  * Add in video lengths via YouTube API
-  * https://github.com/s16h/py-must-watch/blob/master/add_youtube_durations.py
-  * http://stackoverflow.com/questions/15596753/youtube-api-v3-how-to-get-video-durations
 * Create overview page on index that gives overview of what I've built
     * About
         * High level overview - elevator pitch
