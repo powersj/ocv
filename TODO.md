@@ -26,10 +26,14 @@
 
 ## 2015-11-15
 * Test with co-worker/family member
+* Biggest Bug(s)
+    * None unique names
+        * Cause the generation of parent child links to fail (see multivariable calculus example)
+        * This is because names are used to determine links
 * Build JSON representation of Udacity course, like KBAI or MLT
 * Integrate visualization process into edX studio/course development tool
 * Integrate visualization process into edX LMS platform
-* None unique names cause the generation to fail (see multivariable calculus example)
+
 
 ## 2015-11-22
 * Verify demo working
