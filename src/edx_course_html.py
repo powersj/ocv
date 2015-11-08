@@ -46,11 +46,11 @@ def print_html_header():
 
 
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/d3-tip.js"></script>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <body>
 <script type="text/javascript">
