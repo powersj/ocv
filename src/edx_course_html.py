@@ -37,6 +37,14 @@ def print_html_header():
         stroke: #cccccc;
         stroke-width: 3px;
     }
+
+
+.d3-tip {
+  font-weight: bold;
+  padding: 12px;
+}
+
+
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
@@ -88,7 +96,7 @@ def print_javascript_function():
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        return "<span>" + d.tip + "</span>";
+            return "<span>" + d.tip + "</span>";
       })
 
     var svg = d3.select("body").append("svg")
@@ -166,11 +174,10 @@ def print_javascript_function():
             .attr("dy", ".35em")
             .attr('font-family', 'FontAwesome')
             .text(function(d) {
-                return d.icon + ' ' + d.name; ;
+                return d.icon + ' ' + d.name;
             })
             .on('mouseover', tip.show)
             .on('mouseout', tip.hide)
-      ;
 
         // Transition nodes to their new position.
         var nodeUpdate = node.transition()

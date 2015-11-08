@@ -6,6 +6,7 @@
   * Provide additional data about the type and help given
   * Print out all examples and analyze them
   * Print out analysis in pretty fashion
+    * http://bl.ocks.org/ilyabo/1373263
     * http://stackoverflow.com/questions/10805184/d3-show-data-on-mouseover-of-circle/10806220#10806220
 * Create overview page on index that gives overview of what I've built
     * About

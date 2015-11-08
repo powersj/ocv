@@ -2,6 +2,7 @@
 """
 edX Block object used to parse, store, and setup specific data.
 """
+import re
 
 
 from edx_block_icons import icon_dict
@@ -43,11 +44,42 @@ class Block(object):
             youtube_id = ''
 
         if youtube_id:
-            self.tip = 'Video Length: %s' % (get_video_duration(youtube_id))
+            duration = get_video_duration(youtube_id)
+            if duration:
+                self.tip = 'Video Length: %s' % (duration)
+
+    @staticmethod
+    def generate_feature_list(features):
+        string = '<b>Problem Set Features:</b><ul>'
+        for feature in features:
+            item = '<li>%s</li>' % feature
+            string = ''.join([string, item])
+
+        string = ''.join([string, '</ul>'])
+
+        # if we added something great, otherwise return empty string
+        if string == '<b>Problem Set Features:</b><ul></ul>':
+            return '<b>Problem Set includes no unique features</b>'
+        else:
+            return string
 
     def generate_problem_tooltip(self, block):
         try:
-            if block['markdown']:
-                self.tip = 'I HAVE MARKDOWN TO VIEW!!!'
+            markdown = block['markdown']
         except KeyError:
-            return 0
+            markdown = ''
+
+        if markdown:
+            regex_dict = {
+                'Hint - General':   r"""\|\|.*?\|\|""",
+                'Hint - Incorrect': r"""not=.*?""",
+                'Explanation':      r"""\[explanation\]""",
+                'Feedback':         r"""{{.*?}}"""
+            }
+
+            features = []
+            for type, regex in sorted(regex_dict.iteritems()):
+                if re.compile(regex).findall(markdown):
+                    features.append(type)
+
+            self.tip = self.generate_feature_list(features)

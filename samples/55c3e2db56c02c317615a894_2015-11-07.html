@@ -24,6 +24,14 @@
         stroke: #cccccc;
         stroke-width: 3px;
     }
+
+
+.d3-tip {
+  font-weight: bold;
+  padding: 12px;
+}
+
+
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
@@ -66,8 +74,8 @@ var data = [
 {"name": "Reading Assignments", "parent": "Lesson 1 - Getting Started", "type": "vertical", "icon": "\uf160", "tip": ""},
 {"name": "Reading Assignments", "parent": "Reading Assignments", "type": "html", "icon": "\uf02e", "tip": ""},
 {"name": "HTML Page", "parent": "Reading Assignments", "type": "html", "icon": "\uf02e", "tip": ""},
-{"name": "Perchance to Dream", "parent": "Reading Assignments", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
-{"name": "Attributing Blame", "parent": "Reading Assignments", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Perchance to Dream", "parent": "Reading Assignments", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set includes no unique features</b>"},
+{"name": "Attributing Blame", "parent": "Reading Assignments", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set includes no unique features</b>"},
 {"name": "Reading Sample", "parent": "Reading Assignments", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Homework - Question Styles", "parent": "Example Week 1: Getting Started", "type": "sequential", "icon": "\uf0c9", "tip": ""},
 {"name": "Pointing on a Picture", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf160", "tip": ""},
@@ -77,7 +85,7 @@ var data = [
 {"name": "Drag and Drop", "parent": "Drag and Drop", "type": "problem", "icon": "\uf044", "tip": ""},
 {"name": "Drag and Drop", "parent": "Drag and Drop", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Multiple Choice Questions", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"name": "Multiple Choice Questions", "parent": "Multiple Choice Questions", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Multiple Choice Questions", "parent": "Multiple Choice Questions", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set includes no unique features</b>"},
 {"name": "Selection from Options", "parent": "Multiple Choice Questions", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Mathematical Expressions", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf160", "tip": ""},
 {"name": "Mathematical Expressions", "parent": "Mathematical Expressions", "type": "problem", "icon": "\uf044", "tip": ""},
@@ -86,10 +94,10 @@ var data = [
 {"name": "Chemical Equations", "parent": "Chemical Equations", "type": "problem", "icon": "\uf044", "tip": ""},
 {"name": "Chemical Equations", "parent": "Chemical Equations", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Numerical Input", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"name": "Numerical Input", "parent": "Numerical Input", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Numerical Input", "parent": "Numerical Input", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
 {"name": "Numerical Input", "parent": "Numerical Input", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Text input", "parent": "Homework - Question Styles", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"name": "Text Input", "parent": "Text input", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Text Input", "parent": "Text input", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
 {"name": "Text Input", "parent": "Text input", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Example Week 2: Get Interactive", "parent": "edX Demonstration Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
 {"name": "Lesson 2 - Let's Get Interactive!", "parent": "Example Week 2: Get Interactive", "type": "sequential", "icon": "\uf0c9", "tip": ""},
@@ -153,10 +161,10 @@ var data = [
 {"name": "Immediate Feedback", "parent": "Immediate Feedback", "type": "problem", "icon": "\uf044", "tip": ""},
 {"name": "Immediate Feedback", "parent": "Immediate Feedback", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Getting Answers", "parent": "edX Exams", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"name": "Getting Answers", "parent": "Getting Answers", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Getting Answers", "parent": "Getting Answers", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
 {"name": "Getting Answers", "parent": "Getting Answers", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Answering More Than Once", "parent": "edX Exams", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"name": "Answering More Than Once", "parent": "Answering More Than Once", "type": "problem", "icon": "\uf044", "tip": "I HAVE MARKDOWN TO VIEW!!!"},
+{"name": "Answering More Than Once", "parent": "Answering More Than Once", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
 {"name": "Answering More Than Once", "parent": "Answering More Than Once", "type": "discussion", "icon": "\uf0c0", "tip": ""},
 {"name": "Limited Checks", "parent": "edX Exams", "type": "vertical", "icon": "\uf160", "tip": ""},
 {"name": "Limited Checks", "parent": "Limited Checks", "type": "problem", "icon": "\uf044", "tip": ""},
@@ -203,7 +211,7 @@ var data = [
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        return "<span>" + d.tip + "</span>";
+            return "<span>" + d.tip + "</span>";
       })
 
     var svg = d3.select("body").append("svg")
@@ -281,11 +289,10 @@ var data = [
             .attr("dy", ".35em")
             .attr('font-family', 'FontAwesome')
             .text(function(d) {
-                return d.icon + ' ' + d.name; ;
+                return d.icon + ' ' + d.name;
             })
             .on('mouseover', tip.show)
             .on('mouseout', tip.hide)
-      ;
 
         // Transition nodes to their new position.
         var nodeUpdate = node.transition()
