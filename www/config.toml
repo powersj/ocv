@@ -69,7 +69,7 @@ theme = "hugo-creative-theme"
             description = "Zoom in and out, move around, expand and hide objects!"
 
         [[params.services.list]]
-            icon = "fa-map"
+            icon = "fa-database"
             title = "Details"
             description = "Get additional details like video lengths and problem set features!"
 
