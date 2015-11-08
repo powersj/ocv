@@ -1,8 +1,8 @@
 html {
     display: table;
-    margin: auto;
     font-family: 'Cantarell';
     font-size: 14px;
+    margin: auto;
 }
 body {
     background-color: #ffffff;
@@ -13,5 +13,9 @@ body {
     stroke-width: 3px;
 }
 .d3-tip {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 1px;
+    color: #fff;
     font-weight: bold;
+    padding: 12px;
 }
