@@ -1,0 +1,17 @@
+html {
+    display: table;
+    margin: auto;
+    font-family: 'Cantarell';
+    font-size: 14px;
+}
+body {
+    background-color: #ffffff;
+}
+.link {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 3px;
+}
+.d3-tip {
+    font-weight: bold;
+}

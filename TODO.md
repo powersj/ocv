@@ -8,6 +8,7 @@
 * Build JSON representation of Udacity course, like KBAI or MLT
 * Tooltips only when tooltip exists
     * CSS tooltips cause empty box to always appear, even if tooltip field is empty
+* Split lines up if longer than 42 charachters
 * Analyze other fields - what other items can be added to tooltips?
 
 ## 2015-11-22
