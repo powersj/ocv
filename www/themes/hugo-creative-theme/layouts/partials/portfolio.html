@@ -1,4 +1,12 @@
 <section class="no-padding" id="portfolio">
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 class="section-heading">{{ with .Site.Params.portfolio.headline }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+            </div>
+        </div>
+    </aside>
     <div class="container-fluid">
         <div class="row no-gutter">
             {{ range .Site.Data.projects }}

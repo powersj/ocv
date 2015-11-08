@@ -28,68 +28,72 @@ theme = "hugo-creative-theme"
 		brand = "Online Course Visualizer"
 
 		[params.navigation.links]
-			about     = "About"
-			services  = "Purpose"
-			portfolio = "Demos"
-			contact   = "Contact"
+			about      = "Objective"
+			services   = "Features"
+			portfolio  = "Demos"
+			contact    = "Download"
 
 
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Seeing the paths online education takes"
-		subtitle   = "Help educators and students to see the paths and model for eduation."
+		slogan     = "Seeing the paths online education can take"
+		subtitle   = "Help educators and students to visual see a course structure."
 		buttonText = "Find out more"
 
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
+		headline    = "Objective"
+		description = "The goal of this project is to create visualizations of components of entire online education courses to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, like edX."
+		buttonText  = "Check out the demos below!"
 
 
 	# Service section
 	[params.services]
-		headline = "At your service"
+		headline = "Features"
 
         [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
+            icon = "fa-graduation-cap"
+            title = "Entire Course"
+            description = "See an entire course in one image!"
 
         [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
+			icon = "fa-gears"
+			title = "Automated"
+			description = "Connect to MOOCs and have the visualization build!"
 
 		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+            icon = "fa-sitemap"
+            title = "Interactive"
+            description = "Zoom in and out, move around, expand and hide objects!"
 
         [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
+            icon = "fa-map"
+            title = "Details"
+            description = "Get additional details like video lengths and problem set features!"
 
 
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+	# Portfolio section
+	[params.portfolio]
+		headline = "Demos"
+
+	    # Portfolio modals
+		[params.portfolio.modal]
+	        client = "Client"
+	        date = "Date"
+	        category = "Category"
+	        buttonText = "Go Back"
 
     # Aside section
 	[params.aside]
-		headline = "Wanna fork us?"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/powersj/ocv"
+		headline = "Click the images above for demos of the visualizations!"
 
 	# Contact section
 	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "If you have ways of enhancements, extensions, or ideas please fork the project!"
+		headline = "Download"
+		description = "Download, extend, enhance, and share ideas on how to enhance!"
+
+		[params.contact.button]
+			text = "Download Here"
+			link = "https://github.com/powersj/ocv"
