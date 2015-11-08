@@ -33,8 +33,10 @@ class Block(object):
 
     def __str__(self):
         """Overload string function."""
-        return '{"name": "%s", "parent": "%s", "type": "%s", "icon": "%s", "tip": "%s"},' % (
-               self.name.encode('utf-8'), self.parent.encode('utf-8'), self.type.encode('utf-8'),
+        return ('{"id": "%s", "name": "%s", "parent": "%s",'
+                ' "type": "%s", "icon": "%s", "tip": "%s"},') % (
+               self.id.encode('utf-8'), self.name.encode('utf-8'),
+               self.parent.encode('utf-8'), self.type.encode('utf-8'),
                self.icon, self.tip)
 
     def generate_video_tooltip(self, block):

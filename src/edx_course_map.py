@@ -28,7 +28,7 @@ def read_blocks(course_dict):
 def get_children(tree, block):
     """Finds all children and children's children recursively."""
     for child in block.children:
-        child.parent = block.name
+        child.parent = block.id
         tree.append(child)
         children = get_children(tree, child)
         if children:
