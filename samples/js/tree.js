@@ -24,7 +24,7 @@ var tip = d3.tip()
     .offset([-10, 0])
     .html(function(d) {
         return "<span>" + d.tip + "</span>";
-    })
+    });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.right + margin.left)
@@ -104,7 +104,7 @@ var update = function(source) {
             return d.icon + ' ' + d.name;
         })
         .on('mouseover', tip.show)
-        .on('mouseout', tip.hide)
+        .on('mouseout', tip.hide);
 
     // Transition nodes to their new position.
     var nodeUpdate = node.transition()
@@ -129,7 +129,7 @@ var update = function(source) {
     nodeExit.select('text')
         .attr('font-family', 'FontAwesome')
         .text(function(d) {
-            return d.icon + ' ' + d.name;;
+            return d.icon + ' ' + d.name;
         });
 
     // Update the links...

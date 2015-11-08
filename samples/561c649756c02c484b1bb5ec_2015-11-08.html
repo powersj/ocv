@@ -6,268 +6,29 @@
 <title>OCV</title>
 <meta name="description" content="Online Course Visualizer">
 
-<style type="text/css">
-    html {
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/d3.js"></script>
+<script type="text/javascript" src="js/d3-tip.js"></script>
 
-        display: table;
-        margin: auto;
-        font-family: 'Cantarell';
-        font-size: 14px;
-    }
-
-    body {
-        background-color: #ffffff;
-    }
-
-    .link {
-        fill: none;
-        stroke: #cccccc;
-        stroke-width: 3px;
-    }
-
-
-.d3-tip {
-  font-weight: bold;
-  padding: 12px;
-}
-
-
-</style>
-<script src="js/jquery.js"></script>
-<script src="js/d3.js"></script>
-<script src="js/d3-tip.js"></script>
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
 <body>
 <script type="text/javascript">
 var data = [
-
-{"id": "course", "name": "Test Course", "parent": "null", "type": "course", "icon": "\uf19c", "tip": ""},
-{"id": "6c49044bd98c4737a7ea75cd88b2d6fa", "name": "Section 1", "parent": "course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
-{"id": "b8ad8e7b451a49ada6851cfd23bccaff", "name": "Subsection 1.1", "parent": "6c49044bd98c4737a7ea75cd88b2d6fa", "type": "sequential", "icon": "\uf0c9", "tip": ""},
-{"id": "04614bedaa494176bbcb19ce34bed343", "name": "Unit 1.1.1", "parent": "b8ad8e7b451a49ada6851cfd23bccaff", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"id": "9d6a3b976a1c461ab6a182eab3ee28e8", "name": "Checkboxes", "parent": "04614bedaa494176bbcb19ce34bed343", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
-{"id": "1e303a15cbed4ef2aed1175b9b6f2ebd", "name": "Subsection 1.2", "parent": "6c49044bd98c4737a7ea75cd88b2d6fa", "type": "sequential", "icon": "\uf0c9", "tip": ""},
-{"id": "a91bdd6ceaf04082a7d26f6f9cf87901", "name": "Unit 1.2.1", "parent": "1e303a15cbed4ef2aed1175b9b6f2ebd", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"id": "5fcc159afeff4d54bee7b5c685f6a9fd", "name": "Dropdown", "parent": "a91bdd6ceaf04082a7d26f6f9cf87901", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
-{"id": "9c3e26c73c2848a29930c01215f6eea6", "name": "Unit 1.2.2", "parent": "1e303a15cbed4ef2aed1175b9b6f2ebd", "type": "vertical", "icon": "\uf160", "tip": ""},
-{"id": "b8867a79166446fa9e432681adde1ba2", "name": "Dropdown", "parent": "9c3e26c73c2848a29930c01215f6eea6", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
-
-    ];
-    var margin = {
-            top: 0,
-            right: 0,
-            bottom: 40,
-            left: 40
-        },
-        width = $(document).width(),
-        height = $(document).height();
-
-    var i = 0;
-    var duration = 1000;
-    var root;
-
-    var tree = d3.layout.tree()
-        .size([height, width]);
-
-    var diagonal = d3.svg.diagonal()
-        .projection(function (d) {
-            return [d.y, d.x];
-        });
-
-    var tip = d3.tip()
-      .attr('class', 'd3-tip')
-      .offset([-10, 0])
-      .html(function(d) {
-            return "<span>" + d.tip + "</span>";
-      })
-
-    var svg = d3.select("body").append("svg")
-        .attr("width", width + margin.right + margin.left)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + ")");
-
-    svg.call(tip);
-
-
-    var collapse = function (d) {
-        if (d.children) {
-            d._children = d.children;
-            d._children.forEach(collapse);
-            d.children = null;
-        }
-    };
-
-    var zoom = function() {
-        var scale = d3.event.scale,
-            translation = d3.event.translate,
-            tbound = -height * scale,
-            bbound = height * scale,
-            lbound = (-width + margin.right) * scale,
-            rbound = (width - margin.left) * scale;
-        // limit translation to thresholds
-        translation = [
-            Math.max(Math.min(translation[0], rbound), lbound),
-            Math.max(Math.min(translation[1], bbound), tbound)
-        ];
-        svg.attr("transform", "translate(" + translation + ")" + " scale(" + scale + ")");
-    };
-
-    // Toggle children on click.
-    var click = function(d) {
-        if (d.children) {
-            d._children = d.children;
-            d.children = null;
-        } else {
-            d.children = d._children;
-            d._children = null;
-        }
-        update(d);
-    };
-
-    var update = function(source) {
-        // Compute the new tree layout.
-        var nodes = tree.nodes(root).reverse(),
-            links = tree.links(nodes);
-
-        // Normalize for fixed-depth.
-        nodes.forEach(function(d) {
-            d.y = d.depth * 300;
-        });
-
-        // Update the nodes...
-        var node = svg.selectAll("g.node")
-            .data(nodes, function(d) {
-                return d.id || (d.id = ++i);
-            });
-
-        // Enter any new nodes at the parent's previous position.
-        var nodeEnter = node.enter().append("g")
-            .attr("class", "node")
-            .attr("transform", function(d) {
-                return "translate(" + source.y0 + "," + source.x0 + ")";
-            })
-            .on("click", click);
-
-        nodeEnter.append("text")
-            .attr("x", function(d) {
-                return d.children || d._children ? -10 : 10;
-            })
-            .attr("dy", ".35em")
-            .attr('font-family', 'FontAwesome')
-            .text(function(d) {
-                return d.icon + ' ' + d.name;
-            })
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide)
-
-        // Transition nodes to their new position.
-        var nodeUpdate = node.transition()
-            .duration(duration)
-            .attr("transform", function(d) {
-                return "translate(" + d.y + "," + d.x + ")";
-            });
-
-        nodeUpdate.select("text")
-            .style("fill", function(d) {
-                return d._children ? "#f05f40" : "#337ab7";
-            });
-
-        // Transition exiting nodes to the parent's new position.
-        var nodeExit = node.exit().transition()
-            .duration(duration)
-            .attr("transform", function(d) {
-                return "translate(" + source.y + "," + source.x + ")";
-            })
-            .remove();
-
-        nodeExit.select('text')
-            .attr('font-family', 'FontAwesome')
-            .text(function(d) { return d.icon + ' ' + d.name; ; });
-
-        // Update the links...
-        var link = svg.selectAll("path.link")
-            .data(links, function(d) {
-                return d.target.id;
-            });
-
-        // Enter any new links at the parent's previous position.
-        link.enter().insert("path", "g")
-            .attr("class", "link")
-            .attr("d", function(d) {
-                var o = {
-                    x: source.x0,
-                    y: source.y0
-                };
-                return diagonal({
-                    source: o,
-                    target: o
-                });
-            });
-
-        // Transition links to their new position.
-        link.transition()
-            .duration(duration)
-            .attr("d", diagonal);
-
-        // Transition exiting nodes to the parent's new position.
-        link.exit().transition()
-            .duration(duration)
-            .attr("d", function(d) {
-                var o = {
-                    x: source.x,
-                    y: source.y
-                };
-                return diagonal({
-                    source: o,
-                    target: o
-                });
-            })
-            .remove();
-
-        // Stash the old positions for transition.
-        nodes.forEach(function(d) {
-            d.x0 = d.x;
-            d.y0 = d.y;
-        });
-
-        d3.select("svg").call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom));
-    };
-
-
-    var dataMap = data.reduce(function(map, node) {
-        map[node.id] = node;
-        return map;
-    }, {});
-
-    var treeData = [];
-    data.forEach(function(node) {
-        // add to parent
-        var parent = dataMap[node.parent];
-        if (parent) {
-            // create child array if it doesn't exist
-            (parent.children || (parent.children = []))
-            // add node to child array
-            .push(node);
-        } else {
-            // parent is null or missing
-            treeData.push(node);
-        }
-    });
-
-    root = treeData[0];
-    root.x0 = height / 2;
-    root.y0 = 0;
-
-    root.children.forEach(collapse);
-
-    update(root);
-
-
-
+	{"id": "course", "name": "Test Course", "parent": "null", "type": "course", "icon": "\uf19c", "tip": ""},
+	{"id": "6c49044bd98c4737a7ea75cd88b2d6fa", "name": "Section 1", "parent": "course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+	{"id": "b8ad8e7b451a49ada6851cfd23bccaff", "name": "Subsection 1.1", "parent": "6c49044bd98c4737a7ea75cd88b2d6fa", "type": "sequential", "icon": "\uf0c9", "tip": ""},
+	{"id": "04614bedaa494176bbcb19ce34bed343", "name": "Unit 1.1.1", "parent": "b8ad8e7b451a49ada6851cfd23bccaff", "type": "vertical", "icon": "\uf160", "tip": ""},
+	{"id": "9d6a3b976a1c461ab6a182eab3ee28e8", "name": "Checkboxes", "parent": "04614bedaa494176bbcb19ce34bed343", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
+	{"id": "1e303a15cbed4ef2aed1175b9b6f2ebd", "name": "Subsection 1.2", "parent": "6c49044bd98c4737a7ea75cd88b2d6fa", "type": "sequential", "icon": "\uf0c9", "tip": ""},
+	{"id": "a91bdd6ceaf04082a7d26f6f9cf87901", "name": "Unit 1.2.1", "parent": "1e303a15cbed4ef2aed1175b9b6f2ebd", "type": "vertical", "icon": "\uf160", "tip": ""},
+	{"id": "5fcc159afeff4d54bee7b5c685f6a9fd", "name": "Dropdown", "parent": "a91bdd6ceaf04082a7d26f6f9cf87901", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
+	{"id": "9c3e26c73c2848a29930c01215f6eea6", "name": "Unit 1.2.2", "parent": "1e303a15cbed4ef2aed1175b9b6f2ebd", "type": "vertical", "icon": "\uf160", "tip": ""},
+	{"id": "b8867a79166446fa9e432681adde1ba2", "name": "Dropdown", "parent": "9c3e26c73c2848a29930c01215f6eea6", "type": "problem", "icon": "\uf044", "tip": "<b>Problem Set Features:</b><ul><li>Explanation</li></ul>"},
+];
 </script>
+<script type="text/javascript" src="js/tree.js"></script>
 </body>
 </html>
-
