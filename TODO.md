@@ -1,8 +1,5 @@
 # TODO
 
-## 2015-11-08
-* Trailer
-
 ## 2015-11-15
 * Test with co-worker/family member
 * Build JSON representation of Udacity course, like KBAI or MLT
@@ -12,7 +9,7 @@
 
 ## 2015-11-22
 * Get test site images and content finalized
-* Verify demo working on GitHug pages or edX
+* Verify demo working on GitHub pages or edX
 * Integrate visualization process into edX studio/course development tool
 * Integrate visualization process into edX LMS platform
 * Final fit and finish testing
