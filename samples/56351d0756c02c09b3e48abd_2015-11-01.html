@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>OCV</title>
+<meta name="description" content="Online Course Visualizer">
+
+<style type="text/css">
+    html {
+
+        display: table;
+        margin: auto;
+        font-family: 'Cantarell';
+        font-size: 14px;
+    }
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .link {
+        fill: none;
+        stroke: #cccccc;
+        stroke-width: 3px;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cantarell" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<body>
+<script type="text/javascript">
+var data = [
+
+{"name": "Testing Course", "parent": "null", "type": "course", "icon": "\uf19c", "tip": ""},
+{"name": "HTML", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Text", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Text", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Text", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Default", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Announcement", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Announcement", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Announcement", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Annonymous User ID", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Annonymous User ID", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Anonymous User ID", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Qualtrics", "parent": "Annonymous User ID", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Anonymous User ID", "parent": "Qualtrics", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "URL Param", "parent": "Annonymous User ID", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "URL Param", "parent": "URL Param", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Full Screen Image Tool", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Full Screen Image Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Full Screen Image Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Full Screen Image Tool", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "iFrame Tool", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "iFrame Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Frame with Problem", "parent": "iFrame Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Frame with problem", "parent": "Frame with Problem", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "External Content", "parent": "iFrame Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Frame with external content", "parent": "External Content", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Raw HTML", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Raw HTML", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Raw HTML", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Zooming Image Tool", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Zooming Image Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Zooming Image Tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Zooming Image Tool", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Many Sequentials", "parent": "HTML", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Unit", "parent": "Many Sequentials", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Problem (Basic)", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Blank Common Problem", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Blank Common Problem", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Blank Common Problem", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Checkboxes", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Checkboxes", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Checkboxes", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Checkboxes", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Dropdown", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Dropdown", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Dropdown", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Dropdown", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Multiple Choice", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Multiple Choice", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Multiple Choice", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Numerical Input", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Numerical Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Numerical Input", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Text Input", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Text Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Text Input", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Checkboxes with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Checkboxes with Hints and Feedback", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Checkboxes with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Dropdown with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Dropdown with Hints and Feedback", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Dropdown with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Multiple Choice with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Multiple Choice with Hints and Feedback", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Multiple Choice with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Numerical Input with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Numerical Input with Hints and Feedback", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Numerical Input with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Text Input with Hints and Feedback", "parent": "Problem (Basic)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Text Input with Hints and Feedback", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Text Input with Hints and Feedback", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Problem (Advanced)", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Blank Advanced Problem", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Blank Advanced Problem", "parent": "Blank Advanced Problem", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Default", "parent": "Blank Advanced Problem", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Circuit Schematic Builder", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Circuit Schematic Builder", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Circuit Schematic Builder", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Circuit Schematic Builder", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Custom Javascript Display and Grading", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Custom Javascript Display and Grading", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Custom Javascript Display and Grading", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Custom Javascript Display and Grading", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Custom Python-Evaluated Input", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Custom Python-Evaluated Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Custom Python-Evaluated Input", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Drag and Drop", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Drag and Drop", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Drag Text only - squares", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Drag Text only - squares", "parent": "Drag Text only - squares", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Drag images only - exact rule", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Drag images only - exact rule", "parent": "Drag images only - exact rule", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Images only - any rule", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Images only - any rule", "parent": "Images only - any rule", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Text only - Unordered equal rule", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Text only - Unordered equal rule", "parent": "Text only - Unordered equal rule", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Images only - unordered_equal rule", "parent": "Drag and Drop", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Images only - unordered_equal rule", "parent": "Images only - unordered_equal rule", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Image Mapped Input", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Image Mapped Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Image Mapped Input", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "One rectangular region", "parent": "Image Mapped Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "One rectangular region", "parent": "One rectangular region", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Multiple rectangular regions", "parent": "Image Mapped Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Multiple rectangular regions", "parent": "Multiple rectangular regions", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "irregular region", "parent": "Image Mapped Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "irregular region", "parent": "irregular region", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Math Expression Input", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Math Expression Input", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Math Expression Input", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Molecular Structure", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Molecular Structure", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Molecular Structure", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Peer Assessment", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Peer Assessment", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Open Assessment", "parent": "Default", "type": "openassessment", "icon": "\uf044", "tip": ""},
+{"name": "Introduction", "parent": "Peer Assessment", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Problem with Adaptive Hint", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Default", "parent": "Problem with Adaptive Hint", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Problem with Adaptive Hint", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Chemical Equation", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Chemical Equation", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Chemical Equation", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Chemical Equation", "parent": "Default", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Gene explorer tool", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "basic problem", "parent": "Gene explorer tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Gene Explorer tool", "parent": "basic problem", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Protein builder tool", "parent": "Problem (Advanced)", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "basic problem", "parent": "Protein builder tool", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Protein Builder Tool", "parent": "basic problem", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "Video", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Transcripts", "parent": "Video", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "single language", "parent": "Transcripts", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Video with transcript in a single language", "parent": "single language", "type": "video", "icon": "\uf008", "tip": ""},
+{"name": "Multiple languages", "parent": "Transcripts", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Video with transcript in multiple languages", "parent": "Multiple languages", "type": "video", "icon": "\uf008", "tip": ""},
+{"name": "No Transcripts", "parent": "Video", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Video with no transcripts", "parent": "No Transcripts", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Video", "parent": "Video with no transcripts", "type": "video", "icon": "\uf008", "tip": ""},
+{"name": "Inline Discussion", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Forum", "parent": "Inline Discussion", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "01", "parent": "Forum", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Discussion Forums Test", "parent": "01", "type": "discussion", "icon": "\uf0c0", "tip": ""},
+{"name": "Advanced Modules", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Polls", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Polls", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Polls", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "01948ffd7e304ecda821e36e35ef5a93", "parent": "Default", "type": "poll", "icon": "\uf0cb", "tip": ""},
+{"name": "Surveys", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Surveys", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Surveys", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "842ba3d0c0074ad4b664655fdf46f2fb", "parent": "Default", "type": "survey", "icon": "\uf0cb", "tip": ""},
+{"name": "Annotations", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Annotations", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Annotations", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "acc9595b23fb4d9da7d01817715a9219", "parent": "Default", "type": "annotatable", "icon": "\uf0cb", "tip": ""},
+{"name": "Staff Graded Assignments", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Staff Graded Assignments", "parent": "Staff Graded Assignments", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Staff Graded Assignments", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "HTML Page", "parent": "Staff Graded Assignments", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "5f641b97f17741ddab10de5663941e7d", "parent": "Staff Graded Assignments", "type": "edx_sga", "icon": "\uf0cb", "tip": ""},
+{"name": "Google calendar", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Google calendar", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Google calendar", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "08c37d99bbba4695ab61a773cf532271", "parent": "Default", "type": "google-calendar", "icon": "\uf1a0", "tip": ""},
+{"name": "Google drive", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Google drive", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Google drive", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "92ec9fa89f9e459c93c64b027723a7fb", "parent": "Default", "type": "google-document", "icon": "\uf1a0", "tip": ""},
+{"name": "Google Hangout", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Google Hangout", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Google Hangout", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Google Hangouts", "parent": "Default", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Content experiments", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Content experiments", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Content experiment", "parent": "Content experiments", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "e912eed00059429cbe08d5a4fa5e73bb", "parent": "Content experiment", "type": "split_test", "icon": "\uf044", "tip": ""},
+{"name": "Group ID 455306730", "parent": "e912eed00059429cbe08d5a4fa5e73bb", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Group ID 455306730", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Group ID 1762115162", "parent": "e912eed00059429cbe08d5a4fa5e73bb", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Group ID 1762115162", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Conditional module", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "introduction", "parent": "Conditional module", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Introduction", "parent": "introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "e538b63aa9b24c8ab1e756be8c7abecb", "parent": "introduction", "type": "poll", "icon": "\uf0cb", "tip": ""},
+{"name": "Base problem 1", "parent": "introduction", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "BASE PROBLEM 2", "parent": "introduction", "type": "problem", "icon": "\uf046", "tip": ""},
+{"name": "conditionals based on poll", "parent": "Conditional module", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "conditional_89eba066a519", "parent": "conditionals based on poll", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "html_86e5ce30c03f", "parent": "conditional_89eba066a519", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_bc445272f7cf", "parent": "conditionals based on poll", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "html_6f2e646913d2", "parent": "conditional_bc445272f7cf", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditionals based on a single problem", "parent": "Conditional module", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "conditional_f8cfa10217cb", "parent": "conditionals based on a single problem", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for attempted problem", "parent": "conditional_f8cfa10217cb", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_0977651c0f3d", "parent": "conditionals based on a single problem", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for not attempted problem", "parent": "conditional_0977651c0f3d", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_d6eb0bbb3096", "parent": "conditionals based on a single problem", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for problem aswered correctly", "parent": "conditional_d6eb0bbb3096", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_1de5b85d1647", "parent": "conditionals based on a single problem", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for problem not aswered correctly", "parent": "conditional_1de5b85d1647", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Conditionals based on multiple problems", "parent": "Conditional module", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "conditional_1cb09a78fa65", "parent": "Conditionals based on multiple problems", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for attempted problems", "parent": "conditional_1cb09a78fa65", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_86bd6336f4f5", "parent": "Conditionals based on multiple problems", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for not attempted problems", "parent": "conditional_86bd6336f4f5", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_612ca2737e9d", "parent": "Conditionals based on multiple problems", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for problems aswered correctly", "parent": "conditional_612ca2737e9d", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "conditional_6797c26ea916", "parent": "Conditionals based on multiple problems", "type": "conditional", "icon": "\uf128", "tip": ""},
+{"name": "HTML for problems not aswered correctly", "parent": "conditional_6797c26ea916", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Word cloud", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Word cloud", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Word cloud", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "350e0f30b024495ba73c9301b14df558", "parent": "Default", "type": "word_cloud", "icon": "\uf0c2", "tip": ""},
+{"name": "Default", "parent": "Word cloud", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "59a617ff338f43409ba24aced61da888", "parent": "Default", "type": "word_cloud", "icon": "\uf0c2", "tip": ""},
+{"name": "Recommendation", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Recommendation", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Default", "parent": "Recommendation", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "89ea444137c74375805a15ad1dde3ec8", "parent": "Default", "type": "recommender", "icon": "\uf128", "tip": ""},
+{"name": "Cohort-Specific Courseware", "parent": "Advanced Modules", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Cohort-Specific Courseware", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "introduction", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "cohorted content", "parent": "Cohort-Specific Courseware", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "cohorted content", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "HTML Page", "parent": "cohorted content", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "Other", "parent": "Testing Course", "type": "chapter", "icon": "\uf0c8", "tip": ""},
+{"name": "Jasmine tests", "parent": "Other", "type": "sequential", "icon": "\uf02d", "tip": ""},
+{"name": "Introduction", "parent": "Jasmine tests", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "HTML Page", "parent": "Introduction", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "HTML", "parent": "Jasmine tests", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Jasmine tests: HTML module edition", "parent": "HTML", "type": "html", "icon": "\uf02e", "tip": ""},
+{"name": "JS Input", "parent": "Jasmine tests", "type": "vertical", "icon": "\uf0c9", "tip": ""},
+{"name": "Jasmine tests: JS Input problem edition (same origin)", "parent": "JS Input", "type": "problem", "icon": "\uf046", "tip": ""},
+
+    ];
+    var margin = {
+            top: 0,
+            right: 0,
+            bottom: 40,
+            left: 40
+        },
+        width = $(document).width(),
+        height = $(document).height();
+
+    var i = 0;
+    var duration = 1000;
+    var root;
+
+    var tree = d3.layout.tree()
+        .size([height, width]);
+
+    var diagonal = d3.svg.diagonal()
+        .projection(function (d) {
+            return [d.y, d.x];
+        });
+
+    var tip = d3.tip()
+      .attr('class', 'd3-tip')
+      .offset([-10, 0])
+      .html(function(d) {
+        return "<span>" + d.tip + "</span>";
+      })
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.right + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + ")");
+
+    svg.call(tip);
+
+
+    var collapse = function (d) {
+        if (d.children) {
+            d._children = d.children;
+            d._children.forEach(collapse);
+            d.children = null;
+        }
+    };
+
+    var zoom = function() {
+        var scale = d3.event.scale,
+            translation = d3.event.translate,
+            tbound = -height * scale,
+            bbound = height * scale,
+            lbound = (-width + margin.right) * scale,
+            rbound = (width - margin.left) * scale;
+        // limit translation to thresholds
+        translation = [
+            Math.max(Math.min(translation[0], rbound), lbound),
+            Math.max(Math.min(translation[1], bbound), tbound)
+        ];
+        svg.attr("transform", "translate(" + translation + ")" + " scale(" + scale + ")");
+    };
+
+    // Toggle children on click.
+    var click = function(d) {
+        if (d.children) {
+            d._children = d.children;
+            d.children = null;
+        } else {
+            d.children = d._children;
+            d._children = null;
+        }
+        update(d);
+    };
+
+    var update = function(source) {
+        // Compute the new tree layout.
+        var nodes = tree.nodes(root).reverse(),
+            links = tree.links(nodes);
+
+        // Normalize for fixed-depth.
+        nodes.forEach(function(d) {
+            d.y = d.depth * 300;
+        });
+
+        // Update the nodes...
+        var node = svg.selectAll("g.node")
+            .data(nodes, function(d) {
+                return d.id || (d.id = ++i);
+            });
+
+        // Enter any new nodes at the parent's previous position.
+        var nodeEnter = node.enter().append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) {
+                return "translate(" + source.y0 + "," + source.x0 + ")";
+            })
+            .on("click", click);
+
+        nodeEnter.append("text")
+            .attr("x", function(d) {
+                return d.children || d._children ? -10 : 10;
+            })
+            .attr("dy", ".35em")
+            .text(function(d) {
+                return d.icon + ' ' + d.name; ;
+            })
+                  .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+      ;
+
+        // Transition nodes to their new position.
+        var nodeUpdate = node.transition()
+            .duration(duration)
+            .attr("transform", function(d) {
+                return "translate(" + d.y + "," + d.x + ")";
+            });
+
+        nodeUpdate.select("text")
+            .style("fill", function(d) {
+                return d._children ? "#f05f40" : "#337ab7";
+            });
+
+        // Transition exiting nodes to the parent's new position.
+        var nodeExit = node.exit().transition()
+            .duration(duration)
+            .attr("transform", function(d) {
+                return "translate(" + source.y + "," + source.x + ")";
+            })
+            .remove();
+
+        nodeExit.select('text')
+            .text(function(d) { return d.icon + ' ' + d.name; ; });
+
+        // Update the links...
+        var link = svg.selectAll("path.link")
+            .data(links, function(d) {
+                return d.target.id;
+            });
+
+        // Enter any new links at the parent's previous position.
+        link.enter().insert("path", "g")
+            .attr("class", "link")
+            .attr("d", function(d) {
+                var o = {
+                    x: source.x0,
+                    y: source.y0
+                };
+                return diagonal({
+                    source: o,
+                    target: o
+                });
+            });
+
+        // Transition links to their new position.
+        link.transition()
+            .duration(duration)
+            .attr("d", diagonal);
+
+        // Transition exiting nodes to the parent's new position.
+        link.exit().transition()
+            .duration(duration)
+            .attr("d", function(d) {
+                var o = {
+                    x: source.x,
+                    y: source.y
+                };
+                return diagonal({
+                    source: o,
+                    target: o
+                });
+            })
+            .remove();
+
+        // Stash the old positions for transition.
+        nodes.forEach(function(d) {
+            d.x0 = d.x;
+            d.y0 = d.y;
+        });
+
+        d3.select("svg").call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom));
+    };
+
+
+    var dataMap = data.reduce(function(map, node) {
+        map[node.name] = node;
+        return map;
+    }, {});
+
+    var treeData = [];
+    data.forEach(function(node) {
+        // add to parent
+        var parent = dataMap[node.parent];
+        if (parent) {
+            // create child array if it doesn't exist
+            (parent.children || (parent.children = []))
+            // add node to child array
+            .push(node);
+        } else {
+            // parent is null or missing
+            treeData.push(node);
+        }
+    });
+
+    root = treeData[0];
+    root.x0 = height / 2;
+    root.y0 = 0;
+
+    root.children.forEach(collapse);
+
+    update(root);
+
+
+
+</script>
+</body>
+</html>
+
