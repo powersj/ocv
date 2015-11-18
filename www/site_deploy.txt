@@ -1,0 +1,15 @@
+# notes on things to do to deploy a new gh branch
+rm -rf /tmp/public
+cp -R public/ /tmp/public
+
+cd ..
+git checkout gh-pages
+cp -R /tmp/public/* .
+
+git add -A
+git commit -m "Updating github pages"
+git push origin gh-pages
+
+rm -rf /tmp/public
+
+git checkout origin
