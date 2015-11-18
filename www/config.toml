@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://powersj.github.io/ocv/"
 languageCode = "en-us"
 title = "Online Course Visualizer"
 theme = "hugo-creative-theme"
