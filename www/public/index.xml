@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Online Course Visualizer</title>
-    <link>https://powersj.github.io/ocv/</link>
+    <link>http://localhost:1313/ocv/</link>
     <description>Recent content on Online Course Visualizer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://powersj.github.io/ocv/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ocv/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
