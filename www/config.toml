@@ -84,10 +84,6 @@ theme = "hugo-creative-theme"
 	        category = "Category"
 	        buttonText = "Go Back"
 
-  # Aside section
-	[params.aside]
-		headline = "Click the images above for demos of the visualizations!"
-
 	# Contact section
 	[params.contact]
 		headline = "Download"
