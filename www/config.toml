@@ -48,51 +48,50 @@ theme = "hugo-creative-theme"
 		description = "The goal of this project is to create visualizations of online educational courses. This will help educators understand the methods they are using to teach and assess students. The project helps students understand the course and how it is structured. It is specifically targeted for students and teachers using MOOC platforms, like edX."
 		buttonText  = "Check out the demos below!"
 
-
 	# Service section
 	[params.services]
 		headline = "Features"
 
-        [[params.services.list]]
-            icon = "fa-graduation-cap"
-            title = "Entire Course"
-            description = "See an entire course in one image!"
-
-        [[params.services.list]]
-			icon = "fa-gears"
-			title = "Automated"
-			description = "Connect to MOOCs and have the visualization build!"
+	  [[params.services.list]]
+	      icon = "fa-graduation-cap"
+	      title = "Entire Course"
+	      description = "See an entire course in one image!"
 
 		[[params.services.list]]
-            icon = "fa-sitemap"
-            title = "Interactive"
-            description = "Zoom in and out, move around, expand and hide objects!"
+        icon = "fa-sitemap"
+        title = "Interactive"
+        description = "Zoom in and out, move around, explore, and hide components!"
 
-        [[params.services.list]]
-            icon = "fa-database"
-            title = "Details"
-            description = "Get additional details like video lengths and problem set features!"
+		[[params.services.list]]
+        icon = "fa-database"
+        title = "Details"
+        description = "Get additional details including video lengths and problem set features!"
+
+    [[params.services.list]]
+		  	icon = "fa-gears"
+				title = "Automated"
+				description = "Build the visualizations from existing courses!"
 
 
 	# Portfolio section
 	[params.portfolio]
 		headline = "Demos"
 
-	    # Portfolio modals
+	  # Portfolio modals
 		[params.portfolio.modal]
 	        client = "Client"
 	        date = "Date"
 	        category = "Category"
 	        buttonText = "Go Back"
 
-    # Aside section
+  # Aside section
 	[params.aside]
 		headline = "Click the images above for demos of the visualizations!"
 
 	# Contact section
 	[params.contact]
 		headline = "Download"
-		description = "Download, extend, enhance, and share ideas on how to enhance!"
+		description = "Download the source code! Extend, enhance, and share ideas on how to improve the visualizations!"
 
 		[params.contact.button]
 			text = "Download Here"

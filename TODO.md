@@ -1,13 +1,10 @@
 # TODO
 
-## 2015-11-15
-* Test with co-worker/family member
-
 ## 2015-11-22
-* Build JSON representation of Udacity course, like KBAI or MLT
+* Build Udacity course 1 for visualization
+* Build Udacity course 2 for visualization
 * Get test site images and content finalized
-* Integrate visualization process into edX studio/course development tool
-* Integrate visualization process into edX LMS platform
+* Finalize showcase website
 
 ## 2015-11-29
 * Paper
