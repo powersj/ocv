@@ -33,19 +33,19 @@ The goal of this project is to create visualizations of components of an online 
   * Used to generate the GitHub page for this project in combination with the Hugo "creative" theme
   * Get both at: https://gohugo.io/ and http://themes.gohugo.io/creative/
 
+## Development Examples
+Here was the initial prototype image that was hand-built to demonstrate how the visualizations could look like:
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/proto.png "Initial draft")
+
+After getting in, extracting data, and starting to manipulate the data this is the state of the visualizations (think alpha stage):
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/alpha.png "Initial working code")
+
+Right before going to peer review for the course, this is what the visualizations looked like in a beta form:
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/beta.png "After initial feedback")
+
 ## Tests
 There are example edX course output in the src/data directory that can be used to build the
 visualizations without the need for standing up the entire edX environment.
-
-## Development Examples
-Here was the initial proposal for how the visualizations could look like:
-![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/proto.png "Initial draft")
-
-After getting in and coding and extracting data this is the state of the visualizations at that point:
-![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/alpha.png "Initial working code")
-
-Right before going to peer review for the course, this is what the visualizations looked like:
-![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/beta.png "After initial feedback")
 
 ## Contributors
 * [Joshua Powers](http://powersj.github.io/)
