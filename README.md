@@ -4,6 +4,8 @@ visualization of the course. This is an effort to help demonstrate how online co
 and to highlight if courses are taking advantage of online assessment techniques and providing
 variety.
 
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/final.jpg "Initial draft")
+
 ## Background
 With the continual blending of education together with technology there is a trend of taking traditional methods and placing them online with no changes. The general experience involves students watching lectures and then students take a multiple choice test, which if they pass they move on to the next set of lectures. If they do not pass, they are forced to go back and review the lectures with little to no guidance as to what the student failed or missed.
 
@@ -14,20 +16,22 @@ In addition, writing good well thought out assessments is incredibly difficult. 
 ## Objective
 The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, like edX.
 
-## Example Image
-Below is an example snapshot of the final product.
-![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/final.jpg "Initial draft")
-
 ## Technologies Used
 * **edX**
   * Used as the open source online course platform that the visualizations are based off of
   * Find more information at: https://www.edx.org/
-* **d3 and dagre-d3**
-  * Used to create the visualizations themselves
-  * Find more information at: http://d3js.org/ and https://github.com/cpettitt/dagre-d3
 * **Python**
   * Used as the primary coding language of choice
   * The author's favorite
+* **d3 and d3-tip**
+  * Used to create the visualizations themselves
+  * Find more information at: http://d3js.org/ and https://github.com/Caged/d3-tip
+* **Font-Awesome**
+  * Used throughout the visualizations for icon sets.
+  * Learn more about Font-Awesome at: https://fortawesome.github.io/Font-Awesome/
+* **Hugo**
+  * Used to generate the GitHub page for this project in combination with the Hugo "creative" theme
+  * Get both at: https://gohugo.io/ and http://themes.gohugo.io/creative/
 
 ## Tests
 There are example edX course output in the src/data directory that can be used to build the
@@ -42,7 +46,6 @@ After getting in and coding and extracting data this is the state of the visuali
 
 Right before going to peer review for the course, this is what the visualizations looked like:
 ![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/beta.png "After initial feedback")
-
 
 ## Contributors
 * [Joshua Powers](http://powersj.github.io/)
