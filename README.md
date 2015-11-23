@@ -14,8 +14,9 @@ In addition, writing good well thought out assessments is incredibly difficult. 
 ## Objective
 The goal of this project is to create visualizations of components of an online education course, such as lectures and assessments, to help educators understand the methods they are using to teach and assess students and students to understand how the course is structured. This project is specifically targeted at students and teachers using MOOC platforms, like edX.
 
-## Example
-![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/draft_2015_10_18.png "Initial draft")
+## Example Image
+Below is an example snapshot of the final product.
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/final.jpg "Initial draft")
 
 ## Technologies Used
 * **edX**
@@ -31,6 +32,17 @@ The goal of this project is to create visualizations of components of an online 
 ## Tests
 There are example edX course output in the src/data directory that can be used to build the
 visualizations without the need for standing up the entire edX environment.
+
+## Development Examples
+Here was the initial proposal for how the visualizations could look like:
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/proto.png "Initial draft")
+
+After getting in and coding and extracting data this is the state of the visualizations at that point:
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/alpha.png "Initial working code")
+
+Right before going to peer review for the course, this is what the visualizations looked like:
+![alt text](https://raw.githubusercontent.com/powersj/ocv/master/img/beta.png "After initial feedback")
+
 
 ## Contributors
 * [Joshua Powers](http://powersj.github.io/)

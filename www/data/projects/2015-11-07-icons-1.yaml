@@ -1,8 +1,8 @@
 modalID: 4
-title: edX Icon Set
+title: Icon Set
 date: 2015-11-07
 img: icons.jpg
-client: edX
+client: Visualization
 clientLink: "#"
-category: edX
-description: This example was generated to showcase the various icons and types available to an edX course. It presents the various types that are supported with their cooresponding icons.
+category: Visualization
+description: This example was generated to showcase the various icons and types available, specifically with an edX course. It presents the various types of course modules that are supported with their cooresponding icons.

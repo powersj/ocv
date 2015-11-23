@@ -1,8 +1,8 @@
 modalID: 1
-title: edX Example Course
+title: edX Demo Course
 date: 2015-11-07
 img: example_course.jpg
 client: edX
 clientLink: "#"
 category: edX
-description: This visualization comes from the edX Example Course found (HERE). This is a rather complex course that makes use of the majority of types of components and features that make up edX. As such it is a great test case to show off the various features and types in a visualization.
+description: This visualization comes from the edX Example Course (https://github.com/edx/edx-demo-course). This is a rather complex course that makes use of the majority of types of components and features that make up edX. As such it is a great test case to show off the various features and types in a visualization.
