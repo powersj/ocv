@@ -5,8 +5,8 @@ The goal of this project is to create visualizations of online educational cours
 
 ![Img of visualization](https://raw.githubusercontent.com/powersj/ocv/master/img/final.jpg "Initial draft")
 
-## Live Demos
-Check out live demos and examples at the [GitHub Pages here!](http://powersj.github.io/ocv)
+## Demos
+Check out live demos and examples at the [GitHub Pages here](http://powersj.github.io/ocv) or watch a demonstration of the tool via [a YouTube video!](https://www.youtube.com/watch?v=F9vHBsZJDtk)
 
 ## Background
 With the continual blending of education together with technology there is a trend of taking traditional methods and placing them online with no changes. The general experience involves students watching lectures and then students take a multiple choice test, which if they pass they move on to the next set of lectures. If they do not pass, they are forced to go back and review the lectures with little to no guidance as to what the student failed or missed.
