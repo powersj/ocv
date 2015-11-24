@@ -1,8 +1,13 @@
 modalID: 3
-title: edX Test Course
-date: 2015-11-07
+title: Test Course
+date: 2015-11-24
 img: test_course.jpg
 client: edX
 clientLink: "#"
 category: edX
-description: edX Test Course (https://github.com/edx/demo-test-course) that has many of the edX platform features turned on.
+description: "For the visualization [click here!]
+  (samples/56351d0756c02c09b3e48abd_2015-11-24.html)\n
+  \n
+  This visualization comes from yet another [edX Test Course]
+  (https://github.com/edx/demo-test-course). This test course has many of the edX platform
+  features turned on. It was a great course to use for development."

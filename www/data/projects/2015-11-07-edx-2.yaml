@@ -1,8 +1,13 @@
 modalID: 2
-title: edX
-date: 2015-11-07
+title: Multivariable Calculus
+date: 2015-11-24
 img: math_course.jpg
 client: edX
 clientLink: "#"
 category: edX
-description: A full, real, live edX course that teaches Multivariable Calculus (https://github.com/mitocw/18-02sc-fall-2010.edx)
+description: "View the visualization [by clicking here!]
+  (samples/56351c2456c02c09b3e47132_2015-11-24.html)\n
+  \n
+  This visualization is built from a real, live edX course that teaches [Multivariable Calculus]
+  (https://github.com/mitocw/18-02sc-fall-2010.edx). It features many, many videos and sections
+  as the course was broken down into many smaller parts."

@@ -1,0 +1,10 @@
+modalID: 5
+title: Video Length
+date: 2015-11-24
+img: video.png
+client: Visualization Features
+clientLink: "#"
+category: Visualization Features
+description: "One of the features of the visualizations is the ability to show the length
+  of each video. The visualizer will use the YouTube API to look up the lengths and add them
+  as tooltips when hoveovered with the mouse!"

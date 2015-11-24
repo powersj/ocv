@@ -36,7 +36,8 @@ theme = "hugo-creative-theme"
 
 	# Hero section
 	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		# To change the background of the hero section, replace the 'header.jpg'
+		# at './static/img' with your own.
 		slogan     = "Seeing the paths online education can take"
 		subtitle   = "Help educators and students to visualize the course structure."
 		buttonText = "Find out more"
@@ -45,7 +46,12 @@ theme = "hugo-creative-theme"
 	# About section
 	[params.about]
 		headline    = "Objective"
-		description = "The goal of this project is to create visualizations of online educational courses. This will help educators understand the methods they are using to teach and assess students. The project helps students understand the course and how it is structured. It is specifically targeted for students and teachers using MOOC platforms, like edX."
+		description = """
+  The goal of this project is to create visualizations of online educational
+  courses. This will help educators understand the methods they are using to teach and
+  assess students. The project helps students understand the course and how it is
+  structured. It is specifically targeted for students and teachers using MOOC
+	platforms, like edX."""
 		buttonText  = "Check out the demos below!"
 
 	# Service section
@@ -87,7 +93,8 @@ theme = "hugo-creative-theme"
 	# Contact section
 	[params.contact]
 		headline = "Download"
-		description = "Download the source code! Extend, enhance, and share ideas on how to improve the visualizations!"
+		description = """Download the source code! Extend, enhance, and share ideas on how to
+		improve the visualizations!"""
 
 		[params.contact.button]
 			text = "Download Here"
