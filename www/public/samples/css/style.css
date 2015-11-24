@@ -19,3 +19,11 @@ body {
     font-weight: bold;
     padding: 12px;
 }
+
+svg:not(.active):not(.ctrl) {
+  cursor: crosshair;
+}
+
+.node {
+  cursor: pointer;
+}
