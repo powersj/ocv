@@ -9,7 +9,7 @@ icon_dict = {
     'course_info':     '\uf19c',
     'discussion':      '\uf0c0',
     'edx_sga':         '\uf044',
-    'google-calendar': '\uf1a0',
+    'google-calendar': '\uf271',
     'google-document': '\uf1a0',
     'html':            '\uf02e',
     'openassessment':  '\uf044',
