@@ -5,11 +5,11 @@ html {
     margin: auto;
 }
 body {
-    background-color: #ffffff;
+    background-color: #272822;
 }
 .link {
     fill: none;
-    stroke: #cccccc;
+    stroke: #337ab7;
     stroke-width: 3px;
 }
 .d3-tip {
