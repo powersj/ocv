@@ -5,15 +5,19 @@ The goal of this project is to create visualizations of online educational cours
 
 ![Img of visualization](https://raw.githubusercontent.com/powersj/ocv/master/img/final.jpg "Initial draft")
 
-## Demos
-Check out live demos and examples at the [GitHub Pages here](http://powersj.github.io/ocv) or watch a demonstration of the tool via [a YouTube video!](https://www.youtube.com/watch?v=F9vHBsZJDtk)
+## Demo, Video, and Paper
+ * Check out live demos and examples at the [GitHub Pages here](http://powersj.github.io/ocv)
+ * Watch a demonstration of the tool via [a YouTube video!](https://www.youtube.com/watch?v=JN5GK_NYm68)
+ * Read the [paper](http://powersj.github.io/ocv/online_course_visualizer.pdf)
 
 ## Background
-With the continual blending of education together with technology there is a trend of taking traditional methods and placing them online with no changes. The general experience involves students watching lectures and then students take a multiple choice test, which if they pass they move on to the next set of lectures. If they do not pass, they are forced to go back and review the lectures with little to no guidance as to what the student failed or missed.
+The continual blending of education together with technology has led to a trend of taking traditional educational experiences and placing courses online with no changes. Prior to the massive open online course (MOOC) revolution, the general online course experience involved students watching lectures, normally recorded in-classroom lectures, and then taking a multiple choice test. If the student passes he moves on to the next set of lectures, but if student does not pass, he is forced to go back and review lectures with little to no guidance or feedback.
 
-This type of online education however does not take full advantage of new technologies that may exist or have been enabled by an online platform. As an example, consider methods for providing intelligent feedback to students during assessments. Taking a multiple choice quiz and making it accessible via online tools ignores the fact that educators could provide realtime feedback, use additional methods of assessment, or analyze student inputs to determine where places in lectures may need to be refined.
+The type of online education described above does not take full advantage of new technologies that may exist or that have been enabled by online platforms like MOOCs. As an example, consider methods for providing intelligent feedback to students during assessments. Taking a traditional multiple choice quiz and only making it accessible online ignores the fact that educators could instead be providing real time feedback by mixing and matching additional assessment methods, or analyzing student inputs to determine where there are places in lectures that may need to be refined. Only recently have advances in online education begun to utilize the technologies available to enrich the online experience.
 
-In addition, writing good well thought out assessments is incredibly difficult. A teacher needs to spend time refining and crafting an assessment to help guide a student’s learning. As such enabling teachers to take advantage of the tools and processes available to them enables them to be more effective teachers.
+In addition, writing well thought out assessments is incredibly difficult. A teacher needs to spend a considerable time refining and crafting an assessment to help guide a student’s learning. Therefore, enabling teachers to take advantage of the tools and processes available to them in online learning will enable them to be more effective.
+
+Here I present a visualization to enable both teachers and students to view course structure and features.  The goal of this is to assist educators in understanding the methods they are using, or not using, to teach and assess students and to demonstrate to students the course layout and set expectations on how the course is structured.
 
 ## Technologies Used
 * **edX**
@@ -48,9 +52,11 @@ Right before going to peer review for the course, this is what the visualization
   * Georgia Institute of Technology
 
 ## Reviewers
-A huge thank you to the following project reviewers:
+A huge thank you to the following for thier feedback, evaluation, and support:
+ * Dr. David A. Joyner
+ * Dr. Watler & Marjie Powers
+ * Olga Martyusheva
  * Alex Balderson
- * Jim & Marjie Powers
  * Aaron Anderson
  
 # License
