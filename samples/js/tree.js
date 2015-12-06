@@ -115,7 +115,7 @@ var update = function(source) {
 
     nodeUpdate.select("text")
         .style("fill", function(d) {
-            return d._children ? "#f05f40" : "#337ab7";
+            return d._children ? "#e72528" : "#FF9933";
         });
 
     // Transition exiting nodes to the parent's new position.
