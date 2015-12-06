@@ -2,14 +2,26 @@
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-4 text-center">
-                <h2 class="section-heading">{{ with .Site.Params.contact.headline }}{{ . }}{{ end }}</h2>
+            <div class="col-lg-4 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.video.headline }}{{ . }}{{ end }}</h2>
                 <hr class="primary">
-
+                <i class="fa fa-4x fa-youtube-play wow bounceIn text-primary"></i>
+                <p class="text-muted">{{ with .Site.Params.video.description }}{{ . }}{{ end }}</p>
+                <a href="{{ with .Site.Params.video.button.link }}{{ . }}{{ end }}" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.video.button.text }}{{ . }}{{ end }}</a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.download.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
                 <i class="fa fa-4x fa-github wow bounceIn text-primary"></i>
-                <p class="text-muted">{{ with .Site.Params.contact.description }}{{ . }}{{ end }}</p>
-                <a href="{{ with .Site.Params.contact.button.link }}{{ . }}{{ end }}" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.contact.button.text }}{{ . }}{{ end }}</a>
-
+                <p class="text-muted">{{ with .Site.Params.download.description }}{{ . }}{{ end }}</p>
+                <a href="{{ with .Site.Params.download.button.link }}{{ . }}{{ end }}" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.download.button.text }}{{ . }}{{ end }}</a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h2 class="section-heading">{{ with .Site.Params.paper.headline }}{{ . }}{{ end }}</h2>
+                <hr class="primary">
+                <i class="fa fa-4x fa-file-pdf-o wow bounceIn text-primary"></i>
+                <p class="text-muted">{{ with .Site.Params.paper.description }}{{ . }}{{ end }}</p>
+                <a href="{{ with .Site.Params.paper.button.link }}{{ . }}{{ end }}" class="btn btn-primary btn-xl page-scroll">{{ with .Site.Params.paper.button.text }}{{ . }}{{ end }}</a>
             </div>
         </div>
     </div>

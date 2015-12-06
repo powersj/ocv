@@ -90,12 +90,29 @@ theme = "hugo-creative-theme"
 	        category = "Category"
 	        buttonText = "Go Back"
 
-	# Contact section
-	[params.contact]
+	# Final section
+	[params.download]
 		headline = "Download"
 		description = """Download the source code! Extend, enhance, and share ideas on how to
 		improve the visualizations!"""
 
-		[params.contact.button]
+		[params.download.button]
 			text = "Download Here"
 			link = "https://github.com/powersj/ocv"
+
+	[params.paper]
+		headline = "Paper"
+		description = """Read the final course paper for the project. Great late night reading!"""
+
+		[params.paper.button]
+			text = "Read Here"
+			link = "online_course_visualizer.pdf"
+
+	[params.video]
+		headline = "Video"
+		description = """Watch an overview of the project, the design, and demo of the
+		implimentation!"""
+
+		[params.video.button]
+			text = "View Here"
+			link = "https://www.youtube.com/watch?v=JN5GK_NYm68"
