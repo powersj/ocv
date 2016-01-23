@@ -20,7 +20,10 @@ def read_blocks(course_dict):
     for item in course_dict['blocks']:
         parent_id = item['id']
         for child in item['children']:
-            blocks[parent_id].children.append(blocks[child['child_id']])
+            try:
+                blocks[parent_id].children.append(blocks[child['child_id']])
+            except KeyError:
+                pass
 
     return blocks.values()
 
