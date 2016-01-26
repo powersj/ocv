@@ -4,6 +4,7 @@ Print out self-contained HTML page with visualization. However, does require int
 download the d3.js script.
 """
 import argparse
+import os
 import re
 
 from edx_course_map import build_course_tree
@@ -11,7 +12,7 @@ from edx_course_map import build_course_tree
 
 def print_html_header():
     """Print the header and start of the body of the HTML document."""
-    print """<!DOCTYPE html>
+    return """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +35,7 @@ var data = ["""
 
 def print_html_footer():
     """Finish off the HTML tags."""
-    print """];
+    return """];
 </script>
 <script type="text/javascript" src="js/tree.js"></script>
 </body>
@@ -55,10 +56,17 @@ def main(filename, id_only):
     """Print working single, self contained HTML page with only external dependency on d3.js."""
     course_data = build_course_tree(filename, id_only)
 
-    print_html_header()
+    output_filename = os.path.splitext(os.path.basename(filename))[0] + '.html'
+    output_file = open('../output/' + output_filename, 'w')
+    print 'creating ../output/%s' % output_filename
+
+    output_file.write(print_html_header())
     for data in course_data:
-        print '\t%s' % (data)
-    print_html_footer()
+        output_file.write('\t%s' % (data))
+    output_file.write(print_html_footer())
+
+    output_file.close()
+
 
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()

@@ -10,6 +10,47 @@ The goal of this project is to create visualizations of online educational cours
  * Watch a demonstration of the tool via [a YouTube video!](https://www.youtube.com/watch?v=JN5GK_NYm68)
  * Read the [paper](http://powersj.github.io/ocv/online_course_visualizer.pdf)
 
+## How to Use
+### Getting Data
+There are two methods for getting the data required to generate the visualizations: 1) connect to an edX instance database and export the course directly and 2) use an exported course via the XML format.
+
+#### Export directly from edX Database
+To automatically connect to an edX database you only need to know the IP address of the backend database and be able to establish a connect to the Mongo databse. To use this method use the `edx_course_db.py` script to generate the data. Run the following:
+
+```bash
+./edx_course_db.py <ip address of server>
+# an example pointing to localhost
+./edx_course_db.py 127.0.0.1
+# an example pointing to a remote IP
+./edx_course_db.py 192.168.1.100
+```
+
+This will put exports of ALL courses on that server, one JSON file per course, into the 'input' directory.
+
+#### XML Export
+If you already have an export of an edX course via XML you can use the `edx_course_xml.py` script to generate the data. Run the following:
+
+```bash
+./edx_course_xml.py <path to directory>
+# an example where the course export is in your downloads folder
+./edx_course_xml.py ~/Downloads/mycourse
+```
+
+This will put the data into a single JSON file into the 'input' directory. If the XML export is in an archive (e.g. zip) it needs to be extracted before running the above script.
+
+### Generating the Visualization
+Now that there is data in the input directory it is time to generate the visualizations themselves. This is accomplished by running the 'edx_course_html.py' script as such:
+
+```bash
+./edx_course_html.py <filename>
+# Using the mycourse.json file found in the input directory
+./edx_course_html.py ../input/mycourse.json
+# Same file, but will make all tooltips print the id of the course
+./edx_course_html.py ../input/mycourse.json --id-only
+```
+
+This will automatically output all the data to the output folder. The output folder has been pre-populated with all the required CSS and Javascript files.
+
 ## Background
 The continual blending of education together with technology has led to a trend of taking traditional educational experiences and placing courses online with no changes. Prior to the massive open online course (MOOC) revolution, the general online course experience involved students watching lectures, normally recorded in-classroom lectures, and then taking a multiple choice test. If the student passes he moves on to the next set of lectures, but if student does not pass, he is forced to go back and review lectures with little to no guidance or feedback.
 
@@ -52,12 +93,13 @@ Right before going to peer review for the course, this is what the visualization
   * Georgia Institute of Technology
 
 ## Reviewers
-A huge thank you to the following for thier feedback, evaluation, and support:
+A huge thank you to the following for their feedback, evaluation, and support:
  * Dr. David A. Joyner
  * Dr. Watler & Marjie Powers
  * Olga Martyusheva
  * Alex Balderson
  * Aaron Anderson
- 
+ * Daniel Davis
+
 # License
 Apache 2.0 &copy; 2015 Joshua Powers
