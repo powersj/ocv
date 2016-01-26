@@ -63,26 +63,31 @@ def is_id(string):
 
 
 def customize_discussion(block, block_data):
-    if not block_data['name']:
-        block_data['name'] = 'Discussion'
-
+    """Sets the block name for Discussions if emtpy."""
     try:
-        block_data['name'] = block['fields']['discussion_target']
+        block_data['name'] = block.attrib['discussion_target']
     except KeyError:
-        block_data['name'] = block['fields']['discussion_category']
+        try:
+            block_data['name'] = block.attrib['discussion_category']
+        except KeyError:
+            if not block_data['name']:
+                block_data['name'] = 'Discussion'
 
 
 def customize_html(block, block_data):
+    """Sets the block name for HTML pages if emtpy."""
     if is_id(block_data['name']) or not block_data['name']:
         block_data['name'] = 'HTML Page'
 
 
 def customize_openassessment(block, block_data):
+    """Sets the block name for Open Assessments if emtpy."""
     if is_id(block_data['name']):
         block_data['name'] = 'Open Assessment'
 
 
 def customize_problem(block, block_data):
+    """Sets the block name for Problems if empty."""
     if not block_data['name']:
         block_data['name'] = 'Problem'
 
@@ -93,6 +98,7 @@ def customize_problem(block, block_data):
 
 
 def customize_video(block, block_data):
+    """Sets block data for Videos."""
     try:
         block_data['youtube_id'] = block['fields']['youtube_id_1_0']
     except KeyError:
@@ -108,6 +114,7 @@ def customize_video(block, block_data):
 
 
 def customize_by_type(block, block_data):
+    """Master customizer function."""
     if block_data['type'] == 'discussion':
         customize_discussion(block, block_data)
     if block_data['type'] == 'html':
@@ -121,6 +128,7 @@ def customize_by_type(block, block_data):
 
 
 def add_children(block, block_data):
+    """Adds the children to each block."""
     block_children = []
     for child in block['fields']['children']:
         children_data = {}
@@ -133,14 +141,13 @@ def add_children(block, block_data):
 
 def build_course_map(course_id, course_content):
     """Parse out the data for each block."""
-    course_dict = {}
-    course_dict['course_id'] = course_id.__str__()
-    course_blocks = []
+    course_blocks = {}
+
     for block in course_content['blocks']:
         block_data = {}
-
         block_data['id'] = block['block_id']
         block_data['type'] = block['block_type']
+
         try:
             block_data['name'] = block['fields']['display_name']
         except KeyError:
@@ -151,9 +158,7 @@ def build_course_map(course_id, course_content):
 
         course_blocks.append(block_data)
 
-    course_dict['blocks'] = course_blocks
-
-    return course_dict
+    return course_blocks
 
 
 def main(ip):
@@ -166,9 +171,12 @@ def main(ip):
     course_dump = get_course_content(database, branch_ids)
 
     for course_id, course_content in course_dump.iteritems():
-        course_dict = build_course_map(course_id, course_content)
+        course_dict = {}
+        course_dict['course_id'] = course_id.__str__()
+        course_dict['blocks'] = build_course_map(course_id, course_content)
+
         filename = '%s.json' % str(course_id)
-        filepath = os.path.join('./data/', filename)
+        filepath = os.path.join('../input/', filename)
 
         with open(filepath, 'w') as outfile:
             json.dump(course_dict, outfile, indent=4)

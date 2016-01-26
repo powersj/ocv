@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Script used to connect read in an edX course exported to XML files
+Script used to read in an edX course exported to XML files
 and to produce a json formatted data file.
 """
 import argparse
@@ -22,6 +22,7 @@ def is_id(string):
 
 
 def customize_discussion(root, block_data):
+    """Sets the block name for Discussions if emtpy."""
     try:
         block_data['name'] = root.attrib['discussion_target']
     except KeyError:
@@ -33,16 +34,19 @@ def customize_discussion(root, block_data):
 
 
 def customize_html(root, block_data):
+    """Sets the block name for HTML pages if emtpy."""
     if is_id(block_data['name']) or not block_data['name']:
         block_data['name'] = 'HTML Page'
 
 
 def customize_openassessment(block, block_data):
+    """Sets the block name for Open Assessments if emtpy."""
     if is_id(block_data['name']):
         block_data['name'] = 'Open Assessment'
 
 
 def customize_problem(root, block_data):
+    """Sets the block name for Problems if empty."""
     if not block_data['name']:
         block_data['name'] = 'Problem'
 
@@ -53,6 +57,7 @@ def customize_problem(root, block_data):
 
 
 def customize_video(root, block_data):
+    """Sets block data for Videos."""
     try:
         block_data['youtube_id'] = root.attrib['youtube_id_1_0']
     except KeyError:
@@ -68,7 +73,7 @@ def customize_video(root, block_data):
 
 
 def customize_by_type(root, block_data):
-    """TODO"""
+    """Master customizer function."""
     if block_data['type'] == 'discussion':
         customize_discussion(root, block_data)
     if block_data['type'] == 'html':
@@ -82,7 +87,7 @@ def customize_by_type(root, block_data):
 
 
 def add_children(root, block_data):
-    """TODO"""
+    """Adds the children to each block."""
     block_children = []
     for child in root.getchildren():
         child_data = {}
@@ -96,14 +101,14 @@ def add_children(root, block_data):
     block_data['children'] = block_children
 
 
-def build_course_map(xml_file):
-    """TODO"""
+def build_course_map(xml_file, file_id):
+    """Builds the overall course map."""
     tree = etree.parse(xml_file)
     root = tree.getroot()
 
     block_data = {}
+    block_data['id'] = file_id
     block_data['type'] = root.tag
-    block_data['id'] = os.path.splitext(os.path.basename(xml_file))[0]
 
     try:
         block_data['name'] = root.attrib['display_name']
@@ -126,10 +131,11 @@ def main(folder):
     course_blocks = []
 
     for xml_file in xml_files:
-        if '/course/' not in xml_file and not is_id(os.path.splitext(os.path.basename(xml_file))[0]):
+        file_id = os.path.splitext(os.path.basename(xml_file))[0]
+        if '/course/' not in xml_file and not is_id(file_id):
             print 'skipping: %s' % xml_file
             continue
-        course_blocks.append(build_course_map(xml_file))
+        course_blocks.append(build_course_map(xml_file, file_id))
 
     course_dict['blocks'] = course_blocks
 

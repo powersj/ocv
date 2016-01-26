@@ -51,9 +51,9 @@ def create_div_id(key):
     return re.sub(r'\W+', '', key.lower().replace(' ', ''))
 
 
-def main(filename):
+def main(filename, id_only):
     """Print working single, self contained HTML page with only external dependency on d3.js."""
-    course_data = build_course_tree(filename)
+    course_data = build_course_tree(filename, id_only)
 
     print_html_header()
     for data in course_data:
@@ -63,6 +63,7 @@ def main(filename):
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
     PARSER.add_argument('filename', help='MongoDB data dumped to file')
+    PARSER.add_argument('-i', '--id-only', action="store_true", default=False)
     ARGS = PARSER.parse_args()
 
-    main(ARGS.filename)
+    main(ARGS.filename, ARGS.id_only)

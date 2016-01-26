@@ -11,33 +11,36 @@ from api.youtube_api import get_video_duration
 
 class Block(object):
 
-    def __init__(self, block):
+    def __init__(self, block, id_only=False):
         self.id = block['id']
         self.type = block['type']
         self.name = block['name']
         self.children = []
         self.parent = ''
 
-        self.tip = ''
+        if id_only:
+            self.tip = block['id']
+        else:
+            self.tip = ''
 
         try:
             self.icon = icon_dict[self.type]
         except KeyError:
             self.icon = '\uf111'
 
-        if self.type == 'problem':
+        if self.type == 'problem' and not id_only:
             self.generate_problem_tooltip(block)
 
-        if self.type == 'video':
+        if self.type == 'video' and not id_only:
             self.generate_video_tooltip(block)
 
     def __str__(self):
         """Overload string function."""
         return ('{"id": "%s", "name": "%s", "parent": "%s",'
                 ' "type": "%s", "icon": "%s", "tip": "%s"},') % (
-               self.id.encode('utf-8'), self.name.encode('utf-8'),
-               self.parent.encode('utf-8'), self.type.encode('utf-8'),
-               self.icon, self.tip)
+            self.id.encode('utf-8'), self.name.encode('utf-8'),
+            self.parent.encode('utf-8'), self.type.encode('utf-8'),
+            self.icon, self.tip.encode('utf-8'))
 
     def generate_video_tooltip(self, block):
         try:

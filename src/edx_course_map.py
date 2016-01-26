@@ -10,11 +10,11 @@ import json
 from edx_block import Block
 
 
-def read_blocks(course_dict):
+def read_blocks(course_dict, id_only):
     """Read entire course dictionary into Block objects and set children."""
     blocks = {}
     for item in course_dict['blocks']:
-        blocks[item['id']] = Block(item)
+        blocks[item['id']] = Block(item, id_only)
 
     # now go through and add refrences to each parent to the children blocks
     for item in course_dict['blocks']:
@@ -38,12 +38,12 @@ def get_children(tree, block):
             tree.append(children)
 
 
-def build_course_tree(filename):
+def build_course_tree(filename, id_only):
     """Get all course data from a specific file. Assumes only one course per file."""
     with open(filename, 'r') as my_file:
         course_dict = json.load(my_file)
 
-    blocks = read_blocks(course_dict)
+    blocks = read_blocks(course_dict, id_only)
 
     tree = []
     for block in blocks:
@@ -57,9 +57,9 @@ def build_course_tree(filename):
     return tree
 
 
-def main(filename):
+def main(filename, id_only=False):
     """Read in a file and print each course by chapter."""
-    course = build_course_tree(filename)
+    course = build_course_tree(filename, id_only)
     for block in course:
         print block
 
