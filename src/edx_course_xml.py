@@ -140,7 +140,7 @@ def main(folder):
     course_dict['blocks'] = course_blocks
 
     filename = '%s.json' % course_dict['course_id']
-    filepath = os.path.join('./data/', filename)
+    filepath = os.path.join('../input/', filename)
 
     with open(filepath, 'w') as outfile:
         json.dump(course_dict, outfile, indent=4)
