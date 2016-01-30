@@ -71,7 +71,8 @@ def main(filename, id_only):
 if __name__ == "__main__":
     PARSER = argparse.ArgumentParser()
     PARSER.add_argument('filename', help='MongoDB data dumped to file')
-    PARSER.add_argument('-i', '--id-only', action="store_true", default=False)
+    PARSER.add_argument('-i', '--id-only', action="store_true", help='Uses the id as the tooltip',
+                        default=False)
     ARGS = PARSER.parse_args()
 
     main(ARGS.filename, ARGS.id_only)
