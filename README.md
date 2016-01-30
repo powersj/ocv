@@ -12,20 +12,18 @@ The goal of this project is to create visualizations of online educational cours
 
 ## How to Use
 ### Getting Data
-There are two methods for getting the data required to generate the visualizations: 1) connect to an edX instance database and export the course directly and 2) use an exported course via the XML format.
+There are three methods for getting the data required to generate the visualizations: 1) use a JSON export (Usually a single file) 2) use an exported course via the XML format (Usually a full directory of files) or 3) connect to an edX instance database and export the course directly.
 
-#### Export directly from edX Database
-To automatically connect to an edX database you only need to know the IP address of the backend database and be able to establish a connect to the Mongo databse. To use this method use the `edx_course_db.py` script to generate the data. Run the following:
+#### JSON Export
+If you already have an export of an edX course via JSON you can use the `edx_course_json.py` script to generate the data. Run the following:
 
 ```bash
-./edx_course_db.py <ip address of server>
-# an example pointing to localhost
-./edx_course_db.py 127.0.0.1
-# an example pointing to a remote IP
-./edx_course_db.py 192.168.1.100
+./edx_course_json.py <path to JSON file>
+# an example where the course JSON export is in your downloads folder
+./edx_course_json.py ~/Downloads/mycourse.json
 ```
 
-This will put exports of ALL courses on that server, one JSON file per course, into the 'input' directory.
+This will put the data into a single JSON file, containing the correct format to parse, into the 'input' directory.
 
 #### XML Export
 If you already have an export of an edX course via XML you can use the `edx_course_xml.py` script to generate the data. Run the following:
@@ -37,6 +35,24 @@ If you already have an export of an edX course via XML you can use the `edx_cour
 ```
 
 This will put the data into a single JSON file into the 'input' directory. If the XML export is in an archive (e.g. zip) it needs to be extracted before running the above script.
+
+#### Export directly from edX Database
+To automatically connect to an edX database you only need to know the IP address of the backend database and be able to establish a connect to the Mongo database.
+
+**NOTE** This method requires direct access to the MongoDB database used by the edX instance. Unless you are the one setting up the edX instance, you will probably not be granted access to a course in this manner by any network admin. Therefore, one of the above methods is suggested!
+
+
+To use this method use the `edx_course_db.py` script to generate the data. Run the following:
+
+```bash
+./edx_course_db.py <ip address of server>
+# an example pointing to localhost
+./edx_course_db.py 127.0.0.1
+# an example pointing to a remote IP
+./edx_course_db.py 192.168.1.100
+```
+
+This will put exports of ALL courses on that server, one JSON file per course, into the 'input' directory.
 
 ### Generating the Visualization
 Now that there is data in the input directory it is time to generate the visualizations themselves. This is accomplished by running the 'edx_course_html.py' script as such:
