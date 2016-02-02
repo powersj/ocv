@@ -1,7 +1,6 @@
 #!/usr/bin/python
 """Used to determine YouTube video lengths."""
 import os
-import requests
 import re
 import sys
 
@@ -86,7 +85,12 @@ def get_video_duration(youtube_id):
     query = ''.join([url, uri])
 
     try:
+        import requests
         request = requests.get(query)
+    except ImportError:
+        print >> sys.stderr, 'No requests library! Please install via:'
+        print >> sys.stderr, '`pip install requests` or `apt install python-requests`'
+        return ''
     except:
         print >> sys.stderr, 'Could not retrive video: %s' % (youtube_id)
         return ''
