@@ -38,9 +38,21 @@ class Block(object):
         """Overload string function."""
         return ('{"id": "%s", "name": "%s", "parent": "%s",'
                 ' "type": "%s", "icon": "%s", "tip": "%s"},') % (
-            self.id.encode('utf-8'), self.name.encode('utf-8'),
-            self.parent.encode('utf-8'), self.type.encode('utf-8'),
-            self.icon, self.tip.encode('utf-8'))
+            self.id.encode('utf-8'),
+            self.html_escape(self.name.encode('utf-8')),
+            self.parent.encode('utf-8'),
+            self.type.encode('utf-8'),
+            self.icon,
+            self.html_escape(self.tip.encode('utf-8')))
+
+    html_escape_table = {
+        '"': '\\"',
+        "'": "\\'",
+        }
+
+    def html_escape(self, text):
+        """Produce entities within text."""
+        return "".join(self.html_escape_table.get(c, c) for c in text)
 
     def generate_video_tooltip(self, block):
         try:
